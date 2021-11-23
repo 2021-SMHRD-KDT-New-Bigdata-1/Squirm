@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="./css/Join_Login.css">
+  <link rel="stylesheet" href="./resources/css/Join_Login.css">
 </head>
 <body>
   
@@ -77,8 +77,8 @@
     
     </div>
 
-    <script src="./js/jquery-3.6.0.min.js"></script>
-    <script src="./js/Join_Login.js"></script> 
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script src="../js/Join_Login.js"></script> 
     
     </body> 
 
