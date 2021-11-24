@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="./resources/css/Join_Login.css">
+  
+    
 </head>
 <body>
   
@@ -77,9 +79,8 @@
     
     </div>
 
-    <script src="../js/jquery-3.6.0.min.js"></script>
-    <script src="../js/Join_Login.js"></script> 
-    
+  	<script src="./resources/js/jquery-3.6.0.min.js"></script>
+    <script src="./resources/js/Join_Login.js"></script> 
     </body> 
 
   

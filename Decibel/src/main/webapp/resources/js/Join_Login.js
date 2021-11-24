@@ -1,4 +1,3 @@
-
 $('.btn-enregistrer').click(function() {
     $('.connexion').addClass('remove-section');
       $('.enregistrer').removeClass('active-section');
