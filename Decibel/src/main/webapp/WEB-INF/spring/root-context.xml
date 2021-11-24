@@ -11,9 +11,9 @@
      
    <bean id="hikariConfig" class="com.zaxxer.hikari.HikariConfig">
       <property name="driverClassName" value="com.mysql.jdbc.Driver"/> 
-      <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/bigdata"/>
-      <property name="username" value="root"/>
-      <property name="password" value="12345"/>
+      <property name="jdbcUrl" value="jdbc:mysql://project-db-stu.ddns.net:3307"/>
+      <property name="username" value="echo"/>
+      <property name="password" value="119"/>
    </bean>
    
    <bean id="hikariDataSource" class="com.zaxxer.hikari.HikariDataSource" destroy-method="close">
