@@ -12,7 +12,7 @@
     
 </head>
 <body>
-  
+  <form method = "post">
   <!-- login -->
     <div class="content">
       <div class="container">
@@ -51,13 +51,13 @@
           <div class="enregistrer active-section">
             <div class="contact-form">
               <label>닉네임</label>
-              <input placeholder="" type="text">
+              <input placeholder="" type="text"  name ="member_nickname">
               
               <label>이메일</label>
-              <input placeholder="" type="text">	
+              <input placeholder="" type="text" name = "member_email">	
               
               <label>비밀번호</label>
-              <input placeholder="" type="text">
+              <input placeholder="" type="text" name = "member_pw">
               
               <div class="check">
                 <label>				
@@ -70,7 +70,7 @@
                 <h3>동의하기</h3>
               </div>
               
-              <input class="submit" value="회원가입" type="submit">	
+              <input class="submit" value="회원가입" type="submit" >	
                 
             </div>
           </div>
@@ -81,6 +81,7 @@
 
   	<script src="./resources/js/jquery-3.6.0.min.js"></script>
     <script src="./resources/js/Join_Login.js"></script> 
+    </form>
     </body> 
 
   

@@ -9,13 +9,13 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import kr.smhrd.domain.Board;
-import kr.smhrd.mapper.BoardMapper;
+import kr.smhrd.mapper.memberMapper;
 
 @RestController
 public class AjaxController { //ajax
    
    @Autowired
-   BoardMapper mapper;
+   memberMapper mapper;
    
    @RequestMapping("/boardListJson.do")
    public List<Board> boardListJson(Model model) {
