@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1> 재정이 노래 잘불러</h1>
+<h2> 재정이 노래 잘불러</h2>
 </body>
 </html>
