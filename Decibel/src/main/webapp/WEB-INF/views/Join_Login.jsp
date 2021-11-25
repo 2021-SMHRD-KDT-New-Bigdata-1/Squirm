@@ -25,10 +25,10 @@
           <div class="connexion">
             <div class="contact-form">
               <label>이메일</label>
-              <input placeholder="" type="text">
+              <input placeholder="" type="text" name = "member_email">
               
               <label>비밀번호</label>
-              <input placeholder="" type="password">
+              <input placeholder="" type="password" name = "member_pw">
               
               <div class="check">
                 <label>				

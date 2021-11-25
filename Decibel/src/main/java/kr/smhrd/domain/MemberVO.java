@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class memberVO {
+public class MemberVO {
 	private String member_id;
 	private String member_pw;
 	private String member_name;
