@@ -17,10 +17,16 @@ public class HomeController {
 		return "decibel";
 				
 	}
-	@RequestMapping("/menu.do")
+	@RequestMapping("/main.do")
 	public String menu() {
-		return "menu";
-				
+		return "main";		
 	}
-
+	
+	@RequestMapping("/login.do")
+	public String main() {
+		return "login";		
+	}
+	
+	
+	
 }
