@@ -64,39 +64,24 @@ if (navigator.mediaDevices) {
 
       mediaRecorder.onstop = (e) => {
         console.log("data available after MediaRecorder.stop() called.");
-
-        const clipName = prompt("오디오 파일 제목을 입력하세요.", new Date());
-
+        ///////나중에 전송 성공하면 지워도 되는부분들 확인할것
         const clipContainer = document.createElement("article");
-        const clipLabel = document.createElement("p");
         const audio = document.createElement("audio");
-        const deleteButton = document.createElement("button");
-
         clipContainer.classList.add("clip");
-        audio.setAttribute("controls", "");
-        deleteButton.innerHTML = "삭제";
-        clipLabel.innerHTML = clipName;
-
+        audio.setAttribute("controls", "auto");
         clipContainer.appendChild(audio);
-        clipContainer.appendChild(clipLabel);
-        clipContainer.appendChild(deleteButton);
         soundClips.appendChild(clipContainer);
+
         console.log(soundClips);
 
-        audio.controls = true;
         const blob = new Blob(chunks, {
-          type: "audio/ogg codecs=opus",
+          type: "audio/wav codecs=opus",
         });
         chunks = [];
         const audioURL = URL.createObjectURL(blob);
-        console.log(audioURL);
+        console.log("blob:" + audioURL);
         audio.src = audioURL;
         console.log("recorder stopped");
-
-        deleteButton.onclick = (e) => {
-          evtTgt = e.target;
-          evtTgt.parentNode.parentNode.removeChild(evtTgt.parentNode);
-        };
       };
 
       mediaRecorder.ondataavailable = (e) => {
