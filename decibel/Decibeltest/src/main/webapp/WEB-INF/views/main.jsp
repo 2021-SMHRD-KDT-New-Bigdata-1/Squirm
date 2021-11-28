@@ -45,6 +45,7 @@
               <div class="frame">
                 <input type="checkbox" id="cb-1" name="cb" class="checkbox"> 
                 <label for="cb-1" class="label"></label>
+                
                 <div class="microphone">
                   <svg width="85px" height="85px" viewBox="0 0 100 100">
                     <circle class="circle" cx="50" cy="50" r="47"/>
