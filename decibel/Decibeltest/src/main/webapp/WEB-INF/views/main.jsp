@@ -38,11 +38,15 @@
               <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                      <p class = "speak" id = "output" style = "color : black; font-family : 'Gowun Dodum', sans-serif; ">상대방 말이 표시됩니다.</p>
+                      <p class = "speak" id = "output"
+                      style = "color : black;
+                      font-family : 'Gowun Dodum', sans-serif; ">상대방 말이 표시됩니다.</p>
                   </div>
 		
                   <div class="card-body1" >
-                    <p class = "speak" id="sound-clips" style = "color : black; font-family : 'Gowun Dodum', sans-serif; "><%=data %></p>
+                    <p class = "speak" id="sound-clips"
+                    style = "color : black;
+                    font-family : 'Gowun Dodum', sans-serif; "><%=data %></p>
                 </div>
                   
                 </div>
