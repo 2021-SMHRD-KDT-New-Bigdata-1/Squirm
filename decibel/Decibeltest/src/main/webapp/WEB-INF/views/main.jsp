@@ -14,22 +14,19 @@
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 
 
+
 <!-- <script src="js/stt.js"></script> -->
 
 
 </head>
 
 <body>
-<<<<<<< HEAD
 	<!-- 여기가 우리의 메인  -->
-=======
 	<%
 		String data = request.getParameter("result");
 		out.print(data);
 	%>
-	
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-New-Bigdata-1/Squirm.git
-	<!-- <input id = "bStart" type = "button" value = "stt 시작하는 버튼 자동화 시켜서 필요" onclick = "start();"></input> --> 
+<!-- <input id = "bStart" type = "button" value = "stt 시작하는 버튼 자동화 시켜서 필요" onclick = "start();"></input> --> 
 	   
   <div class="firstinfo"><img src="https://randomuser.me/api/portraits/lego/6.jpg">
   </div>
