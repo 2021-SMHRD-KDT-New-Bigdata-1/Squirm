@@ -27,6 +27,10 @@ public class HomeController {
 		return "login";		
 	}
 	
+	@RequestMapping("/flask_send.do")
+	public String flask_send() {
+		return "flask_send";		
+	}
 	
 	
 }

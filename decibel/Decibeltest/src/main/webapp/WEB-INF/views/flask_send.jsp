@@ -1,16 +1,20 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="EUC-KR">
+<meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>À½¼º°æ·Î Àü¼Û</h1>
+		<h1>ìŒì„±ê²½ë¡œ ì „ì†¡</h1>
 
 	<!-- <form action="test" method="GET"> -->
 	<form action="http://127.0.0.1:5003/address" method="POST">
 		<input type="text" name="address_sound">
-		<input type="submit" value="Àü¼Û">
+		<input type="submit" value="ì „ì†¡">
 	</form>
+	
+	
 </body>
 </html>
