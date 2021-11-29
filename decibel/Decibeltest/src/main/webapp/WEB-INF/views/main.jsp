@@ -20,6 +20,11 @@
 </head>
 
 <body>
+	<%
+		String data = request.getParameter("result");
+		out.print(data);
+	%>
+	
 	<!-- <input id = "bStart" type = "button" value = "stt 시작하는 버튼 자동화 시켜서 필요" onclick = "start();"></input> --> 
 	   
   <div class="firstinfo"><img src="https://randomuser.me/api/portraits/lego/6.jpg">
@@ -36,7 +41,7 @@
                   </div>
 
                   <div class="card-body1" >
-                    <p class = "speak" id="sound-clips" style = "color : black; font-family : 'Gowun Dodum', sans-serif; ">내가 한 말 표시</p>
+                    <p class = "speak" id="sound-clips" style = "color : black; font-family : 'Gowun Dodum', sans-serif; "><%=data %></p>
                 </div>
                   
                 </div>
