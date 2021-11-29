@@ -10,7 +10,7 @@
 		<h1>음성경로 전송</h1>
 
 	<!-- <form action="test" method="GET"> -->
-	<form action="http://127.0.0.1:5003/address" method="POST">
+	<form action="http://220.80.33.113:5003/address" method="POST">
 		<input type="text" name="address_sound">
 		<input type="submit" value="전송">
 	</form>

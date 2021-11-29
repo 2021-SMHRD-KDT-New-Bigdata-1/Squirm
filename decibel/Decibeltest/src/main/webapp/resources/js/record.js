@@ -79,9 +79,28 @@ if (navigator.mediaDevices) {
         });
         chunks = [];
         const audioURL = URL.createObjectURL(blob);
-        console.log("blob:" + audioURL);
+        console.log(audioURL);
         audio.src = audioURL;
         console.log("recorder stopped");
+        const sound = new File([audioURL], "soundBlob", {
+          lastModified: new Date().getTime(),
+          type: "audio",
+        });
+        console.log(sound);
+
+        let form = new FormData();
+        form.append("file", blob, "tempfile");
+
+        $.ajax({
+          type: "POST",
+          url: "http://220.80.33.113:5003/address", //flask server url로 바꿔주세요! ---> 막혀있을수도 있다는거    http://localhost:8081/temp/temp01
+          data: form, // Our pretty new form
+          cache: false,
+          processData: false, // tell jQuery not to process the data
+          contentType: false, // audio/wav ---> 변경하는 방법도 고려해볼 것 (안된다면!!!)
+        }).done(function () {
+          console.log("성공?");
+        });
       };
 
       mediaRecorder.ondataavailable = (e) => {
