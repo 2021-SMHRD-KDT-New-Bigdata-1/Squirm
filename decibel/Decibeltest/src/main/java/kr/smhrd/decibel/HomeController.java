@@ -3,6 +3,7 @@ package kr.smhrd.decibel;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 @Controller
 public class HomeController {
 
@@ -26,6 +27,13 @@ public class HomeController {
 	public String main() {
 		return "login";		
 	}
+	
+	@RequestMapping("/flask_send.do")
+	public String flask_send() {
+		return "flask_send";		
+	}
+	
+
 	
 	
 	
