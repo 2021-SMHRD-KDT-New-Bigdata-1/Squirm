@@ -27,7 +27,7 @@ function speech(txt) {
       voices[i].lang.indexOf(lang) >= 0 ||
       voices[i].lang.indexOf(lang.replace("-", "_")) >= 0
     ) {
-      utterThis.voice = voices[i];
+      utterThis.voice = voices[i]; 
       voiceFound = true;
     }
   }
