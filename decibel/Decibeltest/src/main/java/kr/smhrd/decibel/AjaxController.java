@@ -7,7 +7,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import kr.smhrd.domain.Sound;
+import kr.smhrd.domain.SoundVO;
 import kr.smhrd.mapper.Soundmapper;
 
 @RestController
@@ -17,8 +17,8 @@ public class AjaxController {
 	Soundmapper mapper;
 	
 	  @RequestMapping("/SoundListJson.do")
-	   public List<Sound> SoundListJson(Model model) {
-	      List<Sound> list = mapper.SoundList();
+	   public List<SoundVO> SoundListJson(Model model) {
+	      List<SoundVO> list = mapper.SoundList();
 	      return list;  
 	   }
 	
