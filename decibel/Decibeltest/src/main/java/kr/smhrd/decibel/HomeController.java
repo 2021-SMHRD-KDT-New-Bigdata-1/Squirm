@@ -31,7 +31,10 @@ public class HomeController {
 	public String flask_send() {
 		return "flask_send";		
 	}
-	
+	@RequestMapping("/train.do")
+	public String train() {
+		return "train";
+	}
 
 	
 	

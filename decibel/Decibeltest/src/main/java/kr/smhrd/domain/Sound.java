@@ -1,5 +1,7 @@
 package kr.smhrd.domain;
 
+import java.util.Date;
+
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,8 +11,12 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Sound {
 	
-	private String 이름;
-	private String 나이;
-	private String 국적;
+	private int sound_num;
+	private String sound_file;
+	private String sound_subject;
+	private String sound_content;
+	private Date upload_date;
+	private String member_id;
 	
+
 }
