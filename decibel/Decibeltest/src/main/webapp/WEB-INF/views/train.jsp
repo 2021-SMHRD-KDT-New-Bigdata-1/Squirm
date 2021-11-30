@@ -29,13 +29,11 @@ rect#progress {
 <body>
 
 	<!-- login -->
-	<div class="content">
+<div class="content">
 		<div class="container">
 			<div class="col-md-6 grid-margin stretch-card">
-				<div class="progress-bar"
-					style="width: 65%; margin-top: 16%; margin-left: 18%;">
-					<div class="ldBar"
-						data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)">
+				<div class="progress-bar" style="width: 65%; margin-top: 16%; margin-left: 18%;">
+					<div class="ldBar" data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)">
 		<svg xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="100%" height="100%" viewBox="5.5 3.5 89 13">
 			<defs>
 				<filter id="ldBar-2b78fe717ea45-filter" x="-1" y="-1" width="3" height="3">
@@ -67,7 +65,7 @@ rect#progress {
 		</svg>
 
 
-						<div class="ldBar" data-stroke=" data:ldbar/res, gradient(0,1,#f99,#ff9) " ></div>
+						<div class="ldBar" data-stroke=" data:ldbar/res, gradient(0,1,#f99,#ff9) "></div>
 							
 						</div>
 					</div>
@@ -80,12 +78,10 @@ rect#progress {
 			</div>
 			
 			<div class="frame">
-				<input type="checkbox" id="cb-1" name="cb" class="checkbox"
-					value="1"> <label for="cb-1" class="label"></label>
+				<input type="checkbox" id="cb-1" name="cb" class="checkbox" value="1"> <label for="cb-1" class="label"></label>
 				<div class="microphone">
-					<svg width="85px" height="85px" viewBox="0 0 100 100"
-						id='microphone' onclick='count("plus")'>
-                <circle class="circle" cx="50" cy="50" r="47" />
+					<svg width="85px" height="85px" viewBox="0 0 100 100" id="microphone" onclick="count(&quot;plus&quot;)">
+                <circle class="circle" cx="50" cy="50" r="47"></circle>
             </svg>
 					<div class="icon">
 						<div class="body">
@@ -116,6 +112,6 @@ rect#progress {
 <!-- <script src="./resources/js/stt.js"></script> -->
 
 
-<script type="text/javascript" src="./resources/js/loading-bar.js"></script>
+
 
 </html>
