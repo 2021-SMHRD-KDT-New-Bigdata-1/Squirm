@@ -96,6 +96,9 @@ rect#progress {
 							<div id='result'>0</div>
 
 
+
+						<div class="ldBar" data-stroke=" data:ldbar/res, gradient(0,1,#f99,#ff9) "></div>
+							
 						</div>
 					</div>
 
