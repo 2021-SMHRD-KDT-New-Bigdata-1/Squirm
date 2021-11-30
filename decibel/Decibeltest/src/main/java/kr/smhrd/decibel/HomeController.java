@@ -1,12 +1,11 @@
 package kr.smhrd.decibel;
 
-
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+
 @Controller
 public class HomeController {
-
 
 
 	@RequestMapping("/list.do")
@@ -19,5 +18,23 @@ public class HomeController {
 		return "decibel";
 				
 	}
+	@RequestMapping("/main.do")
+	public String menu() {
+		return "main";		
+	}
+	
+	@RequestMapping("/login.do")
+	public String main() {
+		return "login";		
+	}
+	
+	@RequestMapping("/flask_send.do")
+	public String flask_send() {
+		return "flask_send";		
+	}
+	
 
+	
+	
+	
 }
