@@ -96,6 +96,21 @@
     
   
     </body> 
+        <script>
+      function button1_click () {
+        console.log("버튼1을 눌렀습니다.");
+      }
+    </script>
+     <script>
+      function button2_click () {
+        console.log("버튼2을 눌렀습니다.");
+      }
+    </script>
+     <script>
+      function button3_click () {
+        console.log("버튼3을 눌렀습니다.");
+      }
+    </script>
     <script src="resources/js/jquery-3.6.0.min.js"></script>
     <script src="resources/js/main.js"></script> 
     <script src="resources/js/record.js"></script>
