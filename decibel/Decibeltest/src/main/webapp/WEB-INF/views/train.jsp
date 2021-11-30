@@ -33,11 +33,7 @@ rect#progress {
 		<div class="container">
 			<div class="col-md-6 grid-margin stretch-card">
 				<div class="progress-bar" style="width: 65%; margin-top: 16%; margin-left: 18%;">
-<<<<<<< HEAD
 					<div class="ldBar" data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)" data-type="fill">
-=======
-					<div class="ldBar" data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)">
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-New-Bigdata-1/Squirm.git
 		<svg xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="100%" height="100%" viewBox="5.5 3.5 89 13">
 			<defs>
 				<filter id="ldBar-2b78fe717ea45-filter" x="-1" y="-1" width="3" height="3">
@@ -112,17 +108,9 @@ rect#progress {
 <script src="./resources/js/jquery-3.6.0.min.js"></script>
 <script src="./resources/js/main.js"></script>
 <script src="./resources/js/record_train.js"></script>
-<<<<<<< HEAD
-=======
 
-<!-- <script src="./resources/js/stt.js"></script> -->
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-New-Bigdata-1/Squirm.git
+<!— <script src="./resources/js/stt.js"></script> —>
 
-<<<<<<< HEAD
-<!--<script src="./resources/js/stt.js"></script> --> 
-
-=======
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-New-Bigdata-1/Squirm.git
 
 
 
