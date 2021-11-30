@@ -113,13 +113,15 @@
 		</div>
 </body>
 <script>
-	function button1_click() {
+	function button1_click() {//main.do로 넘겨주기
 		console.log("버튼1을 눌렀습니다.");
+		location.href = 'main.do';
 	}
 </script>
 <script>
-	function button2_click() {
+	function button2_click() {//train.do로 넘겨주기
 		console.log("버튼2을 눌렀습니다.");
+		location.href = 'train.do';
 	}
 </script>
 <script>
