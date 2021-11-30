@@ -26,7 +26,7 @@ if (navigator.mediaDevices) {
   const constraints = {
     audio: true,
   };
-  let chunks = [];  
+  let chunks = [];
 
   navigator.mediaDevices
     .getUserMedia(constraints)
@@ -93,7 +93,7 @@ if (navigator.mediaDevices) {
 
         $.ajax({
           type: "POST",
-          url: "http://220.80.33.113:5003/address", //flask server url로 바꿔주세요! ---> 막혀있을수도 있다는거    http://localhost:8081/temp/temp01
+          url: "http://127.0.0.1:5003/messages", //flask server url로 바꿔주세요! ---> 막혀있을수도 있다는거    http://localhost:8081/temp/temp01
           data: form, // Our pretty new form
           cache: false,
           processData: false, // tell jQuery not to process the data
@@ -103,9 +103,12 @@ if (navigator.mediaDevices) {
         });
       };
 
-      mediaRecorder.ondataavailable = (e) => {
+      
+
+
+      mediaRecorder.ondataavailable = e => {
         chunks.push(e.data);
-      };
+      }
     })
     .catch((err) => {
       console.log("The following error occurred: " + err);

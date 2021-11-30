@@ -29,7 +29,9 @@ rect#progress {
 </style>
 
 <body>
-
+	<%
+		String data = request.getParameter("result");
+	%>
 	<!-- login -->
 	<div class="content">
 		<div class="container">
@@ -100,9 +102,15 @@ rect#progress {
 
 				</div>
 			</div>
-			<div id="train_text_div">
-				<span>무야호</span>
+			
+			<form action="http://127.0.0.1:5003/messages" method="POST">
+			 <div id="train_text_div"
+			 style="color :black;
+			 font-family:'Gowun Dodum';
+			 sans-serif">
+				<span>무야호<%=data %></span>
 			</div>
+			</form>
 			
 			<div class="frame">
 				<input type="checkbox" id="cb-1" name="cb" class="checkbox"
