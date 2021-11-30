@@ -140,5 +140,4 @@ rect#progress {
 <!-- <script src="./resources/js/stt.js"></script> -->
 
 <script type="text/javascript" src="./resources/js/loading-bar.js"></script>
-
 </html>
