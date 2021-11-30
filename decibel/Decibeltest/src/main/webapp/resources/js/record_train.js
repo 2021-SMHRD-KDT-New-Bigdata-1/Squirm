@@ -134,4 +134,3 @@ if (navigator.mediaDevices) {
       console.log("The following error occurred: " + err);
     });
 }
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-New-Bigdata-1/Squirm.git

@@ -172,4 +172,3 @@ music.addEventListener("timeupdate", updateProgress, false);
 
 
 init();
->>>>>>> branch 'master' of https://github.com/2021-SMHRD-KDT-New-Bigdata-1/Squirm.git
