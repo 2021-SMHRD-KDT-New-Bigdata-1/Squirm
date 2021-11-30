@@ -12,6 +12,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.css" />
+<link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.min.css" />
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
 
 
@@ -132,7 +133,7 @@ rect#progress {
 <script src="./resources/js/jquery-3.6.0.min.js"></script>
 <script src="./resources/js/main.js"></script>
 <script src="./resources/js/record_train.js"></script>
-<!-- <script src="./resources/js/stt.js"></script> -->
+ <script src="./resources/js/stt.js"></script>
 
 <script type="text/javascript" src="./resources/js/loading-bar.js"></script>
 </html>
