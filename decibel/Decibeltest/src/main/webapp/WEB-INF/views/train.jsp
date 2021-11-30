@@ -109,7 +109,7 @@ rect#progress {
 <script src="./resources/js/main.js"></script>
 <script src="./resources/js/record_train.js"></script>
 
-<!— <script src="./resources/js/stt.js"></script> —>
+<!-- <script src="./resources/js/stt.js"></script>  --> 
 
 
 
