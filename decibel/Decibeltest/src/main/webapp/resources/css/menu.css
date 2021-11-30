@@ -181,9 +181,6 @@
   border-width: 2px;
   border-radius: 20px;
 }
-.icon-talk {
-	position: absolute;
-}
 .card-body1 {
   box-sizing: border-box;
   width: 75%;
@@ -195,6 +192,31 @@
   border-color: #7959db;
   border-width: 2px;
   border-radius: 20px;
+}
+.card-body1 span {
+  margin-left: 3%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  height: 85%;
+
+
+}
+.talk {
+  color: black;
+  font-family: 'Gowun Dodum', sans-serif;
+  margin-bottom: 15px;
+
+}
+
+.study {
+  color : black; 
+  font-family : 'Gowun Dodum', sans-serif; 
+}
+.category-body {
+  width: 14%;
+  margin-top: 24%;
+  margin-left: 84%;
 }
 .speak {
   margin-top: 0;
@@ -220,4 +242,48 @@
   text-align: right;
   margin-right: 70px;
   margin-top: 20px;
+}
+.speak {
+  color: black;
+  font-family: 'Gowun Dodum', sans-serif;
+  padding: 2%;
+  margin-top: 2px;
+  margin-left: 3px;
+  margin-bottom: -9px;
+}
+.talk-input {
+  width: 87%;
+  height: 50%;
+  display: inline;
+  font-size: medium;
+  padding: 0px;
+  margin: 0px;
+  background-color: #F5F7FF;
+}
+.talk-input-bnt {
+  width: 10%;
+  padding: inherit;
+  background-color: #F5F7FF;
+  border: none;
+  height: 50%;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: medium;
+}
+.button1 {
+  width: 10%;
+  padding: inherit;
+  background-color: #F5F7FF;
+  border: none;
+  height: 50%;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: x-large;
+}
+.button2 {
+  width: 10%;
+  padding: inherit;
+  background-color: #F5F7FF;
+  border: none;
+  height: 50%;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: x-large;
 }

@@ -12,7 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" 
+	href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 
 <!-- <script src="js/stt.js"></script> -->
@@ -36,17 +37,29 @@
     <div class="content">
       <div class="container">
               <div class="col-md-6 grid-margin stretch-card">
+            <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                      <p class = "speak" id = "output"
-                      style = "color : black;
-                      font-family : 'Gowun Dodum', sans-serif; ">상대방 말이 표시됩니다.</p>
+                      <p class = "speak" id = "output" style = "color : black; font-family : 'Gowun Dodum', sans-serif; ">상대방 말이 표시됩니다.</p>
                   </div>
-		
+                  <div class="category-body">
+                    <div class="category1">
+
+                      <div class = "talk"  ><div class="talk_icon"><button class="button1" id="button_1" onclick="button1_click()"> <i class="far fa-comments" style="color:rgb(92, 84, 197); margin-left: 10px; "></i></button></div>
+
+                    </div>
+                  </div>
+                    <div class="category2">
+                      <div class = "study"  ><div class="study_icon"><button class="button2" id="button_2" onclick="button2_click()">  <i class="fas fa-book-open" style="color:rgb(92, 84, 197); margin-left: 10px; "></i></button></div>
+                    </div>
+                  </div>
+           
                   <div class="card-body1" >
-                    <p class = "speak" id="sound-clips"
-                    style = "color : black;
-                    font-family : 'Gowun Dodum', sans-serif; "><%=data %></p>
+                    <p class = "speak" id="sound-clips" >내가 한 말 표시</p>
+                     <span>
+                      <input class="talk-input" type="text">
+                      <button class="talk-input-bnt" type="submit" onclick="button3_click()" >입력</button>
+                    </span>
                 </div>
                   
                 </div>

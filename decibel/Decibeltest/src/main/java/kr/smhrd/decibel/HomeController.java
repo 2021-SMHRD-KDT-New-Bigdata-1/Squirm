@@ -3,7 +3,6 @@ package kr.smhrd.decibel;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-
 @Controller
 public class HomeController {
 
@@ -19,12 +18,12 @@ public class HomeController {
 				
 	}
 	@RequestMapping("/main.do")
-	public String menu() {
+	public String main() {
 		return "main";		
 	}
 	
 	@RequestMapping("/login.do")
-	public String main() {
+	public String login() {
 		return "login";		
 	}
 	
