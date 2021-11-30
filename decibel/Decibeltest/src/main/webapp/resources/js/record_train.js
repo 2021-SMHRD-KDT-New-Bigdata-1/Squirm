@@ -8,8 +8,8 @@ const gainNode = audioCtx.createGain();
 const biquadFilter = audioCtx.createBiquadFilter();
 let b = 0;
 var traintext = new Array(
-  "안녕하세요",
-  "사랑해요",
+  "안녕 하세요",
+  "사랑 해요",
   "너무 보고싶어요",
   "그동안 고생했어요",
   "다음에 꼭 봐요",
@@ -19,10 +19,10 @@ var traintext = new Array(
   "축하 해요",
   "응원 할게요",
   "메리 크리스마스",
-  "새해복 많이",
-  "행복해요",
-  "미안해요",
-  "고생했어"
+  "새해 복 많이",
+  "행복 해요",
+  "미안 해요",
+  "고생 했어요"
 );
 
   function setInnerHTML() {
