@@ -30,6 +30,7 @@
   
   </script>
   
+  
   <!-- login -->
     <div class="content">
       <div class="container">
@@ -38,6 +39,7 @@
             <a href="#connexion" class="btn-connexion"><h2>로그인</h2></a>
             <a href="#enregistrer" class="btn-enregistrer active"><h2>회원가입</h2></a>
           </div>
+          <form action = "m_login.do" method="post">
           <hr id="menu_hr">
           <div class="connexion">
             <div class="contact-form">
@@ -65,6 +67,7 @@
             <hr>
             <a href="https://www.grandvincent-marion.fr/" target="_blank"><h4>비밀번호를 잊으셨나요?</h4></a>
           </div>
+          </form>
           
           <!-- 회원가입 -->
           <form action = "main.do" id = "joinform">
@@ -72,10 +75,10 @@
             <div class="contact-form">
            
               <label>이메일</label>
-              <input placeholder="" type="text" id = "member_email" name = "member_email">	
+              <input placeholder="" type="text" id = "member_email1" name = "member_email1">	
               
               <label>비밀번호</label>
-              <input placeholder="" type="text" id = "member_pw" name = "member_pw">
+              <input placeholder="" type="text" id = "member_pw1" name = "member_pw1">
               
               <div class="check">
                 <label>				

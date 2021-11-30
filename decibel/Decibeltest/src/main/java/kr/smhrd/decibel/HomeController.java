@@ -1,7 +1,20 @@
 package kr.smhrd.decibel;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
+import kr.smhrd.domain.MemberVO;
 
 @Controller
 public class HomeController {
@@ -36,8 +49,30 @@ public class HomeController {
 	public String train() {
 		return "train";
 	}
-
 	
+
+	@PostMapping("/m_login.do")
+	public String processlogin(@ModelAttribute("member") MemberVO member, Model model) {
+		System.out.println(member.getMember_email());
+		System.out.println(member.getMember_pw());
+		return "train";
+	}
+	
+//	@RequestMapping(value = "/m_login.do")
+//    public String m_login(MemberVO member, HttpServletRequest req, RedirectAttributes attr)throws Exception{
+//		HttpSession session = req.getSession();
+//		
+//		if(member == null) {
+//			session.setAttribute("member", null);
+//			 System.out.println("fail");
+//			
+//		} else {
+//			session.setAttribute("member", member);
+//			System.out.println("success");
+//		}
+//		return "main";
+//	}
+	      
 	
 	
 }
