@@ -29,9 +29,7 @@
 	%>
 <!-- <input id = "bStart" type = "button" value = "stt 시작하는 버튼 자동화 시켜서 필요" onclick = "start();"></input> --> 
 	   
-  <div class="firstinfo"><img src="https://randomuser.me/api/portraits/lego/6.jpg">
-  </div>
-  <h3 class = "name" style="font-family: 'Gowun Dodum', sans-serif; " >이태일님 환영합니다</h3>
+
   
   <!-- login -->
     <div class="content">
