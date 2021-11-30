@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -7,9 +7,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="resources/css/main.css">
 </head>
 <body>
+  
+    <script type = "text/javascript">
+  	$(document).ready(function(){
+  		$("#btn_join").click(function(){
+  			if( $.trim($("#member_email").val()) == ""){
+  				alert("이메일 주소를 입력해 주세요");
+  				return;
+  			}
+  			if( $.trim($("#member_pw").val()) == ""){
+  				alert("비밀번호를 입력해 주세요");
+  				return;
+  			}
+  			$("#joinform")
+  		})
+  		
+  	});
+  
+  </script>
   
   <!-- login -->
     <div class="content">
@@ -23,11 +42,11 @@
           <div class="connexion">
             <div class="contact-form">
               <label>이메일</label>
-              <input placeholder="" type="text">
+              <input placeholder="" type="text" name = "member_email" id = "member_email">
             
               
               <label>비밀번호</label>
-              <input placeholder="" type="password">
+              <input placeholder="" type="password" name = "member_pw" id = "member_pw">
               
               <div class="check">
                 <label>				
@@ -47,16 +66,16 @@
             <a href="https://www.grandvincent-marion.fr/" target="_blank"><h4>비밀번호를 잊으셨나요?</h4></a>
           </div>
           
+          <!-- 회원가입 -->
+          <form action = "main.do" id = "joinform">
           <div class="enregistrer active-section">
             <div class="contact-form">
-              <label>닉네임</label>
-              <input placeholder="" type="text">
-              
+           
               <label>이메일</label>
-              <input placeholder="" type="text">	
+              <input placeholder="" type="text" id = "member_email" name = "member_email">	
               
               <label>비밀번호</label>
-              <input placeholder="" type="text">
+              <input placeholder="" type="text" id = "member_pw" name = "member_pw">
               
               <div class="check">
                 <label>				
@@ -69,11 +88,11 @@
                 <h3>동의하기</h3>
               </div>
               
-              <input class="submit" value="회원가입" type="submit">	
+              <input class="submit" value="회원가입" type="submit" id = "btn_join">	
                 
             </div>
           </div>
-          
+          </form>
       </div>
     
     </div>

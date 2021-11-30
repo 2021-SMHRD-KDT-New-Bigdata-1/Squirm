@@ -12,7 +12,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" 
+	href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 
 <!-- <script src="js/stt.js"></script> -->
@@ -28,25 +29,35 @@
 	%>
 <!-- <input id = "bStart" type = "button" value = "stt 시작하는 버튼 자동화 시켜서 필요" onclick = "start();"></input> --> 
 	   
-  <div class="firstinfo"><img src="https://randomuser.me/api/portraits/lego/6.jpg">
-  </div>
-  <h3 class = "name" style="font-family: 'Gowun Dodum', sans-serif; " >이태일님 환영합니다</h3>
+
   
   <!-- login -->
     <div class="content">
       <div class="container">
               <div class="col-md-6 grid-margin stretch-card">
+            <div class="col-md-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                      <p class = "speak" id = "output"
-                      style = "color : black;
-                      font-family : 'Gowun Dodum', sans-serif; ">상대방 말이 표시됩니다.</p>
+                      <p class = "speak" id = "output" style = "color : black; font-family : 'Gowun Dodum', sans-serif; ">상대방 말이 표시됩니다.</p>
                   </div>
-		
+                  <div class="category-body">
+                    <div class="category1">
+
+                      <div class = "talk"  ><div class="talk_icon"><button class="button1" id="button_1" onclick="button1_click()"> <i class="far fa-comments" style="color:rgb(92, 84, 197); margin-left: 10px; "></i></button></div>
+
+                    </div>
+                  </div>
+                    <div class="category2">
+                      <div class = "study"  ><div class="study_icon"><button class="button2" id="button_2" onclick="button2_click()">  <i class="fas fa-book-open" style="color:rgb(92, 84, 197); margin-left: 10px; "></i></button></div>
+                    </div>
+                  </div>
+           
                   <div class="card-body1" >
-                    <p class = "speak" id="sound-clips"
-                    style = "color : black;
-                    font-family : 'Gowun Dodum', sans-serif; "><%=data %></p>
+                    <p class = "speak" id="sound-clips" >내가 한 말 표시</p>
+                     <span>
+                      <input class="talk-input" type="text">
+                      <button class="talk-input-bnt" type="submit" onclick="button3_click()" >입력</button>
+                    </span>
                 </div>
                   
                 </div>
@@ -83,6 +94,21 @@
     
   
     </body> 
+        <script>
+      function button1_click () {
+        console.log("버튼1을 눌렀습니다.");
+      }
+    </script>
+     <script>
+      function button2_click () {
+        console.log("버튼2을 눌렀습니다.");
+      }
+    </script>
+     <script>
+      function button3_click () {
+        console.log("버튼3을 눌렀습니다.");
+      }
+    </script>
     <script src="resources/js/jquery-3.6.0.min.js"></script>
     <script src="resources/js/main.js"></script> 
     <script src="resources/js/record.js"></script>
