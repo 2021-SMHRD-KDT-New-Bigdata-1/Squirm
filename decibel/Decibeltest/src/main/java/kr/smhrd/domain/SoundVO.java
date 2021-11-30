@@ -10,7 +10,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Sound {
+public class SoundVO {
 	
 	private int sound_num;
 	private String sound_file;
