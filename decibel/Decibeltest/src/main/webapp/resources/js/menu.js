@@ -38,7 +38,7 @@ var open = function () {
   });
 
   return false;
-};
+}; 
 
 var close = function () {
   active.removeClass("active");

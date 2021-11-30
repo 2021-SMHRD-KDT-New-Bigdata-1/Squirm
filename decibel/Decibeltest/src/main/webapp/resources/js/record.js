@@ -1,45 +1,20 @@
 const checkbox = document.getElementById("cb-1");
 
+const soundClips = document.getElementById("sound-clips");
+
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)(); // 오디오 컨텍스트 정의
 
 const analyser = audioCtx.createAnalyser();
 const distortion = audioCtx.createWaveShaper();
 const gainNode = audioCtx.createGain();
 const biquadFilter = audioCtx.createBiquadFilter();
-let b = 0;
-var traintext = new Array(
-  "안녕하세요",
-  "사랑해요",
-  "너무 보고싶어요",
-  "그동안 고생했어요",
-  "다음에 꼭 봐요",
-  "엄마 아빠 사랑해요",
-  "정말 고마워",
-  "다시 만나요",
-  "축하 해요",
-  "응원 할게요",
-  "메리 크리스마스",
-  "새해복 많이",
-  "행복해요",
-  "미안해요",
-  "고생했어"
-);
-
-  function setInnerHTML() {
-    const element = document.getElementById("train_text_div");
-    element.innerHTML =
-      "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
-      traintext[b] +
-      "<div>";
-    b++; // 바뀌게 하는코드
-  }
 
 function makeSound(stream) {
-  const source = audioCtx.createMediaStreamSource(stream);  
+  const source = audioCtx.createMediaStreamSource(stream);
 
-  source.connect(analyser); 
+  source.connect(analyser);
   analyser.connect(distortion);
-  distortion.connect(biquadFilter); 
+  distortion.connect(biquadFilter);
   biquadFilter.connect(gainNode);
   gainNode.connect(audioCtx.destination); // connecting the different audio graph nodes together
   analyser.connect(audioCtx.destination);
@@ -51,7 +26,7 @@ if (navigator.mediaDevices) {
   const constraints = {
     audio: true,
   };
-  let chunks = [];
+  let chunks = [];  
 
   navigator.mediaDevices
     .getUserMedia(constraints)
@@ -68,7 +43,6 @@ if (navigator.mediaDevices) {
           mediaRecorder.stop(); //녹음종료
           console.log(mediaRecorder.state);
           console.log("recorder stopped");
-          setInnerHTML();
         }
       });
 
@@ -96,6 +70,9 @@ if (navigator.mediaDevices) {
         clipContainer.classList.add("clip");
         audio.setAttribute("controls", "auto");
         clipContainer.appendChild(audio);
+        soundClips.appendChild(clipContainer);
+
+        console.log(soundClips);
 
         const blob = new Blob(chunks, {
           type: "audio/wav codecs=opus",

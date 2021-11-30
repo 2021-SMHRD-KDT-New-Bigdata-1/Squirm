@@ -21,7 +21,7 @@ body{
 .play-btn:hover, .pause-btn:hover{
 	color: #b6b3b3; 
 }
-.wrapper > div {
+.wrapper > div { 
 	color: black;
 	padding-right: 0px;
 }

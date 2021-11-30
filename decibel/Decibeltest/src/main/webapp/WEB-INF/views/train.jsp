@@ -89,43 +89,6 @@ rect#progress {
         </g>
     </svg>
 
-    <div class ="ldBar-label" style = "color:black" align ="center">
-        
-        
-    </div>
-</div>   
-            
-        
-        </div>
-        </div>
-        <div class="frame">
-            <input type="checkbox" id="cb-1" name="cb" class="checkbox" value = "1">  
-            <label for="cb-1" class="label"></label>
-            <div class="microphone">
-            <svg width="85px" height="85px" viewBox="0 0 100 100"  id = 'microphone' onclick='count("plus")'>
-                <circle class="circle" cx="50" cy="50" r="47"/>
-
-						<div class="ldBar-label" style="color: black" align="center">
-							<div id='result'>0</div>
-
-
-						</div>
-					</div>
-
-
-				</div>
-			</div>
-			<div id="train_text_div">
-				<span>무야호</span>
-			</div>
-			
-			<div class="frame">
-				<input type="checkbox" id="cb-1" name="cb" class="checkbox"
-					value="1"> <label for="cb-1" class="label"></label>
-				<div class="microphone">
-					<svg width="85px" height="85px" viewBox="0 0 100 100"
-						id='microphone' onclick='count("plus")'>
-                <circle class="circle" cx="50" cy="50" r="47" />
 
 						<div class="ldBar-label" style="color: black" align="center">
 							<div id='result'>0</div>
@@ -154,11 +117,11 @@ rect#progress {
 							<div class="fill"></div>
 						</div>
 						<div class="foot_v"></div>
-						<div class="foot_h"></div>
+						<div class="foot_h"></div> 
 					</div>
 					<div class="dots">
-						<div class="dot dot-1"></div>
-						<div class="dot dot-2"></div>
+						<div class="dot dot-1"></div>  
+						<div class="dot dot-2"></div>   
 						<div class="dot dot-3"></div>
 					</div>
 				</div>
