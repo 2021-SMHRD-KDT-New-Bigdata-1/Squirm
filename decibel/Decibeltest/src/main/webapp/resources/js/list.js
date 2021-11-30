@@ -24,7 +24,7 @@ let tracks = [
                 "url": "https://raw.githubusercontent.com/yuyuchi/AudioPlayer/master/music/Ganesha.mp3"
             },
             {
-            	"track": 3,
+            	"track": 3, 
                 "name": "thank you",
                 "artist": "감사",
                 "duration": "00:29",

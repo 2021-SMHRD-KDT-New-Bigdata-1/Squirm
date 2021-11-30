@@ -25,7 +25,7 @@ if (navigator.mediaDevices) {
   console.log("getUserMedia supported.");
 
   const constraints = {
-    audio: true,
+    audio: true, 
   };
   let chunks = [];
 

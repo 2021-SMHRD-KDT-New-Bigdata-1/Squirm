@@ -57,7 +57,7 @@
 												style="color: rgb(92, 84, 197); margin-left: 10px;"></i>
 										</button>
 									</div>
-
+ 
 								</div>
 							</div>
 							<div class="category2">

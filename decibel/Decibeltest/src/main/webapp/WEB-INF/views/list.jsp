@@ -29,7 +29,7 @@
                   <div class="wrapper">
                     <div></div>
                     <div>title</div>
-                    <div>talk</div>
+                    <div>talk</div> 
                     <div>time</div>
                   </div>
                 </li>
