@@ -67,7 +67,6 @@
     </svg>
 
     <div class ="ldBar-label" style = "color:black" align ="center">
-        <div id = 'result'>0</div>
         
         
     </div>
