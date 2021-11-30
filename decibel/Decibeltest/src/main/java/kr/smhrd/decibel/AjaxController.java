@@ -19,6 +19,7 @@ public class AjaxController {
 	  @RequestMapping("/SoundListJson.do")
 	   public List<SoundVO> SoundListJson(Model model) {
 	      List<SoundVO> list = mapper.SoundList();
+	      System.out.println(list);
 	      return list;  
 	   }
 	
