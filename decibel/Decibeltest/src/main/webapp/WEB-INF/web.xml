@@ -51,5 +51,24 @@
 		<servlet-name>appServlet</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
-	
+	<servlet>
+    <description></description>
+    <display-name>AjaxController</display-name>
+    <servlet-name>AjaxController</servlet-name>
+    <servlet-class>kr.smhrd.decibel.AjaxController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxController</servlet-name>
+    <url-pattern>/AjaxController</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>AjaxControllerr</display-name>
+    <servlet-name>AjaxControllerr</servlet-name>
+    <servlet-class>kr.smhrd.decibel.AjaxController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>AjaxControllerr</servlet-name>
+    <url-pattern>/AjaxControllerr</url-pattern>
+  </servlet-mapping>
 </web-app>

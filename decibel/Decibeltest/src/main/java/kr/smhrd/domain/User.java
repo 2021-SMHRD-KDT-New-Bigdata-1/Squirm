@@ -7,7 +7,7 @@ import lombok.NoArgsConstructor;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class Sound {
+public class User {
 	
 	private String 이름;
 	private String 나이;

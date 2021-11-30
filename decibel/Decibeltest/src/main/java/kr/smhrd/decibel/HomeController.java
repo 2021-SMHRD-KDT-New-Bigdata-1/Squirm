@@ -11,7 +11,7 @@ public class HomeController {
 	@RequestMapping("/list.do")
 	public String playlist() {
 		return "list";
-				
+
 	}
 	@RequestMapping("/decibel.do")
 	public String decibel() {
