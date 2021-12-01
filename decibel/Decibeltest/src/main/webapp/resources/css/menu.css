@@ -253,7 +253,7 @@
   margin-bottom: -9px;
 }
 .talk-input {
-  width: 80%;
+  width: 70%;
   height: 100%;
   display: inline;
   font-size: medium;
@@ -262,13 +262,13 @@
   background-color: #F5F7FF;
 }
 .talk-input-bnt {
-  width: 10%;
+  width: 30%;
   padding: inherit;
   background-color: #F5F7FF;
   border: none;
   height: 100%;
   font-family: 'Gowun Dodum', sans-serif;
-  font-size: medium;
+  font-size: x-large;
 }
 .button1 {
   width: 20%;
