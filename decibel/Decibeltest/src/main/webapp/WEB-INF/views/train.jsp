@@ -106,14 +106,11 @@ rect#progress {
 				</div>
 			</div>
 			
-			<form action="http://127.0.0.1:5003/messages" method="POST">
-			 <div id="train_text_div"
-			 style="color :black;
-			 font-family:'Gowun Dodum'
-			 sans-serif">
+			
+			 <div id="train_text_div" style="color :black; font-family:'Gowun Dodum' sans-serif">
 				<span>무야호<%=data %></span>
 			</div>
-			</form>
+			
 			
 			<div class="frame">
 				<input type="checkbox" id="cb-1" name="cb" class="checkbox"
