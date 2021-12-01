@@ -107,13 +107,13 @@
   position: absolute;
   width: 50px;
   height: 10px;
-  top: 38px;
-  left: 20px;
+  top: 27px;
+  left: 11px;
 }
 .microphone .dots .dot {
   float: left;
-  width: 10px;
-  height: 10px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: #fff;
 }

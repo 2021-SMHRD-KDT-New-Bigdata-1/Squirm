@@ -121,8 +121,8 @@ rect#progress {
 				style="color :black;
 				font-family:'Gowun Dodum'
 				sans-serif">
-				   <span>무야호<%=data %></span>
-			   </div>
+				<span>무야호<%=data %></span>
+			</div>
 			</div>
 			</form>
 			
