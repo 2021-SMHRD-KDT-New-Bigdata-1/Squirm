@@ -33,7 +33,7 @@ rect#progress {
 		<div class="container">
 			<div class="col-md-6 grid-margin stretch-card">
 				<div class="progress-bar" style="width: 65%; margin-top: 16%; margin-left: 18%;">
-					<div class="ldBar" data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)">
+					<div class="ldBar" data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)" data-type="fill">
 		<svg xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="100%" height="100%" viewBox="5.5 3.5 89 13">
 			<defs>
 				<filter id="ldBar-2b78fe717ea45-filter" x="-1" y="-1" width="3" height="3">
@@ -59,8 +59,28 @@ rect#progress {
 				<path d="M10 10L90 10M90 8M90 12" fill="none" class="baseline" stroke="#ddd" stroke-width="0.5"></path>
 			</g>
 			<g>
-			<!-- stroke-dasharray 부분 40:80이라고 하면 50%정도  -->
-				<path d="M10 10L90 10M90 8M90 12" class="mainline" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="40 80"></path>
+			
+				<!-- stroke-dasharray 부분 40:80이라고 하면 50%정도  -->
+				
+
+					<path d="M10 10L90 10M90 8M90 12" id="#one" class="mainline1" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="6 80" style = "display:none"></path>
+				<!-- 클릭 두번할 때 마다 바 길이 조정 -->	
+				 	<path d="M10 10L90 10M90 8M90 12" id="#two" class="mainline2" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="12 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="18 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="24 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="30 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="36 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="42 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="48 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="54 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="60 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="65 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="70 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="75 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="80 80" style = "display:none"></path>
+
+					 
+					
 			</g>
 		</svg>
 
@@ -79,7 +99,7 @@ rect#progress {
 			
 			<div class="frame">
 				<input type="checkbox" id="cb-1" name="cb" class="checkbox" value="1"> <label for="cb-1" class="label"></label>
-				<div class="microphone">
+				<div class="microphone" id = "microphone">
 					<svg width="85px" height="85px" viewBox="0 0 100 100" id="microphone" onclick="count(&quot;plus&quot;)">
                 <circle class="circle" cx="50" cy="50" r="47"></circle>
             </svg>

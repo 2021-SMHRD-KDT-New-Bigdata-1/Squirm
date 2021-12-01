@@ -7,6 +7,13 @@ const distortion = audioCtx.createWaveShaper();
 const gainNode = audioCtx.createGain();
 const biquadFilter = audioCtx.createBiquadFilter();
 let b = 0;
+
+function click_s(){
+var h = $('path[d="M10 10L90 10M90 8M90 12"]:hidden');
+	h[0].style.display = "block";
+
+};
+
 var traintext = new Array(
   "안녕하세요",
   "사랑해요",
@@ -69,7 +76,9 @@ if (navigator.mediaDevices) {
           console.log(mediaRecorder.state);
           console.log("recorder stopped");
           setInnerHTML();
-        }
+		  click_s();     
+}
+		
       });
 
       // record.onclick = () => {  //버튼 사용시 이용하던 코드
