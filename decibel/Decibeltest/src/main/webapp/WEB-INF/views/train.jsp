@@ -36,7 +36,7 @@ rect#progress {
 		String data = request.getParameter("result");
 	%>
 	<!-- login -->
-	<div class="content">
+<div class="content">
 	<div class="container">
 		<div class="col-md-6 grid-margin stretch-card">
 			<div class="progress-bar"
@@ -110,12 +110,14 @@ rect#progress {
 		</div>
 		
 		<form action="http://127.0.0.1:5003/messages" method="POST">
+
 		 <div id="train_text_div"
 		 style="color :black;
 		 font-family:'Gowun Dodum'
 		 sans-serif">
 			<span>무야호<%=data %></span>
 		</div>
+
 		</form>
 		<div class="category-body" style="margin-top: -35%;" >
 						<div class="category1">
@@ -169,8 +171,17 @@ rect#progress {
 
 </div>
 </div>
+
+
 </body>
 <script src="./resources/js/jquery-3.6.0.min.js"></script>
 <script src="./resources/js/main.js"></script>
 <script src="./resources/js/record_train.js"></script>
+
 <!-- <script src="./resources/js/stt.js"></script> -->
+
+
+
+
+</html>
+
