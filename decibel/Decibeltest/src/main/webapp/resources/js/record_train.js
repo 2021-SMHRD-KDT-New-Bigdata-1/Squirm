@@ -77,7 +77,7 @@ if (navigator.mediaDevices) {
           console.log(mediaRecorder.state);
           console.log("recorder stopped");
           setInnerHTML();
-		  click_s();     
+		      click_s();     
 }
 		
       });

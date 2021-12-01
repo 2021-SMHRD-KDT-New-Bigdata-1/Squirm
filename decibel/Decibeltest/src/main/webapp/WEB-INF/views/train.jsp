@@ -14,7 +14,7 @@
 <link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.css">
 <link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.min.css">
 <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 <!-- <script src="js/stt.js"></script> -->
 
@@ -28,20 +28,37 @@ rect#progress {
 
 <body>
 
+	<%
+		String data = request.getParameter("result");
+	%>
+
 	<!-- login -->
-<div class="content">
+<class= "content">
 		<div class="container">
 			<div class="col-md-6 grid-margin stretch-card">
-				<div class="progress-bar" style="width: 65%; margin-top: 16%; margin-left: 18%;">
-					<div class="ldBar" data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)" data-type="fill">
-		<svg xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="100%" height="100%" viewBox="5.5 3.5 89 13">
+				<div class="progress-bar" 
+				style="width: 65%; margin-top: 16%; margin-left: 18%;">
+					<div class="ldBar" 
+					data-stroke="data:ldbar/res,gradient(0,1,#f99,#ff9)" 
+					data-type="fill" style="margin-top:40%;">
+		<svg xmlns:xlink="http://www.w3.org/1999/xlink" 
+		preserveAspectRatio="xMidYMid" width="100%" height="100%" 
+		viewBox="5.5 3.5 89 13">
 			<defs>
-				<filter id="ldBar-2b78fe717ea45-filter" x="-1" y="-1" width="3" height="3">
-					<feMorphology operator="dilate" radius="3"></feMorphology>
-						<feColorMatrix values="0 0 0 0 1    0 0 0 0 1    0 0 0 0 1    0 0 0 1 0" result="cm"></feColorMatrix>
+				<filter id="ldBar-2b78fe717ea45-filter" x="-1" 
+				y="-1" width="3" height="3">
+					<feMorphology operator="dilate" radius="3">
+
+					</feMorphology>
+						<feColorMatrix
+					values="0 0 0 0 1    0 0 0 0 1    0 0 0 0 1    0 0 0 1 0" 
+					result="cm">
+				</feColorMatrix>
+
 				</filter>
 				<mask id="ldBar-2b78fe717ea45-mask">
-					<image xlink:href="" filter="url(#ldBar-2b78fe717ea45-filter)" x="0" y="0" width="100" height="100" preserveAspectRatio="xMidYMid"></image>
+					<image xlink:href="" filter="url(#ldBar-2b78fe717ea45-filter)" x="0" y="0" 
+					width="100" height="100" preserveAspectRatio="xMidYMid"></image>
 				</mask>
 				<g>
 					<mask id="ldBar-2b78fe717ea45-mask-path">
@@ -85,27 +102,61 @@ rect#progress {
 		</svg>
 
 
-						<div class="ldBar" data-stroke=" data:ldbar/res, gradient(0,1,#f99,#ff9) "></div>
+		<div class="ldBar-label" style="color: black" align="center">
+				
+		
+		
+		<div class="ldBar" data-stroke=" data:ldbar/res, gradient(0,1,#f99,#ff9) "></div>
 							
 						</div>
 					</div>
 
 
 				</div>
-			<div class="card-body">
+
+				<form action="http://127.0.0.1:5003/messages" method="POST">
+				<div class="card-body">
 			
-			<div id="train_text_div" color : >
-				<span>무야호</span>
+				<div id="train_text_div"
+				style="color :black;
+				font-family:'Gowun Dodum'
+				sans-serif">
+				   <span>무야호<%=data %></span>
+			   </div>
 			</div>
+			</form>
 			
-			</div>
-			
+			<div class="category-body" style="margin-top: -30%;" >
+				<div class="category1">
+
+					<div class="talk">
+						<div class="talk_icon">
+							<button class="button1" id="button_1"
+								onclick="button1_click()">
+								<i class="far fa-comments"
+									style="color: rgb(92, 84, 197); margin-left: 10px;"></i>
+							</button>
+						</div>
+
+					</div>
+				</div>
+				<div class="category2">
+					<div class="study">        
+						<div class="study_icon">
+							<button class="button2" id="button_2"
+								onclick="button2_click()">
+								<i class="fas fa-book-open"
+									style="color: rgb(92, 84, 197); margin-left: 10px;"></i>
+							</button>
+						</div>
+					</div>
+				</div>
 			
 			<div class="frame">
 				<input type="checkbox" id="cb-1" name="cb" class="checkbox" value="1"> <label for="cb-1" class="label"></label>
 				<div class="microphone" id = "microphone">
 					<svg width="85px" height="85px" viewBox="0 0 100 100" id="microphone" onclick="count(&quot;plus&quot;)">
-                <circle class="circle" cx="50" cy="50" r="47"></circle>
+                <circle class="circle" cx="50" cy="50" r="44"></circle>
             </svg>
 					<div class="icon">
 						<div class="body">
@@ -123,9 +174,7 @@ rect#progress {
 			</div>
 		</div>
 </div>
-
-	</div>
-	</div>
+</div>
 
 
 </body>
@@ -139,3 +188,4 @@ rect#progress {
 
 
 </html>
+
