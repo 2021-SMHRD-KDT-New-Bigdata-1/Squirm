@@ -155,7 +155,7 @@ rect#progress {
 			<div class="frame">
 				<input type="checkbox" id="cb-1" name="cb" class="checkbox" value="1"> <label for="cb-1" class="label"></label>
 				<div class="microphone" id = "microphone">
-					<svg width="85px" height="85px" viewBox="0 0 100 100" id="microphone" onclick="count(&quot;plus&quot;)">
+					<svg width="60px" height="60px" viewBox="0 0 100 100" id="microphone" onclick="count(&quot;plus&quot;)">
                 <circle class="circle" cx="50" cy="50" r="44"></circle>
             </svg>
 					<div class="icon">
