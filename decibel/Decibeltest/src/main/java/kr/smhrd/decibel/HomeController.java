@@ -58,14 +58,14 @@ public class HomeController {
 //		return "train";
 //	}
 	
-	@RequestMapping(value = "/login_check.do")
-	public String login_check(Model model, HttpServletRequest request,MemberVO member) throws Exception{
-		//회원 유무 확인 후 회원 정보 저장
-		MemberVO member = loginService.checkLogin(MemberVO);
-		
-		//회원이 맞을 경우 세션에 회원 로그인 값 담아주기
-		if(member != null && !member)
-	}
+//	@RequestMapping(value = "/login_check.do")
+//	public String login_check(Model model, HttpServletRequest request,MemberVO member) throws Exception{
+//		//회원 유무 확인 후 회원 정보 저장
+//		MemberVO member = loginService.checkLogin(MemberVO);
+//		
+//		//회원이 맞을 경우 세션에 회원 로그인 값 담아주기
+//		if(member != null && !member)
+//	}
 //	public String processlogin(@ModelAttribute("member") MemberVO member, Model model) {
 //		System.out.println(member.getMember_email());
 //		System.out.println(member.getMember_pw());
