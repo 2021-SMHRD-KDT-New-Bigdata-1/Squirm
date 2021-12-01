@@ -14,7 +14,7 @@
   font-family: "Open Sans", Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
+} 
 
 .checkbox {
   display: none;
@@ -199,19 +199,23 @@
   justify-content: flex-start;
   align-items: end;
   height: 85%;
+
+
 }
 .talk {
   color: black;
-  font-family: "Gowun Dodum", sans-serif;
+  font-family: 'Gowun Dodum', sans-serif;
   margin-bottom: 15px;
+
 }
 
 .study {
-  color: black;
-  font-family: "Gowun Dodum", sans-serif;
+  color : black; 
+  font-family : 'Gowun Dodum', sans-serif; 
 }
 .category-body {
   width: 14%;
+  margin-top: 24%;
   margin-left: 84%;
 
 }
@@ -242,50 +246,54 @@
 }
 .speak {
   color: black;
-  font-family: "Gowun Dodum", sans-serif;
+  font-family: 'Gowun Dodum', sans-serif;
   padding: 2%;
   margin-top: 2px;
   margin-left: 3px;
   margin-bottom: -9px;
 }
 .talk-input {
-  width: 70%;
-  height: 100%;
+  width: 87%;
+  height: 50%;
   display: inline;
-  font-family: "Gowun Dodum", sans-serif;
   font-size: medium;
   padding: 0px;
   margin: 0px;
-  background-color: #f5f7ff;
-  display: inline;
+  background-color: #F5F7FF;
 }
 .talk-input-bnt {
-  width: 30%;
+  width: 10%;
   padding: inherit;
-  background-color: #f5f7ff;
+  background-color: #F5F7FF;
   border: none;
-  height: 100%;
-  font-family: "Gowun Dodum", sans-serif;
-  font-size: x-large;
-  display: inline;
-  margin: 0;
-  padding: inherit;
+  height: 50%;
+  font-family: 'Gowun Dodum', sans-serif;
+  font-size: medium;
 }
 .button1 {
   width: 10%;
   padding: inherit;
-  background-color: #f5f7ff;
+  background-color: #F5F7FF;
   border: none;
   height: 50%;
-  font-family: "Gowun Dodum", sans-serif;
+  font-family: 'Gowun Dodum', sans-serif;
   font-size: x-large;
 }
 .button2 {
   width: 10%;
   padding: inherit;
-  background-color: #f5f7ff;
+  background-color: #F5F7FF;
   border: none;
   height: 50%;
-  font-family: "Gowun Dodum", sans-serif;
+  font-family: 'Gowun Dodum', sans-serif;
   font-size: x-large;
+}
+#train_text_div {
+  color: black;
+  font-family: 'Open Sans',sans-serif;
+  margin-top: 30%;
+  margin-left: -3%;
+  text-align: center;
+  font-size: large;
+ 
 }
