@@ -253,8 +253,8 @@
   margin-bottom: -9px;
 }
 .talk-input {
-  width: 87%;
-  height: 50%;
+  width: 80%;
+  height: 100%;
   display: inline;
   font-size: medium;
   padding: 0px;
@@ -266,12 +266,12 @@
   padding: inherit;
   background-color: #F5F7FF;
   border: none;
-  height: 50%;
+  height: 100%;
   font-family: 'Gowun Dodum', sans-serif;
   font-size: medium;
 }
 .button1 {
-  width: 10%;
+  width: 20%;
   padding: inherit;
   background-color: #F5F7FF;
   border: none;
