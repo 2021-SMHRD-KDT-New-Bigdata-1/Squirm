@@ -92,10 +92,14 @@ rect#progress {
 
 
 				</div>
+			<div class="card-body">
 			
-			<div id="train_text_div">
+			<div id="train_text_div" color : >
 				<span>무야호</span>
 			</div>
+			
+			</div>
+			
 			
 			<div class="frame">
 				<input type="checkbox" id="cb-1" name="cb" class="checkbox" value="1"> <label for="cb-1" class="label"></label>
