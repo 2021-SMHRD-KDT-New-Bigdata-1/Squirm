@@ -16,7 +16,10 @@
 <link
 	href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
 	rel="stylesheet">
-
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+	integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+	crossorigin="anonymous">
 
 <!-- <script src="js/stt.js"></script> -->
 
@@ -114,7 +117,31 @@ rect#progress {
 				<span>무야호<%=data %></span>
 			</div>
 			</form>
-			
+			<div class="category-body">
+							<div class="category1">
+
+								<div class="talk">
+									<div class="talk_icon">
+										<button class="button1" id="button_1"
+											onclick="button1_click()">
+											<i class="far fa-comments"
+												style="color: rgb(92, 84, 197); margin-left: 10px;"></i>
+										</button>
+									</div>
+ 
+								</div>
+							</div>
+							<div class="category2">
+								<div class="study">        
+									<div class="study_icon">
+										<button class="button2" id="button_2"
+											onclick="button2_click()">
+											<i class="fas fa-book-open"
+												style="color: rgb(92, 84, 197); margin-left: 10px;"></i>
+										</button>
+									</div>
+								</div>
+							</div>
 			<div class="frame">
 				<input type="checkbox" id="cb-1" name="cb" class="checkbox"
 					value="1"> <label for="cb-1" class="label"></label>
