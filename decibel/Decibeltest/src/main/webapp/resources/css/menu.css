@@ -217,6 +217,7 @@
   width: 14%;
   margin-top: 24%;
   margin-left: 84%;
+
 }
 .speak {
   margin-top: 0;
@@ -252,8 +253,8 @@
   margin-bottom: -9px;
 }
 .talk-input {
-  width: 87%;
-  height: 50%;
+  width: 70%;
+  height: 100%;
   display: inline;
   font-size: medium;
   padding: 0px;
@@ -261,16 +262,16 @@
   background-color: #F5F7FF;
 }
 .talk-input-bnt {
-  width: 10%;
+  width: 30%;
   padding: inherit;
   background-color: #F5F7FF;
   border: none;
-  height: 50%;
+  height: 100%;
   font-family: 'Gowun Dodum', sans-serif;
-  font-size: medium;
+  font-size: x-large;
 }
 .button1 {
-  width: 10%;
+  width: 20%;
   padding: inherit;
   background-color: #F5F7FF;
   border: none;
@@ -286,4 +287,13 @@
   height: 50%;
   font-family: 'Gowun Dodum', sans-serif;
   font-size: x-large;
+}
+#train_text_div {
+  color: black;
+  font-family: 'Open Sans',sans-serif;
+  margin-top: 30%;
+  margin-left: -3%;
+  text-align: center;
+  font-size: large;
+ 
 }

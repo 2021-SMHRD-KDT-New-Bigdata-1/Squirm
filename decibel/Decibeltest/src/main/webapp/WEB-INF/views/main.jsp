@@ -73,10 +73,17 @@
 							</div>
 
 							<div class="card-body1">
-
+								<span>
 								<input class="talk-input" id="code_html"
-									type="text" value="삼겹살" /> <input type="button"
-									value="말하기" />
+									type="text" value="삼겹살" /> 
+									<input class = "talk-input-bnt"type="button"
+								value="말하기" style="color: rgb(92, 84, 197);"/></span>
+								
+								
+								
+
+
+							</span>
 
 
 								
@@ -129,8 +136,7 @@
 	function button3_click() {
 		console.log("버튼3을 눌렀습니다.");
 	}
-</script>
-<script src="resources/js/jquery-3.6.0.min.js"></script>
+</script><script src="resources/js/jquery-3.6.0.min.js"></script>
 <script src="resources/js/main.js"></script>
 <script src="resources/js/record.js"></script>
 <script src="resources/js/stt.js"></script>
