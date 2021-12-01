@@ -219,6 +219,12 @@
   margin-left: 84%;
 
 }
+.category-b {
+    width: 14%;
+  margin-top: 24%;
+  margin-left: 84%;
+
+}
 .speak {
   margin-top: 0;
   margin-bottom: 0;
@@ -253,22 +259,22 @@
   margin-bottom: -9px;
 }
 .talk-input {
-  width: 87%;
-  height: 50%;
-  display: inline;
-  font-size: medium;
-  padding: 0px;
-  margin: 0px;
-  background-color: #F5F7FF;
-}
+  width: 65%;
+    height: 100%;
+    display: inline;
+    font-size: medium;
+    padding: 0px;
+    margin: 0px;
+    background-color: #F5F7FF;
+} 
 .talk-input-bnt {
-  width: 10%;
+  width: 35%;
   padding: inherit;
   background-color: #F5F7FF;
   border: none;
-  height: 50%;
+  height: 100%;
   font-family: 'Gowun Dodum', sans-serif;
-  font-size: medium;
+  font-size: x-large;
 }
 .button1 {
   width: 10%;
@@ -280,13 +286,15 @@
   font-size: x-large;
 }
 .button2 {
-  width: 10%;
+  border-radius: 7px;
+  width: 90%;
   padding: inherit;
   background-color: #F5F7FF;
-  border: none;
+  border-style: solid;
   height: 50%;
   font-family: 'Gowun Dodum', sans-serif;
-  font-size: x-large;
+  font-size: medium;
+  margin-left: -17px;
 }
 #train_text_div {
 
@@ -297,4 +305,37 @@
   text-align: center;
   font-size: large;
   
+}
+.card-b{
+  box-sizing: border-box;
+    width: 88%;
+    height: 35%;
+    position: absolute;
+    left: 5%;
+    top: 10%;
+    border-color: #7959db;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+}
+
+.card-b1 {
+  box-sizing: border-box;
+  width: 88%;
+  height: 35%;
+  position: absolute;
+  left: 6%;
+  top: 47%;
+  border-style: solid;
+  border-color: #7959db;
+  border-width: 2px;
+  border-radius: 20px;
+}
+.card-b1 span {
+  margin-top: 3%;
+  margin-left: 3%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: end;
+  height: 93%;
 }
