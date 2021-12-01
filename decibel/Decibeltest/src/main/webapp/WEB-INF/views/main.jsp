@@ -29,7 +29,6 @@
 	<!-- 여기가 우리의 메인  -->
 	<%
 		String data = request.getParameter("result");
-	out.print(data);
 	%>
 	<!-- <input id = "bStart" type = "button" value = "stt 시작하는 버튼 자동화 시켜서 필요" onclick = "start();"></input> -->
 
