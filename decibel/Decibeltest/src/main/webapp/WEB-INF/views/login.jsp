@@ -52,12 +52,30 @@
   		return true; 
   	 
   	}
+  	
+  	
+  	
+  	
   </script>
   
+   <div id="logo"><img src="resources/img/logo.png" alt=""></div>
+  
+  <script>
+    function hideDiv(){
+      $("#logo").fadeOut();
+    }
+    function inDiv(){
+      document.getElementById("box").style.display="block";
+    }
+    
+    self.setTimeout("hideDiv()",4000) // 4초 뒤에 사라짐
+    self.setTimeout("inDiv()",4400) // 4초 뒤에 사라짐
+  </script>
   
   <!-- login -->
     <div class="content">
       <div class="container">
+      <div id = "box" style="display : none">
         <!-- <img class="bg-img" src="https://mariongrandvincent.github.io/HTML-Personal-website/img-codePen/bg.jpg" alt=""> -->
           <div class="menu">
             <a href="#connexion" class="btn-connexion"><h2>로그인</h2></a>
@@ -129,7 +147,7 @@
           </div>
           </form>
       </div>
-    
+    	</div>
     </div>
 
     <script src="resources/js/jquery-3.6.0.min.js"></script>

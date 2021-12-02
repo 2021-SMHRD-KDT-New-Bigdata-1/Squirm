@@ -51,13 +51,13 @@
 				</div>
 				<nav class="nav" id="nav">
 					<ul>
-						
+						 <c:if test = "${vo!=null}"> 
 						<li><a href="#"><strong>${vo.member_nickname} 님</strong></a></li>
 						<li><a href="#">번역기</a></li>
 						<li><a href="#">교육</a></li>
 						<li><a href="#">단어</a></li>
 						<li><a href="#">리스트</a></li>
-						
+						</c:if>
 					</ul>
 				</nav> 
 			</div>

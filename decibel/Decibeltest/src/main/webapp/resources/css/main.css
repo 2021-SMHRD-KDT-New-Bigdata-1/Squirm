@@ -241,3 +241,23 @@ body {
       position: absolute;
       left: 500px;
   }
+  
+  div>img{
+  animation: scale1 2.5s alternate forwards; 
+  animation-iteration-count:1;
+  position: static;
+  margin-left: 0px;
+  margin-top : 80px;
+}
+#logo{
+  text-align: center;
+  
+}
+
+  /* 추가된 부분 */
+  @keyframes scale1 {
+    0%   { transform: scale(0) }
+    100%  { transform: scale(.7) }
+  }
+  
+
