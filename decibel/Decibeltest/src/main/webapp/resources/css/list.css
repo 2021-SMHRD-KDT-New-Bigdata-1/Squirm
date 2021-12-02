@@ -571,10 +571,29 @@ input[type="button"],
   margin-top: 3px;
 }
 
+
+input[type="submit"]:visited,
+input[type="reset"]:visited,
+input[type="button"]:visited,
+.button:visited {
+	  border-color: #7959db;
+  		color: #7959db ;
+	
+}
+
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.button:hover {
+.button:visited {
+	  border-color: #7959db;
+  color: #7959db ;
+	
+}
+.button:active {
+  border-color: #7959db;
+  color: #7959db !important;
+}
+.button:visited {
   border-color: #7959db;
   color: #7959db !important;
 }
