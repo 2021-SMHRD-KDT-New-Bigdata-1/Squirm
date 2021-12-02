@@ -37,49 +37,237 @@ rect#progress {
 <class= "content">
       <div class="container">     
          <div class="col-md-6 grid-margin stretch-card" overflow: auto>
-           <div><h5>여기에 로고 화면으로 가기 메뉴!</h5></div>
-            <div class="button">
-            <a>잘했어요</a>
-            </div>
-              <div class="button">
-            <a>고마워요</a>
-            </div>
-              <div class="button">
-            <a>사랑해요</a>
-            </div>
-               <div class="button">
-            <a>보고싶어요</a>
-            </div>
-               <div class="button">
-            <a>고생했어요</a>
-              </div>
-               <div class="button">
-            <a>시현이는</a>
-              </div>
-               <div class="button">
-            <a>동휘라는</a>
-              </div>
-               <div class="button">
-            <a>남자가 있어요</a>
-              </div>
-               <div class="button">
-            <a>같이 잠도자고</a>
-              </div>
-               <div class="button">
-            <a>밥도 먹고 </a>
-              </div>
-               <div class="button">
-            <a>동해물과백</a>
-              </div>
-               <div class="button">
-            <a>고생했어요</a>
-              </div>
+           
+        <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+    ></script>      
+
+
+    <div class="allWrap">
+      <div class="tabBox">
+        <p class="tab-link current" data-tab="tab-1">
+          <span
+            ><img src="http://mmctxt.com/link/img/icon01.png" alt="icon"
+          /></span>
+          학습한거
+        </p>
+        <p class="tab-link" data-tab="tab-2">
+          <span
+            ><img src="http://mmctxt.com/link/img/icon02.png" alt="icon"
+          /></span>
+          학습해야할거
+        </p>
+      </div>
+      <div id="tab-1" class="tab-content current">
+      
+      <div class="button">
+                        <a>안녕하세요</a>
+                        </div>
+                          <div class="button">
+                        <a>사랑해요</a>
+                        </div>
+                        <div class="button">
+                        <a>너무 보고싶어요 </a>
+                        </div>
+                      
+                        <div class="button">
+                        <a>그동안 고생했어요 </a>
+                        </div>
+                       
+                        <div class="button">
+                        <a>다음에 꼭 봐요 </a>
+                        </div>
+                      
+                        <div class="button">
+                        <a>엄마 아빠 사랑해요</a>
+                        </div>
+                      
+                        <div class="button">
+                        <a>정말 고마워</a>
+                        </div>
+                        <div class="button">
+                        <a>다시 만나요</a>
+                        </div>
+                        <div class="button">
+                        <a>축하 해요</a>
+                        </div>
+                        <div class="button">
+                        <a>응원 할게요</a>
+                        </div>
+                        <div class="button">
+                        <a>메리 크리스마스</a>
+                        </div>
+                        <div class="button">
+                        <a>새해복 많이</a>
+                        </div>
+                        <div class="button">
+                        <a>행복해요</a>
+                        </div>
+                        <div class="button">
+                        <a>미안해요</a>
+                        </div>
+                        <div class="button">
+                        <a>고생했어</a>
+                        </div>
+                        </div>
+                        
+      <div id="tab-2" class="tab-content">
+      <script>
+      function colorChange() {
+    	  var color = ["#FC5C7D", "#6A82FB", "#38ef7d", "#fffbd5", "#b20a2c", "#CAC531"];
+
+    	  var num = Math.floor(Math.random() * color.length);
+    	  var bodyTag = document.getElementById("button");
+    	  bodyTag.style.backgroundColor = color[num];
+    	}
+      </script>
+      
+      <button class="button">
+                        <a>그때 참 좋았는데말야</a>
+                        </button>
+                           <button class="button"onclick="colorChange()"  >
+                        <a>때론 외롭고 슬퍼도 말야</a>
+                        </button>
+                        <button class="button"onclick="colorChange()">
+                        <a>싱잉 나나나</a>
+                        </button>
+                        <button class="button">
+                        <a>내일은 비가 온데요</a>
+                        </button>
+                        <button class="button">
+                        <a>유자향이 참 좋아요</a>
+                        </button>
+                        <button class="button">
+                        <a>치타인가 새인가</a>
+                        </button>
+                        <button class="button">
+                        <a>널위해 서라면</a>
+                        </button>
+                        <button class="button">
+                        <a>잊어버렸어</a>
+                        </button>
+                        <button class="button">
+                        <a>나도내가 누구였는지</a>
+                        </button>
+                        <button class="button">
+                        <a>아파도 강한척 할수가</a>
+                        </button>
+                        <button class="button">
+                        <a>이뤄지지 않는 꿈</a>
+                        </button>
+                        <button class="button">
+                        <a>널위해 예쁜 거짓을</a>
+                        </button>
+                        <button class="button">
+                        <a>페이크 러브</a>
+                        </button>
+                         <button class="button">
+                        <a>홀로남은 설국열차</a>
+                        </button>
+                         <button class="button">
+                        <a>그 봄날이 올까</a>
+                        </button>
+                         <button class="button">
+                        <a>조금더 빨리</a>
+                        </button>
+                         <button class="button">
+                        <a>눈꽃이 떨어져요</a>
+                        </button>
+                         <button class="button">
+                        <a>또 조금씩 멀어져요</a>
+                        </button>
+                         <button class="button">
+                        <a>보고싶다</a>
+                        </button>
+                         <button class="button">
+                        <a>얼마나 기다려야</a>
+                        </button>
+                         <button class="button">
+                        <a>또 몇밤을 또새워야</a>
+                        </button>
+                         <button class="button">
+                        <a>만나게될까</a>
+                        </button>
+                         <button class="button">
+                        <a>그곳에 좀 더 머물러줘</a>
+                        </button>
+                         <button class="button">
+                        <a>니가 변한건지</a>
+                        </button>
+                         <button class="button">
+                        <a>아니면 내가 변한건지</a>
+                        </button>
+                         <button class="button">
+                        <a>보고 싶은데</a>
+                        </button>
+                         <button class="button">
+                        <a>연기처럼 하얀 연기처럼</a>
+                        </button>
+                   </button>
+    </div>
+    <script>
+      $(".tab-link").click(function () {
+        var tab_id = $(this).attr("data-tab");
+
+        $(".tab-link").removeClass("current");
+        $(".tab-content").removeClass("current");
+
+        $(this).addClass("current");
+        $("#" + tab_id).addClass("current");
+      });
+    </script>
+    
+    <style>
+    .allWrap {
+  width: 100%;
+  margin: 0 auto;
+}
+.tabBox {
+  margin: 20px 0;
+}
+.tab-link {
+  width: 43%;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  background-color: #929090;
+  border-radius: 20px;
+  color: #fff;
+  cursor: pointer;
+ 
+}
+.tab-link.current {
+  background-color: #4b49ac;
+  font-weight: 600;
+}
+.tab-content {
+  display: none;
+}
+.tab-content.current {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow:scroll;
+  font-size: 10px;
+  text-align: center;
+  
+}
+    
+    </style>
+
          
          
    
-         <div class="frame">
-            
-         </div>
+<div class="frame">
+						<input type="checkbox" id="cb-1" name="cb" class="checkbox" value="1"> <label for="cb-1" class="label"></label>
+						<div class="microphone" id = "microphone">
+							<svg width="60px" height="60px" viewBox="0 0 100 100" id="microphone" onclick="count(&quot;plus&quot;)">
+										<button>학습시키키</button>
+								</svg>
+													
+						</div>
+					</div>
       </div>
 </div>
 </div>
