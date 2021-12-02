@@ -56,6 +56,7 @@ public class HomeController {
 	@Autowired
 	MemberMapper mapper;
 	
+		  
 	      @RequestMapping("/m_login.do")
 	      public String mLogin(MemberVO member, HttpSession session) {
 	    	  //로그인 처리
