@@ -35,8 +35,8 @@ rect#progress {
 	<!-- login -->
 <class= "content">
 		<div class="container">
-		<c:if test = "${vo!=null}"> 
-               <label>${vo.member_email}님 방문을 환영합니다.</label>
+		<!--  <c:if test = "${vo!=null}"> 
+               <label>${vo.member_email}님 방문을 환영합니다.</label>-->
                <!--  <button type="submit" class="btn btn-default" onclick="logout.do">로그아웃</button>-->
             </c:if>
 			<div class="col-md-6 grid-margin stretch-card">
@@ -135,7 +135,7 @@ rect#progress {
 			
 				<div id="list_number"
 				style="color:black; font-family: 'Gowun Dodum', sans-serif;" >
-				<span style="color:black; font-family: 'Gowun Dodum', sans-serif; text-align=center">하이<%=data %></span>
+				<span style="color:black; font-family: 'Gowun Dodum', sans-serif; text-align=center font-size: larger; font-weight: bold;">하이<%=data %></span>
 			</div>
 			</div>
 			</form>
@@ -158,7 +158,7 @@ rect#progress {
 					<div class="study">        
 						<div class="study_icon">
 							<button class="button2" id="button_2"
-								onclick="button2_click()">
+								onclick="button2_click()" style = "border : none">
 								<i class="fas fa-book-open"
 									style="color: rgb(92, 84, 197); margin-left: 10px;"></i>
 							</button>

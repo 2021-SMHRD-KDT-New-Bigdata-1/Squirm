@@ -14,19 +14,21 @@
   
     <script type = "text/javascript">
   	$(document).ready(function(){
-  		$("#btn_join").click(function(){
-  			if( $.trim($("#member_email").val()) == ""){
-  				alert("이메일 주소를 입력해 주세요");
-  				$("#member_email").focus();
-  				return false;
-  			}
-  			if( $.trim($("#member_pw").val()) == ""){
-  				alert("비밀번호를 입력해 주세요");
-  				$("#member_pw").focus();
-  				return false;
-  			}
-  			$("#joinform").submit();
-  		})
+  		var member_email = $("#member_email").val();
+  		if(member_email==""){
+  			alert("이메일을 입력하세요");
+  			$("#member_email").focus();
+  			return false;
+  		}
+  		var member_pw = $("member_pw").val();
+  		if(member_pw==""){
+  			alert("패스워드를 입력하세요");
+  			$("#member_pw").focus();
+  			return false;
+  		}
+  		$("#joinform").submit();
+  	}
+  
   		 
   	}); 
   

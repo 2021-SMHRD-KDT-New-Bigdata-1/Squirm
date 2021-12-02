@@ -78,7 +78,7 @@ var number_list = new Array(
  function setInnerNUMBER() {
     const element1 = document.getElementById("list_number");
     element1.innerHTML =
-      "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
+      "<div style= color: black; font-family: 'Gowun Dodum', sans-serif font-size: larger; font-weight: bold;>" +
       number_list[b] +
       "<div>";
     b++; // 바뀌게 하는코드
