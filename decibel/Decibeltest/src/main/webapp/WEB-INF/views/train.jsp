@@ -29,6 +29,8 @@ rect#progress {
 
 <body>
 
+
+
    <%
       String data = request.getParameter("result");
    %>
@@ -37,10 +39,13 @@ rect#progress {
 <class= "content">
       <div class="container">
       			<div id="menu">
-				<div id="menu-bar" onclick="menuOnClick()">
-					<div id="bar1" class="bar"></div>
-					<div id="bar2" class="bar"></div>
-					<div id="bar3" class="bar"></div>
+      			<div id = "logo_mini">
+      				<img src="resources/img/logo.png">
+					<div id="menu-bar" onclick="menuOnClick()">
+						<div id="bar1" class="bar"></div>
+						<div id="bar2" class="bar"></div>
+						<div id="bar3" class="bar"></div>
+					</div>
 				</div>
 				<nav class="nav" id="nav">
 					<ul>
