@@ -9,6 +9,7 @@
 <title>Document</title>
 <link rel="stylesheet" href="./resources/css/main.css">
 <link rel="stylesheet" href="./resources/css/menu.css">
+<link rel="stylesheet" href="resources/css/menu_bar.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.css">

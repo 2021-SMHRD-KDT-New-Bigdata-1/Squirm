@@ -51,11 +51,13 @@
 				</div>
 				<nav class="nav" id="nav">
 					<ul>
-						<li><a href="#"><strong>곰돌 님</strong></a></li>
-						<li><a href="#">번역기</a></li>
-						<li><a href="#">교육</a></li>
-						<li><a href="#">단어</a></li>
-						<li><a href="#">리스트</a></li>
+						 <c:if test = "${vo!=null}"> 
+						<li><a href="#"><strong>${vo.member_name} 님</strong></a></li>
+						<li><a href="main.do">번역기</a></li>
+						<li><a href="train.do">교육</a></li>
+						<li><a href="list.do">단어</a></li>
+						<li><a href="logout.do">로그아웃</a></li>
+						</c:if>
 					</ul>
 				</nav> 
 			</div>
