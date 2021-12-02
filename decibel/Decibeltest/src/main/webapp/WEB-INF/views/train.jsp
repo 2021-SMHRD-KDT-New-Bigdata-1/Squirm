@@ -137,38 +137,19 @@ rect#progress {
          </div>
          </form>
          
-         <div class="category-body" style="margin-top: -30%;" >
-            <div class="category1">
+ 
+             <div class="category-body" style="margin-top: -30%;" >
+			<div class="category1">
 
-               <div class="talk">
-                  <div class="talk_icon">
-                     <button class="button1" id="button_1"
-                        onclick="button1_click()">
-                        <i class="far fa-comments"
-                           style="color: rgb(92, 84, 197); margin-left: 10px;"></i>
-                     </button>
-                  </div>
-
-               </div>
-            </div>
-            <div class="category2">
-               <div class="study">        
-                  <div class="study_icon">
-                     <button class="button2" id="button_2"
-                        onclick="button2_click()" style = "border : none">
-                        <i class="fas fa-book-open"
-                           style="color: rgb(92, 84, 197); margin-left: 10px;"></i>
-                     </button>
-                  </div>
-               </div>
-            </div>
-         
-            <div class = "card-body2">
-               <div>
-            <span style="color: black; font-family: 'Gowun Dodum', sans-serif;">5초 안에 읽어주세요</span><br>
-            <span style="color: black; font-family: 'Gowun Dodum', sans-serif;">띄어쓰기를 유의해서 읽어주세요</span>
-         </div>
-            </div>
+				 </div>
+			</div>
+	 
+			<div class = "card-body2" style="  text-align: center;	margin-top: 110%;">
+				 <div>
+			<span style="color: black; font-family: 'Gowun Dodum', sans-serif;">5초 안에 읽어주세요</span><br>
+			<span style="color: black; font-family: 'Gowun Dodum', sans-serif;">띄어쓰기를 유의해서 읽어주세요</span>
+	 </div>
+			</div>
 
                
 
