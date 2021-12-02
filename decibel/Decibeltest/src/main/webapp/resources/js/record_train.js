@@ -15,6 +15,7 @@ var h = $('path[d="M10 10L90 10M90 8M90 12"]:hidden');
 
 };
 
+
 var traintext = new Array(
   "안녕하세요",
   "사랑해요",
@@ -33,6 +34,38 @@ var traintext = new Array(
   "고생했어"
 );
 
+var number_list = new Array(
+  "1/15",
+  "1/15",
+  "2/15",
+  "2/15",
+  "3/15",
+  "3/15",
+  "4/15",
+  "4/15",
+  "5/15",
+  "5/15",
+  "6/15",
+  "6/15",
+  "7/15",
+  "7/15",
+  "8/15",
+  "8/15",
+  "9/15",
+  "9/15",
+  "10/15",
+  "10/15",
+  "11/15",
+  "11/15",
+  "12/15",
+  "12/15",
+  "13/15",
+  "13/15",
+  "14/15",
+  "14/15",
+  "15/15",
+  "15/15"
+);
   function setInnerHTML() {
     const element = document.getElementById("train_text_div");
     element.innerHTML =
@@ -41,6 +74,16 @@ var traintext = new Array(
       "<div>";
     b++; // 바뀌게 하는코드
   }
+
+ function setInnerNUMBER() {
+    const element1 = document.getElementById("list_number");
+    element1.innerHTML =
+      "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
+      number_list[b] +
+      "<div>";
+    b++; // 바뀌게 하는코드
+  }
+
 
 function makeSound(stream) {
   const source = audioCtx.createMediaStreamSource(stream);  
@@ -77,7 +120,9 @@ if (navigator.mediaDevices) {
           console.log(mediaRecorder.state);
           console.log("recorder stopped");
           setInnerHTML();
-		      click_s();     
+		  click_s();  
+		  setInnerNUMBER(); 
+		 
 }
 		
       });

@@ -90,7 +90,7 @@
   width: 4px;
   height: 13px;
   top: 25px;
-  left: 9px;
+  left: 8.5px;
   background: #fff;
 }
 .microphone .icon .foot_h {
@@ -201,7 +201,17 @@
   height: 85%;
 
 
+}.card-body2 {
+  box-sizing: border-box;
+  width: 70%;
+  height: 5%;
+  position: absolute;
+  left: 17%;
+  top: 75%;
+  text-align: center;
+
 }
+
 .talk {
   color: black;
   font-family: 'Gowun Dodum', sans-serif;

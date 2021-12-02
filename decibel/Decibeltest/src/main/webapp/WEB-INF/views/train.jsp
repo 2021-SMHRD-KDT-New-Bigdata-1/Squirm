@@ -35,6 +35,10 @@ rect#progress {
 	<!-- login -->
 <class= "content">
 		<div class="container">
+		<c:if test = "${vo!=null}"> 
+               <label>${vo.member_email}님 방문을 환영합니다.</label>
+               <!--  <button type="submit" class="btn btn-default" onclick="logout.do">로그아웃</button>-->
+            </c:if>
 			<div class="col-md-6 grid-margin stretch-card">
 				<div class="progress-bar" 
 				style="width: 65%; margin-top: 16%; margin-left: 18%;">
@@ -82,18 +86,19 @@ rect#progress {
 
 					<path d="M10 10L90 10M90 8M90 12" id="#one" class="mainline1" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="6 80" style = "display:none"></path>
 				<!-- 클릭 두번할 때 마다 바 길이 조정 -->	
-				 	<path d="M10 10L90 10M90 8M90 12" id="#two" class="mainline2" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="12 80" style = "display:none"></path>
-					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="18 80" style = "display:none"></path>
+				 	<path d="M10 10L90 10M90 8M90 12" id="#two" class="mainline2" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="11 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="17 80" style = "display:none"></path>
 					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="24 80" style = "display:none"></path>
-					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="30 80" style = "display:none"></path>
-					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="36 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="29 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="33 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="37 80" style = "display:none"></path>
 					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="42 80" style = "display:none"></path>
-					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="48 80" style = "display:none"></path>
-					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="54 80" style = "display:none"></path>
-					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="60 80" style = "display:none"></path>
-					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="65 80" style = "display:none"></path>
-					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="70 80" style = "display:none"></path>
-					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="75 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="47 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="52 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="57 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="63 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="68 80" style = "display:none"></path>
+					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="74 80" style = "display:none"></path>
 					<path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="80 80" style = "display:none"></path>
 
 					 
@@ -113,15 +118,24 @@ rect#progress {
 
 
 				</div>
+				
 
 				<form action="http://127.0.0.1:5003/messages" method="POST">
 				<div class="card-body">
 			
 				<div id="train_text_div"
-				style="color :black;
-				font-family:'Gowun Dodum'
-				sans-serif">
-				<span>무야호<%=data %></span>
+				style="color:black; font-family: 'Gowun Dodum', sans-serif;">
+				<span style="color:black; font-family: 'Gowun Dodum', sans-serif;">무야호<%=data %></span>
+			</div>
+			</div>
+			</form>
+			
+				<form action="http://127.0.0.1:5003/messages" method="POST">
+				<div class="card-body3" style="text-align: center;">
+			
+				<div id="list_number"
+				style="color:black; font-family: 'Gowun Dodum', sans-serif;" >
+				<span style="color:black; font-family: 'Gowun Dodum', sans-serif; text-align=center">하이<%=data %></span>
 			</div>
 			</div>
 			</form>
@@ -152,6 +166,18 @@ rect#progress {
 					</div>
 				</div>
 			
+				<div class = "card-body2">
+					<div>
+				<span style="color: black; font-family: 'Gowun Dodum', sans-serif;">5초 안에 읽어주세요</span><br>
+				<span style="color: black; font-family: 'Gowun Dodum', sans-serif;">띄어쓰기를 유의해서 읽어주세요</span>
+			</div>
+				</div>
+
+					
+
+
+
+				</div>
 			<div class="frame">
 				<input type="checkbox" id="cb-1" name="cb" class="checkbox" value="1"> <label for="cb-1" class="label"></label>
 				<div class="microphone" id = "microphone">

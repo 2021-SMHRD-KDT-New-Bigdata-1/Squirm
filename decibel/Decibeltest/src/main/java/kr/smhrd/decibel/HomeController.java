@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.smhrd.domain.MemberVO;
+import kr.smhrd.mapper.MemberMapper;
 
 @Controller
 public class HomeController {
@@ -50,43 +52,27 @@ public class HomeController {
 		return "train";
 	}
 	
-
-//	@PostMapping("/m_login.do")
-//	public String processlogin(@ModelAttribute("member") MemberVO member, Model model) {
-//		System.out.println(member.getMember_email());
-//		System.out.println(member.getMember_pw());
-//		return "train";
-//	}
 	
-//	@RequestMapping(value = "/login_check.do")
-//	public String login_check(Model model, HttpServletRequest request,MemberVO member) throws Exception{
-//		//회원 유무 확인 후 회원 정보 저장
-//		MemberVO member = loginService.checkLogin(MemberVO);
-//		
-//		//회원이 맞을 경우 세션에 회원 로그인 값 담아주기
-//		if(member != null && !member)
-//	}
-//	public String processlogin(@ModelAttribute("member") MemberVO member, Model model) {
-//		System.out.println(member.getMember_email());
-//		System.out.println(member.getMember_pw());
-//		return "train";
-//	}
+	@Autowired
+	MemberMapper mapper;
 	
-//	@RequestMapping(value = "/m_login.do")
-//    public String m_login(MemberVO member, HttpServletRequest req, RedirectAttributes attr)throws Exception{
-//		HttpSession session = req.getSession();
-//		
-//		if(member == null) {
-//			session.setAttribute("member", null);
-//			 System.out.println("fail");
-//			
-//		} else {
-//			session.setAttribute("member", member);
-//			System.out.println("success");
-//		}
-//		return "main";
-//	}
+	      @RequestMapping("/m_login.do")
+	      public String mLogin(MemberVO member, HttpSession session) {
+	    	  //로그인 처리
+	    	  MemberVO vo = mapper.mLogin(member);
+	    	  if(vo != null) {
+	    		  session.setAttribute("vo", vo);
+	    	  }
+	    	  return "redirect:/train.do";
+	    	  
+	      }
 	      
+	      @RequestMapping("/logout.do")
+	      public String logout(HttpSession session) {
+	    	  //로그아웃 처리
+	    	  session.invalidate();
+	    	  return "redirect:/login.do";
+	      }
 	
 	
 }

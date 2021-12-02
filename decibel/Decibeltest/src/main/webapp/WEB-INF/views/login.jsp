@@ -17,13 +17,15 @@
   		$("#btn_join").click(function(){
   			if( $.trim($("#member_email").val()) == ""){
   				alert("이메일 주소를 입력해 주세요");
-  				return;
+  				$("#member_email").focus();
+  				return false;
   			}
   			if( $.trim($("#member_pw").val()) == ""){
   				alert("비밀번호를 입력해 주세요");
-  				return;
+  				$("#member_pw").focus();
+  				return false;
   			}
-  			$("#joinform")
+  			$("#joinform").submit();
   		})
   		 
   	}); 
@@ -63,6 +65,11 @@
               
               <input class="submit" value="로그인" type="submit">
             </div>
+            
+            
+            
+            
+            
             
             <hr>
             <a href="https://www.grandvincent-marion.fr/" target="_blank"><h4>비밀번호를 잊으셨나요?</h4></a>
