@@ -13,21 +13,45 @@
 <body>
   
     <script type = "text/javascript">
-  	$(document).ready(function(){
-  		$("#btn_join").click(function(){
-  			if( $.trim($("#member_email").val()) == ""){
-  				alert("이메일 주소를 입력해 주세요");
-  				return;
-  			}
-  			if( $.trim($("#member_pw").val()) == ""){
-  				alert("비밀번호를 입력해 주세요");
-  				return;
-  			}
-  			$("#joinform")
-  		})
-  		 
-  	}); 
-  
+  	function loginCheck(){
+  		var member_email = $("#member_email").val();
+  		if(member_email==""){
+  			alert("이메일을 입력하세요");
+  			$("#member_email").focus();
+  			return false;
+  		}
+  		var member_pw = $("#member_pw").val();
+  		if(member_pw==""){
+  			alert("패스워드를 입력하세요");
+  			$("#member_pw").focus();
+  			return false;
+  		}
+  		return true; 
+  	 
+  	}
+  	
+  	function joinCheck(){
+  		var member_email = $("#member_email").val();
+  		if(member_email==""){
+  			alert("이메일을 입력하세요");
+  			$("#member_email").focus();
+  			return false;
+  		}
+  		var member_pw = $("#member_pw").val();
+  		if(member_pw==""){
+  			alert("패스워드를 입력하세요");
+  			$("#member_pw").focus();
+  			return false;
+  		}
+  		var member_nickname = $("#member_nickname").val();
+  		if(member_nickname==""){
+  			alert("닉네임을 입력하세요");
+  			$("#member_nickname").focus();
+  			return false;
+  		}
+  		return true; 
+  	 
+  	}
   </script>
   
   
@@ -39,7 +63,7 @@
             <a href="#connexion" class="btn-connexion"><h2>로그인</h2></a>
             <a href="#enregistrer" class="btn-enregistrer active"><h2>회원가입</h2></a>
           </div>
-          <form action = "m_login.do" method="post">
+          <form action = "m_login.do" method="post" id = loginform>
           <hr id="menu_hr">
           <div class="connexion">
             <div class="contact-form">
@@ -61,8 +85,13 @@
                 <h3>로그인 유지</h3>
               </div>
               
-              <input class="submit" value="로그인" type="submit">
+              <input class="submit" value="로그인" type="submit" onclick = "return loginCheck()">
             </div>
+            
+            
+            
+            
+            
             
             <hr>
             <a href="https://www.grandvincent-marion.fr/" target="_blank"><h4>비밀번호를 잊으셨나요?</h4></a>
@@ -80,6 +109,9 @@
               <label>비밀번호</label>
               <input placeholder="" type="text" id = "member_pw1" name = "member_pw1">
               
+              <label>닉네임</label>
+              <input placeholder="" type="text" id = "nickname" name = "member_nickname">
+              
               <div class="check">
                 <label>				
                   <input id="check" type="checkbox" class="checkbox">
@@ -91,7 +123,7 @@
                 <h3>동의하기</h3>
               </div>
               
-              <input class="submit" value="회원가입" type="submit" id = "btn_join">	
+              <input class="submit" value="회원가입" type="submit" id = "btn_join" onclick = "return joinCheck()">	
                 
             </div>
           </div>
