@@ -9,6 +9,8 @@
 <title>Document</title>
 <link rel="stylesheet" href="resources/css/main.css">
 <link rel="stylesheet" href="resources/css/menu.css">
+<link rel="stylesheet" href="resources/css/menu_bar.css">
+
 <link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.css">
 <link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -39,8 +41,30 @@
 
 	<!-- login -->
 <body>
-  <div class="content">
+ <div class="content">
 		<div class="container">
+			<div id="menu">
+				<div id="menu-bar" onclick="menuOnClick()">
+					<div id="bar1" class="bar"></div>
+					<div id="bar2" class="bar"></div>
+					<div id="bar3" class="bar"></div>
+				</div>
+				<nav class="nav" id="nav">
+					<ul>
+						<li><a href="#"><strong>곰돌 님</strong></a></li>
+						<li><a href="#">번역기</a></li>
+						<li><a href="#">교육</a></li>
+						<li><a href="#">단어</a></li>
+						<li><a href="#">리스트</a></li>
+					</ul>
+				</nav> 
+			</div>
+			
+			<div class="menu-bg" id="menu-bg"></div>
+					
+	
+				
+
 			<div class="col-md-6 grid-margin stretch-card">
 				<div class="col-md-6 grid-margin stretch-card">
 					<div class="card">
@@ -49,33 +73,23 @@
 								style="color: black; font-family: 'Gowun Dodum', sans-serif;">상대방
 								말이 표시됩니다.</p>
 						</div>
-						<div class="category-b" style="margin-top: 8%;">
-			
-							<div class="category2">
-								<div class="study">        
-									<div class="study_icon" style="margin-left: -27px; "> 
-										<button class="button2" id="button_2"
-											onclick="button2_click()">           
-                      <strong>학습하기</strong>
-										</button>
-									</div>
-								</div>
-							</div>
 
 							<div class="card-b1">
 								<span>
 								<input class="talk-input" id="code_html"
 									type="text" value="삼겹살" /> 
-									<input class = "talk-input-bnt"type="button"
-								value="말하기" style="color: rgb(92, 84, 197);"/></span>
-					
-							</span>
+									<input class = "talk-input-bnt" type="image" src="resources/img/speaker.png"
+								onclick="" />
+								</span>	
+				
+						
+						
+						
 
-
-								
-							</div>
+				
 
 						</div>
+					</div>
 					</div>
 
 					<div class="frame">
@@ -104,24 +118,10 @@
 			</div>
 		</div>
 </body>
-<script>
-	function button1_click() {//main.do로 넘겨주기
-		console.log("버튼1을 눌렀습니다.");
-		location.href = 'main.do';
-	}
-</script>
-<script>
-	function button2_click() {//train.do로 넘겨주기
-		console.log("버튼2을 눌렀습니다.");
-		location.href = 'train.do';
-	}
-</script>
-<script>
-	function button3_click() {
-		console.log("버튼3을 눌렀습니다.");
-	}
-</script><script src="resources/js/jquery-3.6.0.min.js"></script>
+
+<script src="resources/js/jquery-3.6.0.min.js"></script>
 <script src="resources/js/main.js"></script>
+<script src="resources/js/menu_bar.js"></script>
 <script src="resources/js/record.js"></script>
 <script src="resources/js/stt.js"></script>
 <script src="resources/js/tts.js"></script>
