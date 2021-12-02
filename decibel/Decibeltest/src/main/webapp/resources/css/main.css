@@ -1,9 +1,7 @@
-
 body {
     font-family: 'Open Sans',sans-serif;
     font-weight: 500;
-    color:#fff;
-    
+  	color:#fff;
     
   }
   .info p {
@@ -75,7 +73,7 @@ body {
     width: 360px;
     height: 640px;
     margin: auto;
-    margin-top: 180px; 
+    margin-top: 50px; 
     box-shadow: 1px 5px 10px 1px #333;
     overflow:hidden;
     border-radius: 5%;

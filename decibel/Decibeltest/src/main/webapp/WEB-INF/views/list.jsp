@@ -1,71 +1,98 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+   pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- CSS Files -->
-<link rel="stylesheet" href="resources/css/list.css">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/list_main.css"> 
-<link rel="stylesheet" 
-	href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+<title>Document</title>
+<link rel="stylesheet" href="./resources/css/main.css">
+<link rel="stylesheet" href="./resources/css/menu.css">
+<link rel="stylesheet" href="./resources/css/list.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.css">
+<link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+<!-- <script src="js/stt.js"></script> -->
 
 
-<title>Insert title here</title>
 </head>
+<style>
+rect#progress {
+   transition: all 10s linear;
+}
+</style>
+
 <body>
-<audio id="music">
-    Your browser does not support HTML5 Audio!
-</audio>
-    <div class="content">
-      <div class="container">
-              <div class="list">
-              <ul id="music-list">
-                <div class="listname"><i class="fas fa-angle-left"></i>   녹음리스트<br/><br/></div>
-                <li>     
-                  <div class="wrapper">
-                    <div></div>
-                    <div>title</div>
-                    <div>talk</div> 
-                    <div>time</div>
-                  </div>
-                </li>
-              <hr>
-              </ul>
-  
-              <div class="controll-panel">
-                <div class="center">
-                  <span class="prev-btn controll-btn">
-                    <i class="fas fa-step-backward"></i>
-                  </span>	
-                </div>
-                <div class="center">
-                  <span class="play-btn controll-btn">
-                    <i class="far fa-play-circle"></i>
-                  </span>
-                  <span class="pause-btn controll-btn hidden">
-                    <i class="far fa-pause-circle"></i>
-                  </span>
-                </div>
-                <div class="center">
-                  <span class="next-btn controll-btn">
-                    <i class="fas fa-step-forward"></i>
-                  </span>
-                </div>
+
+   <%
+      String data = request.getParameter("result");
+   %>
+
+   <!-- login -->
+<class= "content">
+      <div class="container">     
+         <div class="col-md-6 grid-margin stretch-card" overflow: auto>
+           <div><h5>여기에 로고 화면으로 가기 메뉴!</h5></div>
+            <div class="button">
+            <a>잘했어요</a>
+            </div>
+              <div class="button">
+            <a>고마워요</a>
+            </div>
+              <div class="button">
+            <a>사랑해요</a>
+            </div>
+               <div class="button">
+            <a>보고싶어요</a>
+            </div>
+               <div class="button">
+            <a>고생했어요</a>
               </div>
-              <div class="progress-panel">
-                <div id="start-time">00:00</div>
-                <progress id="progress-bar" value="0" max="100"></progress>
-                <div id="end-time">00:00</div>
+               <div class="button">
+            <a>시현이는</a>
               </div>
-        </div>         
-    </div>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="resources/js/list.js"></script>
+               <div class="button">
+            <a>동휘라는</a>
+              </div>
+               <div class="button">
+            <a>남자가 있어요</a>
+              </div>
+               <div class="button">
+            <a>같이 잠도자고</a>
+              </div>
+               <div class="button">
+            <a>밥도 먹고 </a>
+              </div>
+               <div class="button">
+            <a>동해물과백</a>
+              </div>
+               <div class="button">
+            <a>고생했어요</a>
+              </div>
+         
+         
+   
+         <div class="frame">
+            
+         </div>
+      </div>
+</div>
+</div>
+
 
 </body>
+<script src="./resources/js/jquery-3.6.0.min.js"></script>
+<script src="./resources/js/main.js"></script>
+<script src="./resources/js/record_train.js"></script>
+
+<!-- <script src="./resources/js/stt.js"></script> -->
+
+
+
 
 </html>
