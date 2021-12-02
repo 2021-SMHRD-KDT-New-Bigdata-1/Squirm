@@ -28,10 +28,6 @@ rect#progress {
 
 <body>
 
-   <%
-      String data = request.getParameter("result");
-   %>
-
    <!-- login -->
 <class= "content">
       <div class="container">
@@ -125,7 +121,7 @@ rect#progress {
          
             <div id="train_text_div"
             style="color:black; font-family: 'Gowun Dodum', sans-serif;">
-            <span style="color:black; font-family: 'Gowun Dodum', sans-serif;">무야호<%=data %></span>
+            <span style="color:black; font-family: 'Gowun Dodum', sans-serif;">지금부터 화면에 나오는<br> 글자를 읽어주세요</span>
          </div>
          </div>
          </form>
@@ -135,7 +131,7 @@ rect#progress {
          
             <div id="list_number"
             style="color:black; font-family: 'Gowun Dodum', sans-serif;" >
-            <span style="color:black; font-family: 'Gowun Dodum', sans-serif; text-align=center font-size: larger; font-weight: bold;">하이<%=data %></span>
+            <span style="color:black; font-family: 'Gowun Dodum', sans-serif; text-align=center font-size: larger; font-weight: bold;">0/15</span>
          </div>
          </div>
          </form>
