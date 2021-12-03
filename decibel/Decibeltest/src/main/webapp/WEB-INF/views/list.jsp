@@ -117,19 +117,19 @@ rect#progress {
 
 
 					<button class="button" onclick="cssChange()">
-						<a>그때 참 좋았는데말야</a>
+						<a>돼지고기</a>
 					</button>
 					<button class="button"">
-						<a id="change">때론 외롭고 슬퍼도 말야</a>
+						<a id="change">채소</a>
 					</button>
 					<button class="button" onclick="cssChange1()">
-						<a id="change1">싱잉 나나나</a>
+						<a id="change1">도와주세요</a>
 					</button>
 					<button class="button">
-						<a id="change">내일은 비가 온데요</a>
+						<a id="change">날씨가 좋네요</a>
 					</button>
 					<button class="button" onclick="cssChange2()">
-						<a id="change2">유자향이 참 좋아요</a>
+						<a id="change2">배고파요</a>
 					</button>
 					<button class="button">
 						<a id="change">치타인가 새인가</a>
@@ -138,7 +138,7 @@ rect#progress {
 						<a id="change">널위해 서라면</a>
 					</button>
 					<button class="button" onclick="cssChange3()">
-						<a id="change3">잊어버렸어</a>
+						<a id="change3">잘 지냈어요?</a>
 					</button>
 					<button class="button">
 						<a id="change">나도내가 누구였는지</a>
@@ -167,36 +167,7 @@ rect#progress {
 					<button class="button">
 						<a id="change">눈꽃이 떨어져요</a>
 					</button>
-					<button class="button">
-						<a id="change">또 조금씩 멀어져요</a>
-					</button>
-					<button class="button">
-						<a id="change">보고싶다</a>
-					</button>
-					<button class="button">
-						<a id="change">얼마나 기다려야</a>
-					</button>
-					<button class="button">
-						<a id="change">또 몇밤을 또새워야</a>
-					</button>
-					<button class="button">
-						<a id="change">만나게될까</a>
-					</button>
-					<button class="button">
-						<a id="change">그곳에 좀 더 머물러줘</a>
-					</button>
-					<button class="button">
-						<a id="change">니가 변한건지</a>
-					</button>
-					<button class="button">
-						<a id="change">아니면 내가 변한건지</a>
-					</button>
-					<button class="button">
-						<a id="change">보고 싶은데</a>
-					</button>
-					<button class="button">
-						<a id="change">연기처럼 하얀 연기처럼</a>
-					</button>
+			
 
 				</div>
 				<script>
