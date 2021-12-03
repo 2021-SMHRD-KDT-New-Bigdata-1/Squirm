@@ -1,7 +1,5 @@
 const checkbox = document.getElementById("cb-1");
 
-const soundClips = document.getElementById("sound-clips");
-
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)(); // 오디오 컨텍스트 정의
 
 const analyser = audioCtx.createAnalyser();
@@ -65,14 +63,10 @@ if (navigator.mediaDevices) {
       mediaRecorder.onstop = (e) => {
         console.log("data available after MediaRecorder.stop() called.");
         ///////나중에 전송 성공하면 지워도 되는부분들 확인할것
-        const clipContainer = document.createElement("article");
-        const audio = document.createElement("audio");
-        clipContainer.classList.add("clip");
-        audio.setAttribute("controls", "auto");
-        clipContainer.appendChild(audio);
-        soundClips.appendChild(clipContainer);
 
-        console.log(soundClips);
+        const audio = document.createElement("audio");
+
+        audio.setAttribute("controls", "auto");
 
         const blob = new Blob(chunks, {
           type: "audio/wav codecs=opus",
@@ -103,12 +97,9 @@ if (navigator.mediaDevices) {
         });
       };
 
-      
-
-
-      mediaRecorder.ondataavailable = e => {
+      mediaRecorder.ondataavailable = (e) => {
         chunks.push(e.data);
-      }
+      };
     })
     .catch((err) => {
       console.log("The following error occurred: " + err);
