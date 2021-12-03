@@ -53,11 +53,11 @@ rect#progress {
 				<div class="tabBox">
 					<p class="tab-link current" data-tab="tab-1">
 						<span><img src="http://mmctxt.com/link/img/icon01.png"
-							alt="icon" /></span> 학습한거
+							alt="icon" /></span> 학습완료
 					</p>
 					<p class="tab-link" data-tab="tab-2">
 						<span><img src="http://mmctxt.com/link/img/icon02.png"
-							alt="icon" /></span> 학습해야할거
+							alt="icon" /></span> 추가학습
 					</p>
 				</div>
 				<div id="tab-1" class="tab-content current">
@@ -132,40 +132,40 @@ rect#progress {
 						<a id="change2">배고파요</a>
 					</button>
 					<button class="button">
-						<a id="change">치타인가 새인가</a>
+						<a id="change">뜨거워요</a>
 					</button>
 					<button class="button">
-						<a id="change">널위해 서라면</a>
+						<a id="change">졸려요</a>
 					</button>
 					<button class="button" onclick="cssChange3()">
 						<a id="change3">잘 지냈어요?</a>
 					</button>
 					<button class="button">
-						<a id="change">나도내가 누구였는지</a>
+						<a id="change">사람</a>
 					</button>
 					<button class="button" onclick="cssChange4()">
-						<a id="change4">아파도 강한척 할수가</a>
+						<a id="change4">잠깐만요</a>
 					</button>
 					<button class="button" onclick="cssChange5()">
-						<a id="change5">이뤄지지 않는 꿈</a>
+						<a id="change5">기다려주세요</a>
 					</button>
 					<button class="button">
-						<a id="change">널위해 예쁜 거짓을</a>
+						<a id="change">거짓말</a>
 					</button>
 					<button class="button">
-						<a id="change">페이크 러브</a>
+						<a id="change">설레요</a>
 					</button>
 					<button class="button">
-						<a id="change">홀로남은 설국열차</a>
+						<a id="change">자장면</a>
 					</button>
 					<button class="button">
-						<a id="change">그 봄날이 올까</a>
+						<a id="change">날씨</a>
 					</button>
 					<button class="button">
-						<a id="change">조금더 빨리</a>
+						<a id="change">어려워요</a>
 					</button>
 					<button class="button">
-						<a id="change">눈꽃이 떨어져요</a>
+						<a id="change">부끄러워요</a>
 					</button>
 			
 
