@@ -167,6 +167,15 @@ rect#progress {
 					<button class="button">
 						<a id="change">부끄러워요</a>
 					</button>
+					<button class="button">
+						<a id="change">목말라요</a>
+					</button>
+					<button class="button">
+						<a id="change">운동</a>
+					</button>
+					<button class="button">
+						<a id="change">괜찮아요</a>
+					</button>
 			
 
 				</div>
@@ -254,7 +263,8 @@ rect#progress {
 
 				<div class="frame">
 
-					<p id="gotrain">학습시키기</p>
+					<p href=""
+					 id="gotrain">학습시키기</p>
 				</div>
 			</div>
 		</div>
