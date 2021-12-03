@@ -24,7 +24,6 @@
 	crossorigin="anonymous">
 
 
-<!-- <script src="js/stt.js"></script> -->
 
 
 </head>
@@ -127,4 +126,6 @@
 <script src="resources/js/record.js"></script>
 <script src="resources/js/stt.js"></script>
 <script src="resources/js/tts.js"></script>
+
+
 </html>
