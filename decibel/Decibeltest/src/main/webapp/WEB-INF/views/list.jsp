@@ -61,151 +61,169 @@ rect#progress {
       </div>
       <div id="tab-1" class="tab-content current">
       
-      <div class="button">
+      <button class="button" onclick="cssChange()">
                         <a>안녕하세요</a>
-                        </div>
-                          <div class="button">
+                        </button>
+                          <button class="button" onclick="cssChange()">
                         <a>사랑해요</a>
-                        </div>
-                        <div class="button">
+                        </button>
+                        <button class="button" onclick="cssChange()">
                         <a>너무 보고싶어요 </a>
-                        </div>
+                        </button>
                       
-                        <div class="button">
+                        <button class="button" onclick="cssChange()">
                         <a>그동안 고생했어요 </a>
-                        </div>
+                        </button>
                        
-                        <div class="button">
+                        <button class="button" onclick="cssChange()">
                         <a>다음에 꼭 봐요 </a>
-                        </div>
+                        </button>
                       
-                        <div class="button">
+                        <button class="button" onclick="cssChange()">
                         <a>엄마 아빠 사랑해요</a>
-                        </div>
+                        </button>
                       
-                        <div class="button">
+                        <button class="button" onclick="cssChange()">
                         <a>정말 고마워</a>
-                        </div>
-                        <div class="button">
+                        </button>
+                        <button class="button" onclick="cssChange()">
                         <a>다시 만나요</a>
-                        </div>
-                        <div class="button">
+                        </button>
+                        <button class="button" onclick="cssChange()">
                         <a>축하 해요</a>
-                        </div>
-                        <div class="button">
+                        </button>
+                        <button class="button" onclick="cssChange()">
                         <a>응원 할게요</a>
-                        </div>
-                        <div class="button">
+                        </button>
+                        <button class="button" onclick="cssChange()">
                         <a>메리 크리스마스</a>
-                        </div>
-                        <div class="button">
+                        </button>
+                        <button class="button" onclick="cssChange()">
                         <a>새해복 많이</a>
-                        </div>
-                        <div class="button">
+                        </button>
+                        <button class="button" onclick="cssChange()">
                         <a>행복해요</a>
-                        </div>
-                        <div class="button">
+                        </button>
+                        <button class="button" onclick="cssChange()">
                         <a>미안해요</a>
-                        </div>
-                        <div class="button">
+                        </button>
+                        <button class="button" onclick="cssChange()">
                         <a>고생했어</a>
-                        </div>
+                        </button>
                         </div>
                         
       <div id="tab-2" class="tab-content">
-      <script>
-      function colorChange() {
-    	  var color = ["#FC5C7D", "#6A82FB", "#38ef7d", "#fffbd5", "#b20a2c", "#CAC531"];
-
-    	  var num = Math.floor(Math.random() * color.length);
-    	  var bodyTag = document.getElementById("button");
-    	  bodyTag.style.backgroundColor = color[num];
-    	}
-      </script>
+   
       
-      <button class="button">
+      <button class="button" onclick="cssChange()">
                         <a>그때 참 좋았는데말야</a>
                         </button>
-                           <button class="button"onclick="colorChange()"  >
-                        <a>때론 외롭고 슬퍼도 말야</a>
+                           <button class="button" ">
+                        <a id="change">때론 외롭고 슬퍼도 말야</a>
                         </button>
-                        <button class="button"onclick="colorChange()">
-                        <a>싱잉 나나나</a>
+                        <button class="button" onclick="cssChange1()">
+                        <a id="change1">싱잉 나나나</a>
                         </button>
-                        <button class="button">
-                        <a>내일은 비가 온데요</a>
+                        <button class="button" >
+                        <a id="change">내일은 비가 온데요</a>
                         </button>
-                        <button class="button">
-                        <a>유자향이 참 좋아요</a>
+                        <button class="button" onclick="cssChange2()">
+                        <a id="change2">유자향이 참 좋아요</a>
                         </button>
-                        <button class="button">
-                        <a>치타인가 새인가</a>
+                        <button class="button" >
+                        <a id="change">치타인가 새인가</a>
                         </button>
-                        <button class="button">
-                        <a>널위해 서라면</a>
+                        <button class="button" >
+                        <a id="change">널위해 서라면</a>
                         </button>
-                        <button class="button">
-                        <a>잊어버렸어</a>
+                        <button class="button" onclick="cssChange3()">
+                        <a id="change3">잊어버렸어</a>
                         </button>
-                        <button class="button">
-                        <a>나도내가 누구였는지</a>
+                        <button class="button" >
+                        <a id="change">나도내가 누구였는지</a>
                         </button>
-                        <button class="button">
-                        <a>아파도 강한척 할수가</a>
+                        <button class="button" onclick="cssChange4()">
+                        <a id="change4">아파도 강한척 할수가</a>
                         </button>
-                        <button class="button">
-                        <a>이뤄지지 않는 꿈</a>
+                        <button class="button" onclick="cssChange5()">
+                        <a id="change5">이뤄지지 않는 꿈</a>
                         </button>
-                        <button class="button">
-                        <a>널위해 예쁜 거짓을</a>
+                        <button class="button" >
+                        <a id="change">널위해 예쁜 거짓을</a>
                         </button>
-                        <button class="button">
-                        <a>페이크 러브</a>
+                        <button class="button" >
+                        <a id="change">페이크 러브</a>
                         </button>
-                         <button class="button">
-                        <a>홀로남은 설국열차</a>
+                         <button class="button" >
+                        <a id="change">홀로남은 설국열차</a>
                         </button>
-                         <button class="button">
-                        <a>그 봄날이 올까</a>
+                         <button class="button" >
+                        <a id="change">그 봄날이 올까</a>
                         </button>
-                         <button class="button">
-                        <a>조금더 빨리</a>
-                        </button>
-                         <button class="button">
-                        <a>눈꽃이 떨어져요</a>
+                         <button class="button" >
+                        <a id="change">조금더 빨리</a>
                         </button>
                          <button class="button">
-                        <a>또 조금씩 멀어져요</a>
+                        <a id="change">눈꽃이 떨어져요</a>
+                        </button>
+                         <button class="button" >
+                        <a id="change">또 조금씩 멀어져요</a>
+                        </button>
+                         <button class="button" >
+                        <a id="change">보고싶다</a>
+                        </button>
+                         <button class="button" >
+                        <a id="change">얼마나 기다려야</a>
+                        </button>
+                         <button class="button" >
+                        <a id="change">또 몇밤을 또새워야</a>
+                        </button>
+                         <button class="button" >
+                        <a id="change">만나게될까</a>
+                        </button>
+                         <button class="button" >
+                        <a id="change">그곳에 좀 더 머물러줘</a>
+                        </button>
+                         <button class="button" >
+                        <a id="change">니가 변한건지</a>
+                        </button>
+                         <button class="button" >
+                        <a id="change">아니면 내가 변한건지</a>
+                        </button>
+                         <button class="button" >
+                        <a id="change">보고 싶은데</a>
                         </button>
                          <button class="button">
-                        <a>보고싶다</a>
+                        <a id="change">연기처럼 하얀 연기처럼</a>
                         </button>
-                         <button class="button">
-                        <a>얼마나 기다려야</a>
-                        </button>
-                         <button class="button">
-                        <a>또 몇밤을 또새워야</a>
-                        </button>
-                         <button class="button">
-                        <a>만나게될까</a>
-                        </button>
-                         <button class="button">
-                        <a>그곳에 좀 더 머물러줘</a>
-                        </button>
-                         <button class="button">
-                        <a>니가 변한건지</a>
-                        </button>
-                         <button class="button">
-                        <a>아니면 내가 변한건지</a>
-                        </button>
-                         <button class="button">
-                        <a>보고 싶은데</a>
-                        </button>
-                         <button class="button">
-                        <a>연기처럼 하얀 연기처럼</a>
-                        </button>
-                   </button>
+    
     </div>
+    <script>
+function cssChange1() {
+    var x = document.getElementById("change1");          
+    x.style.color = "blue"; 
+}
+function cssChange2() {
+    var x = document.getElementById("change2");          
+    x.style.color = "blue"; 
+}
+function cssChange3() {
+    var x = document.getElementById("change3");          
+    x.style.color = "blue"; 
+}
+function cssChange4() {
+    var x = document.getElementById("change4");          
+    x.style.color = "blue"; 
+}
+function cssChange5() {
+    var x = document.getElementById("change5");          
+    x.style.color = "blue"; 
+}
+function cssChange6() {
+    var x = document.getElementById("change");          
+    x.style.color = "blue"; 
+}
+</script>
     <script>
       $(".tab-link").click(function () {
         var tab_id = $(this).attr("data-tab");
@@ -248,7 +266,7 @@ rect#progress {
   display: block;
   width: 100%;
   height: 100%;
-  overflow:scroll;
+ 
   font-size: 10px;
   text-align: center;
   
