@@ -144,10 +144,10 @@ rect#progress {
 						<a id="change">나도내가 누구였는지</a>
 					</button>
 					<button class="button" onclick="cssChange4()">
-						<a id="change4">아파도 강한척 할수가</a>
+						<a id="change4">먼저 갈게요</a>
 					</button>
 					<button class="button" onclick="cssChange5()">
-						<a id="change5">이뤄지지 않는 꿈</a>
+						<a id="change5">힘들어요</a>
 					</button>
 					<button class="button">
 						<a id="change">널위해 예쁜 거짓을</a>
@@ -217,7 +217,7 @@ rect#progress {
 }
 
 .tabBox {
-	margin: 20px 0;
+	margin: 33px 10px;
 }
 
 .tab-link {
