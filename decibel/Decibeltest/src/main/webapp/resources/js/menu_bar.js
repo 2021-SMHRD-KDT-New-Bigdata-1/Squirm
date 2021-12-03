@@ -1,5 +1,6 @@
-function menuOnClick() {
-  document.getElementById("menu-bar").classList.toggle("change");
-  document.getElementById("nav").classList.toggle("change");
-  document.getElementById("menu-bg").classList.toggle("change-bg");
-}
+const menuBar = document.querySelector('.menu-bar');
+const navBar = document.querySelector('.nav-bar');
+
+menuBar.addEventListener('click', () => {
+navBar.classList.toggle('toggle');
+});

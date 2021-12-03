@@ -60,7 +60,17 @@ var number_list = new Array(
       number_list[b] +
       "<div>";
     b++; // 바뀌게 하는코드
+    if(b==10){
+    movemain();
+    }
   }
+  
+  
+ function movemain() {
+  alert("학습이 완료되었습니다");
+  location.href = "main.do";
+}
+  
 
 
 function makeSound(stream) {

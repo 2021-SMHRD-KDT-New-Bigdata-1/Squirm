@@ -36,24 +36,25 @@ rect#progress {
    <!-- login -->
 <class= "content">
       <div class="container">
-               <div id="menu">
-            <div id="menu-bar" onclick="menuOnClick()">
-               <div id="bar1" class="bar"></div>
-               <div id="bar2" class="bar"></div>
-               <div id="bar3" class="bar"></div>
-            </div>
-            <nav class="nav" id="nav">
-               <ul>
-                  <li><a href="#"><strong>곰돌 님</strong></a></li>
-                  <li><a href="#">번역기</a></li>
-                  <li><a href="#">교육</a></li>
-                  <li><a href="#">단어</a></li>
-                  <li><a href="#">리스트</a></li>
-               </ul>
-            </nav> 
-         </div>
-         
-         <div class="menu-bg" id="menu-bg"></div>
+              			<nav class="nav-bar">
+        <div class="menu-bar">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="nav-items">
+					<div class="nav-menu" style="display: flex; flex-direction: column; margin-top: -100px;">
+          <div style="margin-bottom: 30px; margin-left: 20px;">
+						<c:if test = "${vo!=null}"></c:if>
+						<a href="#" id="nick_title" class="nav-links"><strong>${vo.member_name} 님</strong></a>
+					</div>
+					<a href="main.do" class="nav-links">번역기</a>
+          <a href="train.do" class="nav-links">교육</a>
+          <a href="list.do" class="nav-links">단어</a>
+          <a href="logout.do" class="nav-links">로그아웃</a>
+				</div>
+        </div>
+      </nav>
                
       <!--  <c:if test = "${vo!=null}"> 
                <label>${vo.member_email}님 방문을 환영합니다.</label>-->

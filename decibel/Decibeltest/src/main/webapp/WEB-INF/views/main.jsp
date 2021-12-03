@@ -42,26 +42,25 @@
 <body>
  <div class="content">
 		<div class="container">
-			<div id="menu">
-				<div id="menu-bar" onclick="menuOnClick()">
-					<div id="bar1" class="bar"></div>
-					<div id="bar2" class="bar"></div>
-					<div id="bar3" class="bar"></div>
+						<nav class="nav-bar">
+        <div class="menu-bar">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="nav-items">
+					<div class="nav-menu" style="display: flex; flex-direction: column; margin-top: -100px;">
+          <div style="margin-bottom: 30px; margin-left: 20px;">
+						<c:if test = "${vo!=null}"></c:if>
+						<a href="#" id="nick_title" class="nav-links"><strong>${vo.member_name} 님</strong></a>
+					</div>
+					<a href="main.do" class="nav-links">번역기</a>
+          <a href="train.do" class="nav-links">교육</a>
+          <a href="list.do" class="nav-links">단어</a>
+          <a href="logout.do" class="nav-links">로그아웃</a>
 				</div>
-				<nav class="nav" id="nav">
-					<ul>
-						 <c:if test = "${vo!=null}"> 
-						<li><a href="#"><strong>${vo.member_name} 님</strong></a></li>
-						<li><a href="main.do">번역기</a></li>
-						<li><a href="train.do">교육</a></li>
-						<li><a href="list.do">단어</a></li>
-						<li><a href="logout.do">로그아웃</a></li>
-						</c:if>
-					</ul>
-				</nav> 
-			</div>
-			
-			<div class="menu-bg" id="menu-bg"></div>
+        </div>
+      </nav>
 					
 	
 				
