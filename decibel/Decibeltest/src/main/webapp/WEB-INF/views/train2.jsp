@@ -83,19 +83,10 @@ rect#progress {
 
                <path d="M10 10L90 10M90 8M90 12" id="#one" class="mainline1" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="6 80" style = "display:none"></path>
             <!-- 클릭 두번할 때 마다 바 길이 조정 -->   
-               
-               
-               
-               
-                <path d="M10 10L90 10M90 8M90 12" id="#two" class="mainline2" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="11 80" style = "display:none"></path>
-               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="17 80" style = "display:none"></path>
-               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="29 80" style = "display:none"></path>
-               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="33 80" style = "display:none"></path>
-               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="42 80" style = "display:none"></path>
-               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="47 80" style = "display:none"></path>
-               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="57 80" style = "display:none"></path>
-               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="74 80" style = "display:none"></path>
-               
+                <path d="M10 10L90 10M90 8M90 12" id="#two" class="mainline2" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="32 80" style = "display:none"></path>
+               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="48 80" style = "display:none"></path>
+               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="64 80" style = "display:none"></path>
+               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="80 80" style = "display:none"></path>               
                
                
                <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="80 80" style = "display:none"></path>
