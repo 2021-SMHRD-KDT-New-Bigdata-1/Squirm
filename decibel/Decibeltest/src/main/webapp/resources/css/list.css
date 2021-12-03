@@ -3,6 +3,12 @@ body {
   font-weight: 500;
   color: #fff;
 }
+#gotrain {
+    position: relative;
+    left: 157px;
+    top: 4px;
+}
+
 .info p {
   text-align: center;
   color: #999;
@@ -584,7 +590,7 @@ input[type="button"]:visited,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.button:visited {
+.button:hover {
 	  border-color: #7959db;
   color: #7959db ;
 	
