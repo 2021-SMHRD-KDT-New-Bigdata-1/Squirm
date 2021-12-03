@@ -1,4 +1,3 @@
-
 const checkbox = document.getElementById("cb-1");
 
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)(); // 오디오 컨텍스트 정의
@@ -9,12 +8,10 @@ const gainNode = audioCtx.createGain();
 const biquadFilter = audioCtx.createBiquadFilter();
 let b = 0;
 
-function click_s(){
-var h = $('path[d="M10 10L90 10M90 8M90 12"]:hidden');
-	h[0].style.display = "block";
-
-};
-
+function click_s() {
+  var h = $('path[d="M10 10L90 10M90 8M90 12"]:hidden');
+  h[0].style.display = "block";
+}
 
 var traintext = new Array(
   "안녕하세요",
@@ -81,31 +78,38 @@ var number_list = new Array(
   "15/15",
   "15/15"
 );
-  function setInnerHTML() {
-    const element = document.getElementById("train_text_div");
-    element.innerHTML =
-      "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
-      traintext[b] +
-      "<div>";
-    b++; // 바뀌게 하는코드
-  }
+function setInnerHTML() {
+  const element = document.getElementById("train_text_div");
+  element.innerHTML =
+    "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
+    traintext[b] +
+    "<div>";
+  b++; // 바뀌게 하는코드
+}
 
- function setInnerNUMBER() {
-    const element1 = document.getElementById("list_number");
-    element1.innerHTML =
-      "<div style= color: black; font-family: 'Gowun Dodum', sans-serif font-size: larger; font-weight: bold;>" +
-      number_list[b] +
-      "<div>";
-    b++; // 바뀌게 하는코드
-  }
+function setInnerNUMBER() {
+  const element1 = document.getElementById("list_number");
+  element1.innerHTML =
+    "<div style= color: black; font-family: 'Gowun Dodum', sans-serif font-size: larger; font-weight: bold;>" +
+    number_list[b] +
+    "<div>";
+  b++; // 바뀌게 하는코드
 
+  if (b == 30) {
+    movemain();
+  }
+}
+function movemain() {
+  alert("학습이 완료되었습니다");
+  location.href = "main.do";
+}
 
 function makeSound(stream) {
-  const source = audioCtx.createMediaStreamSource(stream);  
+  const source = audioCtx.createMediaStreamSource(stream);
 
-  source.connect(analyser); 
+  source.connect(analyser);
   analyser.connect(distortion);
-  distortion.connect(biquadFilter); 
+  distortion.connect(biquadFilter);
   biquadFilter.connect(gainNode);
   gainNode.connect(audioCtx.destination); // connecting the different audio graph nodes together
   analyser.connect(audioCtx.destination);
@@ -135,11 +139,9 @@ if (navigator.mediaDevices) {
           console.log(mediaRecorder.state);
           console.log("recorder stopped");
           setInnerHTML();
-		  click_s();  
-		  setInnerNUMBER(); 
-		 
-}
-		
+          click_s();
+          setInnerNUMBER();
+        }
       });
 
       // record.onclick = () => {  //버튼 사용시 이용하던 코드
