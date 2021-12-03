@@ -52,14 +52,12 @@ rect#progress {
 			<div class="allWrap">
 				<div class="tabBox">
 					<p class="tab-link current" data-tab="tab-1">
-						<span><img
-							src="http://mmctxt.com/link/img/icon01.png" alt="icon" /></span>
-						학습한거
+						<span><img src="http://mmctxt.com/link/img/icon01.png"
+							alt="icon" /></span> 학습한거
 					</p>
 					<p class="tab-link" data-tab="tab-2">
-						<span><img
-							src="http://mmctxt.com/link/img/icon02.png" alt="icon" /></span>
-						학습해야할거
+						<span><img src="http://mmctxt.com/link/img/icon02.png"
+							alt="icon" /></span> 학습해야할거
 					</p>
 				</div>
 				<div id="tab-1" class="tab-content current">
@@ -284,11 +282,21 @@ rect#progress {
 
 
 				<div class="frame">
+
 					<p id="gotrain">학습시키기</p>
 				</div>
 			</div>
 		</div>
 </body>
+<script type="text/javascript"> 
+var header = document.getElementById('gotrain');
+header.onclick = function() { 
+
+	location.href='train2.do'
+}
+</script>
+
+
 <script src="./resources/js/jquery-3.6.0.min.js"></script>
 <script src="./resources/js/main.js"></script>
 <script src="./resources/js/record_train.js"></script>
