@@ -29,9 +29,32 @@ rect#progress {
 
 <body>
 
+   <%
+      String data = request.getParameter("result");
+   %>
+
    <!-- login -->
 <class= "content">
       <div class="container">
+               <div id="menu">
+            <div id="menu-bar" onclick="menuOnClick()">
+               <div id="bar1" class="bar"></div>
+               <div id="bar2" class="bar"></div>
+               <div id="bar3" class="bar"></div>
+            </div>
+            <nav class="nav" id="nav">
+               <ul>
+                  <li><a href="#"><strong>곰돌 님</strong></a></li>
+                  <li><a href="#">번역기</a></li>
+                  <li><a href="#">교육</a></li>
+                  <li><a href="#">단어</a></li>
+                  <li><a href="#">리스트</a></li>
+               </ul>
+            </nav> 
+         </div>
+         
+         <div class="menu-bg" id="menu-bg"></div>
+               
       <!--  <c:if test = "${vo!=null}"> 
                <label>${vo.member_email}님 방문을 환영합니다.</label>-->
                <!--  <button type="submit" class="btn btn-default" onclick="logout.do">로그아웃</button>-->
@@ -122,7 +145,7 @@ rect#progress {
          
             <div id="train_text_div"
             style="color:black; font-family: 'Gowun Dodum', sans-serif;">
-            <span style="color:black; font-family: 'Gowun Dodum', sans-serif;">지금부터 화면에 나오는<br> 글자를 읽어주세요</span>
+            <span style="color:black; font-family: 'Gowun Dodum', sans-serif;">무야호<%=data %></span>
          </div>
          </div>
          </form>
@@ -132,24 +155,19 @@ rect#progress {
          
             <div id="list_number"
             style="color:black; font-family: 'Gowun Dodum', sans-serif;" >
-            <span style="color:black; font-family: 'Gowun Dodum', sans-serif; text-align=center font-size: larger; font-weight: bold;">0/15</span>
+            <span style="color:black; font-family: 'Gowun Dodum', sans-serif; text-align=center font-size: larger; font-weight: bold;">하이<%=data %></span>
          </div>
          </div>
          </form>
-         
- 
-             <div class="category-body" style="margin-top: -30%;" >
-			<div class="category1">
 
-				 </div>
-			</div>
-	 
-			<div class = "card-body2" style="  text-align: center;	margin-top: 110%;">
-				 <div>
-			<span style="color: black; font-family: 'Gowun Dodum', sans-serif;">5초 안에 읽어주세요</span><br>
-			<span style="color: black; font-family: 'Gowun Dodum', sans-serif;">띄어쓰기를 유의해서 읽어주세요</span>
-	 </div>
-			</div>
+         
+            <div class = "card-body2" style="margin-top: 330px">
+               <div class="card-body3" style="margin-top: 5px; text-align: center;" >
+             
+            <span style="color: black; font-family: 'Gowun Dodum', sans-serif;">5초 안에 읽어주세요</span><br>
+            <span style="color: black; font-family: 'Gowun Dodum', sans-serif;">띄어쓰기를 유의해서 읽어주세요</span>
+         </div>
+            </div>
 
                
 
@@ -184,6 +202,7 @@ rect#progress {
 </body>
 <script src="./resources/js/jquery-3.6.0.min.js"></script>
 <script src="./resources/js/main.js"></script>
+<script src="resources/js/menu_bar.js"></script>
 <script src="./resources/js/record_train.js"></script>
 
 <!-- <script src="./resources/js/stt.js"></script> -->
