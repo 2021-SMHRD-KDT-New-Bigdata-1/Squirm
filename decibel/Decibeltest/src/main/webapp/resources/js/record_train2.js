@@ -1,3 +1,4 @@
+
 const checkbox = document.getElementById("cb-1");
 
 const audioCtx = new (window.AudioContext || window.webkitAudioContext)(); // 오디오 컨텍스트 정의
@@ -6,13 +7,78 @@ const analyser = audioCtx.createAnalyser();
 const distortion = audioCtx.createWaveShaper();
 const gainNode = audioCtx.createGain();
 const biquadFilter = audioCtx.createBiquadFilter();
+let b = 0;
+
+function click_s(){
+var h = $('path[d="M10 10L90 10M90 8M90 12"]:hidden');
+	h[0].style.display = "block";
+
+};
+
+
+var traintext = new Array(
+"도와주세요",
+"도와주세요",
+"배고파요",
+"배고파요",
+"잘 지냈어요?",
+"잘 지냈어요?",
+"먼저 갈게요",
+"먼저 갈게요",
+"힘들어요",
+"힘들어요"
+ 
+
+);
+
+var number_list = new Array(
+  "1/5",
+  "1/5",
+  "2/5",
+  "2/5",
+  "3/5",
+  "3/5",
+  "4/5",
+  "4/5",
+  "5/5",
+  "5/5"
+
+);
+  function setInnerHTML() {
+    const element = document.getElementById("train_text_div");
+    element.innerHTML =
+      "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
+      traintext[b] +
+      "<div>";
+    b++; // 바뀌게 하는코드
+  }
+
+ function setInnerNUMBER() {
+    const element1 = document.getElementById("list_number");
+    element1.innerHTML =
+      "<div style= color: black; font-family: 'Gowun Dodum', sans-serif font-size: larger; font-weight: bold;>" +
+      number_list[b] +
+      "<div>";
+    b++; // 바뀌게 하는코드
+    if(b==12){
+    movemain();
+    }
+  }
+  
+  
+ function movemain() {
+  alert("학습이 완료되었습니다");
+  location.href = "main.do";
+}
+  
+
 
 function makeSound(stream) {
-  const source = audioCtx.createMediaStreamSource(stream);
+  const source = audioCtx.createMediaStreamSource(stream);  
 
-  source.connect(analyser);
+  source.connect(analyser); 
   analyser.connect(distortion);
-  distortion.connect(biquadFilter);
+  distortion.connect(biquadFilter); 
   biquadFilter.connect(gainNode);
   gainNode.connect(audioCtx.destination); // connecting the different audio graph nodes together
   analyser.connect(audioCtx.destination);
@@ -41,7 +107,12 @@ if (navigator.mediaDevices) {
           mediaRecorder.stop(); //녹음종료
           console.log(mediaRecorder.state);
           console.log("recorder stopped");
-        }
+          setInnerHTML();
+		  click_s();  
+		  setInnerNUMBER(); 
+		 
+}
+		
       });
 
       // record.onclick = () => {  //버튼 사용시 이용하던 코드
@@ -63,10 +134,11 @@ if (navigator.mediaDevices) {
       mediaRecorder.onstop = (e) => {
         console.log("data available after MediaRecorder.stop() called.");
         ///////나중에 전송 성공하면 지워도 되는부분들 확인할것
-
+        const clipContainer = document.createElement("article");
         const audio = document.createElement("audio");
-
+        clipContainer.classList.add("clip");
         audio.setAttribute("controls", "auto");
+        clipContainer.appendChild(audio);
 
         const blob = new Blob(chunks, {
           type: "audio/wav codecs=opus",
@@ -87,7 +159,7 @@ if (navigator.mediaDevices) {
 
         $.ajax({
           type: "POST",
-          url: "http://127.0.0.1:5003/messages", //flask server url로 바꿔주세요! ---> 막혀있을수도 있다는거    http://localhost:8081/temp/temp01
+          url: "http://220.80.33.113:5003/address", //flask server url로 바꿔주세요! ---> 막혀있을수도 있다는거    http://localhost:8081/temp/temp01
           data: form, // Our pretty new form
           cache: false,
           processData: false, // tell jQuery not to process the data

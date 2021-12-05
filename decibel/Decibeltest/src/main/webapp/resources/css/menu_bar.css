@@ -1,0 +1,90 @@
+#nick_title{
+  font-size: 25px !important;
+  font-weight: bold;
+  color: black !important;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+
+.menu-bar {
+  position: absolute;
+  right: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 20%;
+  background: #F5F7FF;
+  margin: 10px;
+  cursor: pointer;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+
+}
+.menu-bar .line{
+  width: 25px;
+  height: 3px;
+  margin: 2px;
+  background: #7959db;
+  transition: all 300ms ease-out;
+}
+
+.nav-bar .nav-items{
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  clip-path:inset(5% 16% 90% 75% round 1%);
+  transition: all 700ms ease-out;
+  opacity: 0;
+  z-index: 1;
+}
+
+.nav-bar .nav-items .nav-links{
+  color: black;
+  font-size: 20px;
+  margin: 10px 0;
+  text-decoration: none;
+  font-family: 'Gowun Dodum', sans-serif;
+}
+/* .nav-bar .nav-items .nav-links:hover{
+  color: rgb(16, 27, 48);
+}
+ */
+.nav-bar.toggle .nav-items{
+  clip-path: inset(22% 25% 35% 27% round 5%);
+  opacity: 1;
+}
+
+.nav-bar.toggle .menu-bar{
+  box-shadow: none;
+}
+
+.nav-bar.toggle .menu-bar .line:nth-child(1){
+  transform: rotate(-45deg);
+  margin: 0;
+}
+.nav-bar.toggle .menu-bar .line:nth-child(3){
+  opacity: 0;
+}
+.nav-bar.toggle .menu-bar .line:nth-child(2){
+  transform: rotateZ(45deg);
+  margin: -2px;
+}
+.title {
+  height: 100%;
+  transform: translate(0%, 45%);
+}
+.title h1{
+  text-align: center;
+  font-size: 3em;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #6f4a8e;
+}

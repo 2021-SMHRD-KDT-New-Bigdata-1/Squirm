@@ -9,6 +9,10 @@
 <title>Document</title>
 <link rel="stylesheet" href="resources/css/main.css">
 <link rel="stylesheet" href="resources/css/menu.css">
+<link rel="stylesheet" href="resources/css/menu_bar.css">
+
+<link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.css">
+<link rel="stylesheet" type="text/css" href="./resources/css/loading-bar.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link
@@ -20,7 +24,6 @@
 	crossorigin="anonymous">
 
 
-<!-- <script src="js/stt.js"></script> -->
 
 
 </head>
@@ -36,73 +39,75 @@
 
 
 	<!-- login -->
-	<div class="content">
+<body>
+ <div class="content">
 		<div class="container">
+						<nav class="nav-bar">
+        <div class="menu-bar">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <div class="nav-items">
+					<div class="nav-menu" style="display: flex; flex-direction: column; margin-top: -100px;">
+          <div style="margin-bottom: 30px; margin-left: 20px;">
+						<c:if test = "${vo!=null}"></c:if>
+						<a href="#" id="nick_title" class="nav-links"><strong>${vo.member_name} 님</strong></a>
+					</div>
+					<a href="main.do" class="nav-links">번역기</a>
+          <a href="train.do" class="nav-links">교육</a>
+          <a href="list.do" class="nav-links">단어</a>
+          <a href="logout.do" class="nav-links">로그아웃</a>
+				</div>
+        </div>
+      </nav>
+					
+	
+				
+
 			<div class="col-md-6 grid-margin stretch-card">
 				<div class="col-md-6 grid-margin stretch-card">
 					<div class="card">
-						<div class="card-body">
+						<div class="card-b">
 							<p class="speak" id="output"
 								style="color: black; font-family: 'Gowun Dodum', sans-serif;">상대방
 								말이 표시됩니다.</p>
 						</div>
-						<div class="category-body">
-							<div class="category1">
 
-								<div class="talk">
-									<div class="talk_icon">
-										<button class="button1" id="button_1"
-											onclick="button1_click()">
-											<i class="far fa-comments"
-												style="color: rgb(92, 84, 197); margin-left: 10px;"></i>
-										</button>
-									</div>
- 
-								</div>
-							</div>
-							<div class="category2">
-								<div class="study">        
-									<div class="study_icon">
-										<button class="button2" id="button_2"
-											onclick="button2_click()">
-											<i class="fas fa-book-open"
-												style="color: rgb(92, 84, 197); margin-left: 10px;"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-
-							<div class="card-body1">
-
+							<div class="card-b1">
+								<span>
 								<input class="talk-input" id="code_html"
-									type="text" value="삼겹살" /> <input type="button"
-									value="말하기" />
+									type="text" value="삼겹살" /> 
+									<input class = "talk-input-bnt" type="image" src="resources/img/speaker.png"
+								onclick="" />
+								</span>	
+				
+						
+						
+						
 
-
-								
-							</div>
+				
 
 						</div>
 					</div>
+					</div>
 
 					<div class="frame">
-						<input type="checkbox" id="cb-1" name="cb" class="checkbox">
-						<label for="cb-1" class="label"></label>
-
-						<div class="microphone">
-							<svg width="85px" height="85px" viewBox="0 0 100 100">
-                    <circle class="circle" cx="50" cy="50" r="47" />
-                  </svg>
+						<input type="checkbox" id="cb-1" name="cb" class="checkbox" value="1"> <label for="cb-1" class="label"></label>
+						<div class="microphone" id = "microphone">
+							<svg width="60px" height="60px" viewBox="0 0 100 100" id="microphone" onclick="count(&quot;plus&quot;)">
+										<circle class="circle" cx="50" cy="50" r="44"></circle>
+								</svg>
 							<div class="icon">
 								<div class="body">
 									<div class="fill"></div>
 								</div>
 								<div class="foot_v"></div>
-								<div class="foot_h"></div>
+								<div class="foot_h"></div> 
 							</div>
 							<div class="dots">
-								<div class="dot dot-1"></div>
-								<div class="dot dot-2"></div>
+								<div class="dot dot-1"></div>  
+								<div class="dot dot-2"></div>   
 								<div class="dot dot-3"></div>
 							</div>
 						</div>
@@ -113,24 +118,13 @@
 			</div>
 		</div>
 </body>
-<script>
-	function button1_click() {
-		console.log("버튼1을 눌렀습니다.");
-	}
-</script>
-<script>
-	function button2_click() {
-		console.log("버튼2을 눌렀습니다.");
-	}
-</script>
-<script>
-	function button3_click() {
-		console.log("버튼3을 눌렀습니다.");
-	}
-</script>
+
 <script src="resources/js/jquery-3.6.0.min.js"></script>
 <script src="resources/js/main.js"></script>
+<script src="resources/js/menu_bar.js"></script>
 <script src="resources/js/record.js"></script>
 <script src="resources/js/stt.js"></script>
 <script src="resources/js/tts.js"></script>
+
+
 </html>

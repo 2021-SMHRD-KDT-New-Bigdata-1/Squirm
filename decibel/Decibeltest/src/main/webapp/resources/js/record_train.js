@@ -7,39 +7,109 @@ const distortion = audioCtx.createWaveShaper();
 const gainNode = audioCtx.createGain();
 const biquadFilter = audioCtx.createBiquadFilter();
 let b = 0;
+
+function click_s() {
+  var h = $('path[d="M10 10L90 10M90 8M90 12"]:hidden');
+  h[0].style.display = "block";
+}
+
 var traintext = new Array(
   "안녕하세요",
+  "안녕하세요",
+  "사랑해요",
   "사랑해요",
   "너무 보고싶어요",
+  "너무 보고싶어요",
+  "그동안 고생했어요",
   "그동안 고생했어요",
   "다음에 꼭 봐요",
+  "다음에 꼭 봐요",
+  "엄마 아빠 사랑해요",
   "엄마 아빠 사랑해요",
   "정말 고마워",
+  "정말 고마워",
+  "다시 만나요",
   "다시 만나요",
   "축하 해요",
+  "축하 해요",
+  "응원 할게요",
   "응원 할게요",
   "메리 크리스마스",
+  "메리 크리스마스",
+  "새해복 많이",
   "새해복 많이",
   "행복해요",
+  "행복해요",
   "미안해요",
+  "미안해요",
+  "고생했어",
   "고생했어"
 );
 
-  function setInnerHTML() {
-    const element = document.getElementById("train_text_div");
-    element.innerHTML =
-      "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
-      traintext[b] +
-      "<div>";
-    b++; // 바뀌게 하는코드
+var number_list = new Array(
+  "1/15",
+  "1/15",
+  "2/15",
+  "2/15",
+  "3/15",
+  "3/15",
+  "4/15",
+  "4/15",
+  "5/15",
+  "5/15",
+  "6/15",
+  "6/15",
+  "7/15",
+  "7/15",
+  "8/15",
+  "8/15",
+  "9/15",
+  "9/15",
+  "10/15",
+  "10/15",
+  "11/15",
+  "11/15",
+  "12/15",
+  "12/15",
+  "13/15",
+  "13/15",
+  "14/15", 
+  "14/15",
+  "15/15",
+  "15/15"
+);
+function setInnerHTML() {
+  const element = document.getElementById("train_text_div");
+  element.innerHTML =
+    "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
+    traintext[b] +
+    "<div>";
+  b++; // 바뀌게 하는코드
+}
+
+function setInnerNUMBER() {
+  const element1 = document.getElementById("list_number");
+  element1.innerHTML =
+    "<div style= color: black; font-family: 'Gowun Dodum', sans-serif font-size: larger; font-weight: bold;>" +
+    number_list[b] +
+    "<div>";
+  b++; // 바뀌게 하는코드
+
+  if (b == 30) {
+    movemain();
   }
+}
+function movemain() {
+  alert("학습이 완료되었습니다");
+  location.href = "main.do";
+}
 
 function makeSound(stream) {
-  const source = audioCtx.createMediaStreamSource(stream);  
+  const source = audioCtx.createMediaStreamSource(stream);
 
-  source.connect(analyser); 
+  source.connect(analyser);
   analyser.connect(distortion);
-  distortion.connect(biquadFilter); 
+  distortion.connect(biquadFilter);
   biquadFilter.connect(gainNode);
   gainNode.connect(audioCtx.destination); // connecting the different audio graph nodes together
   analyser.connect(audioCtx.destination);
@@ -69,6 +139,8 @@ if (navigator.mediaDevices) {
           console.log(mediaRecorder.state);
           console.log("recorder stopped");
           setInnerHTML();
+          click_s();
+          setInnerNUMBER();
         }
       });
 
