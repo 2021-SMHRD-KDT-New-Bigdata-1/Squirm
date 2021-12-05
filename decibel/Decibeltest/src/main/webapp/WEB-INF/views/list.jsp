@@ -43,7 +43,7 @@ rect#progress {
 	%>
 
 	<!-- login -->
-	<class= "content">
+	<div class= "content">
 	<div class="container">
 	
 		<span class="toggle-button">

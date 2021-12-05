@@ -30,7 +30,7 @@ rect#progress {
 <body>
 
    <!-- login -->
-<class= "content">
+<div class= "content">
       <div class="container">
 		<span class="toggle-button">
 			<div class="menu-bar bar-top"></div>
