@@ -43,7 +43,7 @@ rect#progress {
 	%>
 
 	<!-- login -->
-	<div class= "content">
+	<class= "content">
 	<div class="container">
 		<span class="toggle-button">
 			<div class="menu-bar bar-top"></div>
@@ -173,10 +173,7 @@ rect#progress {
 							class="mainline3" clip-path="" fill="none" stroke-width="3"
 							stroke="url(#ldBar-2b78fe717ea45-pattern)"
 							stroke-dasharray="68 80" style="display:none"></path>
-               <path d="M10 10L90 10M90 8M90 12" id="#three"
-							class="mainline3" clip-path="" fill="none" stroke-width="3"
-							stroke="url(#ldBar-2b78fe717ea45-pattern)"
-							stroke-dasharray="74 80" style="display:none"></path>
+
                <path d="M10 10L90 10M90 8M90 12" id="#three"
 							class="mainline3" clip-path="" fill="none" stroke-width="3"
 							stroke="url(#ldBar-2b78fe717ea45-pattern)"

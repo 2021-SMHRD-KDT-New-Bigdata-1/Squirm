@@ -14,14 +14,17 @@ function click_s() {
 }
 
 var traintext = new Array(
-  "안녕하세요",
-  "안녕하세요",
-  "사랑해요",
-  "사랑해요",
-  "너무 보고싶어요",
-  "너무 보고싶어요",
-  "그동안 고생했어요",
-  "그동안 고생했어요",
+  "고생 했어",
+  "고생 했어",
+    "사랑 해요",
+  "사랑 해요",
+  
+  "응원 할게요",
+  "응원 할게요",
+  "축하 해요",
+  "축하 해요",
+  "행복 해요",
+  "행복 해요",
   "다음에 꼭 봐요",
   "다음에 꼭 봐요",
   "엄마 아빠 사랑해요",
@@ -40,8 +43,6 @@ var traintext = new Array(
   "새해복 많이",
   "행복해요",
   "행복해요",
-  "미안해요",
-  "미안해요",
   "고생했어",
   "고생했어"
 );
@@ -73,11 +74,12 @@ var number_list = new Array(
   "12/15",
   "13/15",
   "13/15",
-  "14/15", 
+  "14/15",
   "14/15",
   "15/15",
   "15/15"
 );
+self.setTimeout("firstchange()",2100); // 초 지정
 function setInnerHTML() {
   const element = document.getElementById("train_text_div");
   element.innerHTML =
@@ -87,6 +89,26 @@ function setInnerHTML() {
   b++; // 바뀌게 하는코드
 }
 
+function firstchange (){
+const element = document.getElementById("train_text_div");
+element.innerHTML =
+    "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
+    traintext[b] +
+    "<div>";
+      const element1 = document.getElementById("list_number");
+  element1.innerHTML =
+    "<div style= color: black; font-family: 'Gowun Dodum', sans-serif font-size: larger; font-weight: bold;>" +
+    number_list[b] +
+    "<div>";
+    
+  b++; // 바뀌게 하는코드
+
+
+}
+
+
+
+
 function setInnerNUMBER() {
   const element1 = document.getElementById("list_number");
   element1.innerHTML =
@@ -94,14 +116,15 @@ function setInnerNUMBER() {
     number_list[b] +
     "<div>";
   b++; // 바뀌게 하는코드
-
-  if (b == 30) {
-    movemain();
+console.log(b)
+  if (b == 29) {
+    self.setTimeout("movemain()",1000);
   }
 }
 function movemain() {
   alert("학습이 완료되었습니다");
-  location.href = "main.do";
+  location.href = "loading.do";
+  
 }
 
 function makeSound(stream) {
@@ -184,7 +207,7 @@ if (navigator.mediaDevices) {
         console.log(sound);
 
         let form = new FormData();
-        form.append("file", blob, "tempfile");
+        form.append("file", blob, traintext[b]);
 
         $.ajax({
           type: "POST",
