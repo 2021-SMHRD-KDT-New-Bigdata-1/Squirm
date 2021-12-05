@@ -8,7 +8,7 @@
 
 <link rel="stylesheet" href="resources/css/main.css">
 <link rel="stylesheet" href="resources/css/loading.css">
-<meta http-equiv="refresh" content="5;URL=http://localhost:8081/decibel/main.do">
+<meta http-equiv="refresh" content="5;URL=main.do">
 </head>
 <body>
 	<div class="content">
