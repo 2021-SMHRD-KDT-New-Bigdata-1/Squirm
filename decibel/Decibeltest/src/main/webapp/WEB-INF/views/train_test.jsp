@@ -53,9 +53,9 @@
 					<ul>
 						
 						<li><a href="#"><strong>${vo.member_nickname} 님</strong></a></li>
-						<li><a href="#">번역기</a></li>
-						<li><a href="#">교육</a></li>
-						<li><a href="#">단어</a></li>
+						<li><a href="main.do">번역기</a></li>
+						<li><a href="train.do">교육</a></li>
+						<li><a href="list.do">단어</a></li>
 						<li><a href="#">리스트</a></li>
 						
 					</ul>

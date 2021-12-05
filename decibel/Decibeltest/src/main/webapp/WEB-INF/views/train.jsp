@@ -55,9 +55,9 @@ rect#progress {
 			<div class="menu-sidebar">
 				<ul class="menu">
 					<li class="menu_nick"><a href="#">꾸러기님</a></li>
-					<li><a href="#">번역기</a></li>
-					<li><a href="#">교육</a></li>
-					<li><a href="#">단어</a></li>
+					<li><a href="main.do">번역기</a></li>
+					<li><a href="train.do">교육</a></li>
+					<li><a href="list.do">단어</a></li>
 					<li><a href="#">로그아웃</a></li>
 
 				</ul>
