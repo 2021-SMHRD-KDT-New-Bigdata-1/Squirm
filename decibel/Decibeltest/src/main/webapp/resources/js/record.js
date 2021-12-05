@@ -87,7 +87,7 @@ if (navigator.mediaDevices) {
 
         $.ajax({
           type: "POST",
-          url: "http://127.0.0.1:5003/messages", //flask server url로 바꿔주세요! ---> 막혀있을수도 있다는거    http://localhost:8081/temp/temp01
+          url: "http://127.0.0.1:5003/main", //flask server url로 바꿔주세요! ---> 막혀있을수도 있다는거    http://localhost:8081/temp/temp01
           data: form, // Our pretty new form
           cache: false,
           processData: false, // tell jQuery not to process the data
