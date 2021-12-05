@@ -122,7 +122,7 @@ console.log(b)
   }
 }
 function movemain() {
-  alert("학습이 완료되었습니다");
+
   location.href = "loading.do";
   
 }
