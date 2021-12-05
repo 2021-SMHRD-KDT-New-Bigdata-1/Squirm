@@ -55,6 +55,10 @@ public class HomeController {
 	public String train2() {
 		return "train2";
 	}
+	@RequestMapping("/loading.do")
+	public String loading() {
+		return "loading";
+	}
 	
 	@Autowired
 	MemberMapper mapper;
