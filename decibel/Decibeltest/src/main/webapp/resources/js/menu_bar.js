@@ -1,6 +1,17 @@
-const menuBar = document.querySelector('.menu-bar');
-const navBar = document.querySelector('.nav-bar');
+$(document).ready(function() {
+	  var $toggleButton = $('.toggle-button');
+	  $toggleButton.on('click', function() {
+	    $(this).toggleClass('open');
+	  });
+	});
 
-menuBar.addEventListener('click', () => {
-navBar.classList.toggle('toggle');
-});
+	$(document).ready(function() {
+	    var $toggleButton = $('.toggle-button'),
+	        $menuWrap = $('.menu-wrap');
+
+	    $toggleButton.on('click', function() {
+	        $(this).toggleClass('button-open');
+	        $menuWrap.toggleClass('menu-open');
+	    });
+	});
+

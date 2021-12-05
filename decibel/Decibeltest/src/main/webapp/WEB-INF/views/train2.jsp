@@ -32,25 +32,24 @@ rect#progress {
    <!-- login -->
 <class= "content">
       <div class="container">
-      			<nav class="nav-bar">
-        <div class="menu-bar">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-        <div class="nav-items">
-					<div class="nav-menu" style="display: flex; flex-direction: column; margin-top: -100px;">
-          <div style="margin-bottom: 30px; margin-left: 20px;">
-						<c:if test = "${vo!=null}"></c:if>
-						<a href="#" id="nick_title" class="nav-links"><strong>${vo.member_name} 님</strong></a>
-					</div>
-					<a href="main.do" class="nav-links">번역기</a>
-          <a href="train.do" class="nav-links">교육</a>
-          <a href="list.do" class="nav-links">단어</a>
-          <a href="logout.do" class="nav-links">로그아웃</a>
-				</div>
-        </div>
-      </nav>
+		<span class="toggle-button">
+			<div class="menu-bar bar-top"></div>
+			<div class="menu-bar bar-middle"></div>
+			<div class="menu-bar bar-bottom"></div>
+		</span>
+
+		<div class="menu-wrap">
+			<div class="menu-sidebar">
+				<ul class="menu">
+					<li class="menu_nick"><a href="#">꾸러기님</a></li>
+					<li><a href="#">번역기</a></li>
+					<li><a href="#">교육</a></li>
+					<li><a href="#">단어</a></li>
+					<li><a href="#">로그아웃</a></li>
+
+				</ul>
+			</div>
+		</div>
       <!--  <c:if test = "${vo!=null}"> 
                <label>${vo.member_email}님 방문을 환영합니다.</label>-->
                <!--  <button type="submit" class="btn btn-default" onclick="logout.do">로그아웃</button>-->
@@ -197,6 +196,7 @@ rect#progress {
 <script src="./resources/js/jquery-3.6.0.min.js"></script>
 <script src="./resources/js/main.js"></script>
 <script src="./resources/js/record_train2.js"></script>
+<script src="./resources/js/menu_bar.js"></script>
 
 <!-- <script src="./resources/js/stt.js"></script> -->
 

@@ -24,17 +24,18 @@
 	crossorigin="anonymous">
 
 
-<!-- <script src="js/stt.js"></script> -->
 
 
 </head>
 
 <body>
-	<!-- 여기가 우리의 메인  -->
+
+	
 	<%
 		String data = request.getParameter("result");
 	out.print(data);
 	%>
+
 	<!-- <input id = "bStart" type = "button" value = "stt 시작하는 버튼 자동화 시켜서 필요" onclick = "start();"></input> -->
 
 
@@ -43,29 +44,27 @@
 <body>
  <div class="content">
 		<div class="container">
-			<div id="menu">
-				<div id="menu-bar" onclick="menuOnClick()">
-					<div id="bar1" class="bar"></div>
-					<div id="bar2" class="bar"></div>
-					<div id="bar3" class="bar"></div>
-				</div>
-				<nav class="nav" id="nav">
-					<ul>
-						 <c:if test = "${vo!=null}"> 
-						<li><a href="#"><strong>${vo.member_nickname} 님</strong></a></li>
-						<li><a href="#">번역기</a></li>
-						<li><a href="#">교육</a></li>
-						<li><a href="#">단어</a></li>
-						<li><a href="#">리스트</a></li>
-						</c:if>
-					</ul>
-				</nav> 
+		<span class="toggle-button">
+			<div class="menu-bar bar-top"></div>
+			<div class="menu-bar bar-middle"></div>
+			<div class="menu-bar bar-bottom"></div>
+		</span>
+
+		<div class="menu-wrap">
+			<div class="menu-sidebar">
+				<ul class="menu">
+					<li class="menu_nick"><a href="#">꾸러기님</a></li>
+					<li><a href="#">번역기</a></li>
+					<li><a href="#">교육</a></li>
+					<li><a href="#">단어</a></li>
+					<li><a href="#">로그아웃</a></li>
+
+				</ul>
 			</div>
-			
-			<div class="menu-bg" id="menu-bg"></div>
+		</div>
 					
 	
-				
+		
 
 			<div class="col-md-6 grid-margin stretch-card">
 				<div class="col-md-6 grid-margin stretch-card">
@@ -79,7 +78,7 @@
 							<div class="card-b1">
 								<span>
 								<input class="talk-input" id="code_html"
-									type="text" value="삼겹살" /> 
+									type="text" value=<%=data%> /> 
 									<input class = "talk-input-bnt" type="image" src="resources/img/speaker.png"
 								onclick="" />
 								</span>	
@@ -127,4 +126,6 @@
 <script src="resources/js/record.js"></script>
 <script src="resources/js/stt.js"></script>
 <script src="resources/js/tts.js"></script>
+
+
 </html>

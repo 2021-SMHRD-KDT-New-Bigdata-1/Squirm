@@ -12,52 +12,6 @@
 </head>
 <body>
   
-    <script type = "text/javascript">
-  	function loginCheck(){
-  		var member_email = $("#member_email").val();
-  		if(member_email==""){
-  			alert("이메일을 입력하세요");
-  			$("#member_email").focus();
-  			return false;
-  		}
-  		var member_pw = $("#member_pw").val();
-  		if(member_pw==""){
-  			alert("패스워드를 입력하세요");
-  			$("#member_pw").focus();
-  			return false;
-  		}
-  		return true; 
-  	 
-  	}
-  	
-  	function joinCheck(){
-  		var member_email = $("#member_email").val();
-  		if(member_email==""){
-  			alert("이메일을 입력하세요");
-  			$("#member_email").focus();
-  			return false;
-  		}
-  		var member_pw = $("#member_pw").val();
-  		if(member_pw==""){
-  			alert("패스워드를 입력하세요");
-  			$("#member_pw").focus();
-  			return false;
-  		}
-  		var member_nickname = $("#member_nickname").val();
-  		if(member_nickname==""){
-  			alert("닉네임을 입력하세요");
-  			$("#member_nickname").focus();
-  			return false;
-  		}
-  		return true; 
-  	 
-  	}
-  	
-  	
-  	
-  	
-  </script>
-  
    <div id="logo"><img src="resources/img/logo.png" alt=""></div>
   
   <script>
@@ -81,7 +35,9 @@
             <a href="#connexion" class="btn-connexion"><h2>로그인</h2></a>
             <a href="#enregistrer" class="btn-enregistrer active"><h2>회원가입</h2></a>
           </div>
-          <form action = "m_login.do" method="post" id = loginform>
+          
+          
+          <form action = "main.do" method="post" id = loginform>
           <hr id="menu_hr">
           <div class="connexion">
             <div class="contact-form">
@@ -90,7 +46,7 @@
             
               
               <label>비밀번호</label>
-              <input placeholder="" type="password" name = "member_pw" id = "member_pw">
+              <input type="password" name = "member_pw" id = "member_pw">
               
               <div class="check">
                 <label>				
@@ -105,10 +61,7 @@
               
               <input class="submit" value="로그인" type="submit" onclick = "return loginCheck()">
             </div>
-            
-            
-            
-            
+
             
             
             <hr>
@@ -117,7 +70,7 @@
           </form>
           
           <!-- 회원가입 -->
-          <form action = "main.do" id = "joinform">
+          <form action = "train.do" id = "joinform" method="post" >
           <div class="enregistrer active-section">
             <div class="contact-form">
            
@@ -125,7 +78,7 @@
               <input placeholder="" type="text" id = "member_email1" name = "member_email1">	
               
               <label>비밀번호</label>
-              <input placeholder="" type="text" id = "member_pw1" name = "member_pw1">
+              <input placeholder="" type="password" id = "member_pw1" name = "member_pw1">
               
               <label>닉네임</label>
               <input placeholder="" type="text" id = "nickname" name = "member_nickname">

@@ -16,6 +16,8 @@
 	href="./resources/css/loading-bar.css">
 <link rel="stylesheet" type="text/css"
 	href="./resources/css/loading-bar.min.css">
+<link rel="stylesheet" type="text/css"
+	href="./resources/css/menu_bar.css">
 <link
 	href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
 	rel="stylesheet">
@@ -43,6 +45,25 @@ rect#progress {
 	<!-- login -->
 	<class= "content">
 	<div class="container">
+	
+		<span class="toggle-button">
+			<div class="menu-bar bar-top"></div>
+			<div class="menu-bar bar-middle"></div>
+			<div class="menu-bar bar-bottom"></div>
+		</span>
+
+		<div class="menu-wrap">
+			<div class="menu-sidebar">
+				<ul class="menu">
+					<li class="menu_nick"><a href="#">꾸러기님</a></li>
+					<li><a href="#">번역기</a></li>
+					<li><a href="#">교육</a></li>
+					<li><a href="#">단어</a></li>
+					<li><a href="#">로그아웃</a></li>
+
+				</ul>
+			</div>
+		</div>
 		<div class="col-md-6 grid-margin stretch-card" overflow: auto>
 
 			<script type="text/javascript"
@@ -226,11 +247,12 @@ rect#progress {
 }
 
 .tabBox {
-	margin: 20px 0;
+	margin: 50px 0;
 }
 
 .tab-link {
-	width: 43%;
+	margin-left: 10px;
+    width: 40%;
 	display: inline-block;
 	padding: 10px;
 	text-align: center;
@@ -281,6 +303,7 @@ header.onclick = function() {
 <script src="./resources/js/jquery-3.6.0.min.js"></script>
 <script src="./resources/js/main.js"></script>
 <script src="./resources/js/record_train.js"></script>
+<script src="./resources/js/menu_bar.js"></script>
 
 <!-- <script src="./resources/js/stt.js"></script> -->
 
