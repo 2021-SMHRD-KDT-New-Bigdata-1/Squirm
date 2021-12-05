@@ -18,7 +18,7 @@ var h = $('path[d="M10 10L90 10M90 8M90 12"]:hidden');
 
 var traintext = new Array(
 "도와주세요",
-"도와주세요",
+
 "배고파요",
 "배고파요",
 "잘 지냈어요?",
@@ -59,6 +59,7 @@ element.innerHTML =
     "<div>";
     
   b++; // 바뀌게 하는코드
+  
 
 
 }
@@ -71,6 +72,7 @@ element.innerHTML =
       traintext[b] +
       "<div>";
     b++; // 바뀌게 하는코드
+    console.log(b)
   }
 
  function setInnerNUMBER() {
