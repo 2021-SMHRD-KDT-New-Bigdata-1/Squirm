@@ -29,11 +29,13 @@
 </head>
 
 <body>
-	<!-- 여기가 우리의 메인  -->
+
+	
 	<%
 		String data = request.getParameter("result");
 	out.print(data);
 	%>
+
 	<!-- <input id = "bStart" type = "button" value = "stt 시작하는 버튼 자동화 시켜서 필요" onclick = "start();"></input> -->
 
 
@@ -63,7 +65,7 @@
       </nav>
 					
 	
-				
+		
 
 			<div class="col-md-6 grid-margin stretch-card">
 				<div class="col-md-6 grid-margin stretch-card">
@@ -77,7 +79,7 @@
 							<div class="card-b1">
 								<span>
 								<input class="talk-input" id="code_html"
-									type="text" value="삼겹살" /> 
+									type="text" value=<%=data%> /> 
 									<input class = "talk-input-bnt" type="image" src="resources/img/speaker.png"
 								onclick="" />
 								</span>	
