@@ -103,7 +103,7 @@ rect#progress {
             <!-- 클릭 두번할 때 마다 바 길이 조정 -->   
                 <path d="M10 10L90 10M90 8M90 12" id="#two" class="mainline2" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="32 80" style = "display:none"></path>
                <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="48 80" style = "display:none"></path>
-               <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="64 80" style = "display:none"></path>
+            
                <path d="M10 10L90 10M90 8M90 12" id="#three" class="mainline3" clip-path="" fill="none" stroke-width="3" stroke="url(#ldBar-2b78fe717ea45-pattern)" stroke-dasharray="80 80" style = "display:none"></path>               
                
                

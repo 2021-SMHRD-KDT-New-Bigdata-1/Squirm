@@ -44,6 +44,26 @@ var number_list = new Array(
   "5/5"
 
 );
+
+self.setTimeout("firstchange()",2100); // 초 지정
+function firstchange (){
+const element = document.getElementById("train_text_div");
+element.innerHTML =
+    "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
+    traintext[b] +
+    "<div>";
+      const element1 = document.getElementById("list_number");
+  element1.innerHTML =
+    "<div style= color: black; font-family: 'Gowun Dodum', sans-serif font-size: larger; font-weight: bold;>" +
+    number_list[b] +
+    "<div>";
+    
+  b++; // 바뀌게 하는코드
+
+
+}
+
+
   function setInnerHTML() {
     const element = document.getElementById("train_text_div");
     element.innerHTML =
@@ -60,15 +80,15 @@ var number_list = new Array(
       number_list[b] +
       "<div>";
     b++; // 바뀌게 하는코드
-    if(b==12){
-    movemain();
+    if(b==9){
+    self.setTimeout("movemain()",1000);
     }
   }
   
   
  function movemain() {
-  alert("학습이 완료되었습니다");
-  location.href = "main.do";
+ 
+  location.href = "loading.do";
 }
   
 
