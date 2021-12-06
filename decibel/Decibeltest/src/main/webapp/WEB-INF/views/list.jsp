@@ -1,5 +1,9 @@
+<%@page import="kr.smhrd.domain.WordVO"%>
+<%@page import="java.util.List"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+   pageEncoding="UTF-8"%>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,317 +17,225 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" type="text/css"
-	href="./resources/css/loading-bar.css">
+   href="./resources/css/loading-bar.css">
 <link rel="stylesheet" type="text/css"
-	href="./resources/css/loading-bar.min.css">
+   href="./resources/css/loading-bar.min.css">
 <link rel="stylesheet" type="text/css" href="./resources/css/input.css">
 <link rel="stylesheet" type="text/css"
-	href="./resources/css/menu_bar.css">
+   href="./resources/css/menu_bar.css">
 <link
-	href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
-	rel="stylesheet">
+   href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap"
+   rel="stylesheet">
 <link rel="stylesheet"
-	href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-	integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-	crossorigin="anonymous">
+   href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+   integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+   crossorigin="anonymous">
 
 <!-- <script src="js/stt.js"></script> -->
 
-
+   <%
+      //String data = request.getParameter("vo");
+      List<WordVO> list = (List<WordVO>)request.getAttribute("vo");
+   %>
 </head>
 <style>
 rect#progress {
-	transition: all 10s linear;
+   transition: all 10s linear;
 }
 </style>
 
 <body>
 
-	<%
-		String data = request.getParameter("result");
-	%>
+   <!-- login -->
+   <div class="content">
+      <div class="container" >
 
-	<!-- login -->
-	<div class="content">
-		<div class="container" >
+         <span class="toggle-button">
+            <div class="menu-bar bar-top"></div>
+            <div class="menu-bar bar-middle"></div>
+            <div class="menu-bar bar-bottom"></div>
+         </span>
 
-			<span class="toggle-button">
-				<div class="menu-bar bar-top"></div>
-				<div class="menu-bar bar-middle"></div>
-				<div class="menu-bar bar-bottom"></div>
-			</span>
+         <div class="menu-wrap">
+            <div class="menu-sidebar">
+               <ul class="menu">
+                  <li class="menu_nick"><a href="#">꾸러기님</a></li>
+                  <li><a href="main.do">번역기</a></li>
+                  <li><a href="train.do">교육</a></li>
+                  <li><a href="list.do">단어</a></li>
+                  <li><a href="#">로그아웃</a></li>
 
-			<div class="menu-wrap">
-				<div class="menu-sidebar">
-					<ul class="menu">
-						<li class="menu_nick"><a href="#">꾸러기님</a></li>
-						<li><a href="main.do">번역기</a></li>
-						<li><a href="train.do">교육</a></li>
-						<li><a href="list.do">단어</a></li>
-						<li><a href="#">로그아웃</a></li>
-
-					</ul>
-				</div>
-			</div>
+               </ul>
+            </div>
+         </div>
 
 
-			<div class="col-md-6 grid-margin stretch-card">
+         <div class="col-md-6 grid-margin stretch-card">
 
-				<script type="text/javascript"
-					src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-
-
-				<div class="allWrap">
-					<div class="tabBox">
-						<p class="tab-link current" data-tab="tab-1">
-							<span><img src="http://mmctxt.com/link/img/icon01.png"
-								alt="icon" /></span> 학습완료
-						</p>
-						<p class="tab-link" data-tab="tab-2">
-							<span><img src="http://mmctxt.com/link/img/icon02.png"
-								alt="icon" /></span> 추가학습
-						</p>
-					</div>
-					<div id="tab-1" class="tab-content current">
-						<div class="search_wrap">
-							<div class="search">
-								<input type="text" class="searchTerm" placeholder="단어 찾기">
-								<button type="submit" class="searchButton">
-									<i class="fa fa-search"></i>
-								</button>
-							</div>
-						</div>
-
-						<button class="button" onclick="cssChange()">
-							<a>안녕하세요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>사랑해요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>너무 보고싶어요 </a>
-						</button>
-
-						<button class="button" onclick="cssChange()">
-							<a>그동안 고생했어요 </a>
-						</button>
-
-						<button class="button" onclick="cssChange()">
-							<a>다음에 꼭 봐요 </a>
-						</button>
-
-						<button class="button" onclick="cssChange()">
-							<a>엄마 아빠 사랑해요</a>
-						</button>
-
-						<button class="button" onclick="cssChange()">
-							<a>정말 고마워</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>다시 만나요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>축하 해요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>응원 할게요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>메리 크리스마스</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>새해복 많이</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>행복해요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>미안해요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>고생했어</a>
-						</button>
-												<button class="button" onclick="cssChange()">
-							<a>힘낼게요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>맛있어요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>귀여워요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>고마워요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>재밌어요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>행복해요</a>
-						</button>
-					</div>
-
-					<div id="tab-2" class="tab-content">
-						<div class="search_wrap">
-							<div class="search">
-								<input type="text" class="searchTerm" placeholder="단어 추가">
-								<button id="word_button" type="submit" class="searchButton">
-									추가
-								</button>
-							</div>
-						</div>
-
-						<button class="button" onclick="cssChange()">
-							<a>강아지</a>
-						</button>
-						<button class="button"">
-							<a id="change">고양이</a>
-						</button>
-						<button class="button" onclick="cssChange1()">
-							<a id="change1">도와주세요</a>
-						</button>
-						<button class="button">
-							<a id="change">날씨가 좋네요</a>
-						</button>
-						<button class="button" onclick="cssChange2()">
-							<a id="change2">배고파요</a>
-						</button>
-						<button class="button">
-							<a id="change">뜨거워요</a>
-						</button>
-						<button class="button">
-							<a id="change">졸려요</a>
-						</button>
-						<button class="button" onclick="cssChange3()">
-							<a id="change3">잘 지냈어요?</a>
-						</button>
-						<button class="button">
-							<a id="change">배가 아파요</a>
-						</button>
-						<button class="button" onclick="cssChange4()">
-							<a id="change4">잠깐만요</a>
-						</button>
-						<button class="button" onclick="cssChange5()">
-							<a id="change5">기다려주세요</a>
-						</button>
-						<button class="button">
-							<a id="change">거짓말</a>
-						</button>
-						<button class="button">
-							<a id="change">설레요</a>
-						</button>
-						<button class="button">
-							<a id="change">귀찮아요</a>
-						</button>
-						<button class="button">
-							<a id="change">따뜻해요</a>
-						</button>
-						<button class="button">
-							<a id="change">어려워요</a>
-						</button>
-						<button class="button">
-							<a id="change">부끄러워요</a>
-						</button>
-						<button class="button">
-							<a id="change">목말라요</a>
-						</button>
-						<button class="button">
-							<a id="change">빨리해요</a>
-						</button>
-						<button class="button">
-							<a id="change">놀아주세요
-							</a>
-						</button>
+            <script type="text/javascript"
+               src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
 
-					</div>
-					<script>
-						function cssChange1() {
-							var x = document.getElementById("change1");
-							x.style.color = "blue";
+            <div class="allWrap">
+               <div class="tabBox">
+                  <p class="tab-link current"  data-tab="tab-1"  style=" font-family: 'Gowun Dodum', sans-serif;">
+                     <span><img src="http://mmctxt.com/link/img/icon01.png"
+                        alt="icon" /></span> 학습완료
+                  </p>
+                  <p class="tab-link" data-tab="tab-2" style=" font-family: 'Gowun Dodum', sans-serif;">
+                     <span ><img src="http://mmctxt.com/link/img/icon02.png"
+                        alt="icon" /></span> 추가학습
+                  </p>
+               </div>
+                   <div id="tab-1" class="tab-content current">
+                  <div class="search_wrap">
+                     <div class="search">
 
-						}
-						function cssChange2() {
-							var x = document.getElementById("change2");
-							x.style.color = "blue";
-						}
-						function cssChange3() {
-							var x = document.getElementById("change3");
-							x.style.color = "blue";
-						}
-						function cssChange4() {
-							var x = document.getElementById("change4");
-							x.style.color = "blue";
+                        <input type="text" class="searchTerm s_sted" placeholder="단어 찾기">
+                        <button type="submit" class="searchButton" onclick="sted_word()">
+                           <i class="fa fa-search"></i>
+                        </button>
+                     </div>
+                  </div>
+                  <c:forEach var="vo" items="${list}">
+                     <c:forEach var="w" items="${fn:split(vo.sted_word,'|')}">
+                        <button type="button" class="button b_sted" onclick="cssChange()">
+                           <a style=" font-size: 16px; font-family: 'Gowun Dodum', sans-serif;">${w}</a>
+                        </button>
+                     </c:forEach>
+                  </c:forEach>
+               </div>
 
-						}
-						function cssChange5() {
-							var x = document.getElementById("change5");
-							x.style.color = "blue";
-						}
-						function cssChange6() {
-							var x = document.getElementById("change6");
-							x.style.color = "blue";
-						}
-					</script>
-					<script>
-						$(".tab-link").click(function() {
-							var tab_id = $(this).attr("data-tab");
+               <div id="tab-2" class="tab-content">
+                  <div class="search_wrap">
+                     <div class="search">
+                        <!-- mini's form -->
+                      
+                           <input type="text" class="searchTerm s_stwi" placeholder="단어 추가";">
+                           <button id="word_button" type="button" class="searchButton"
+                              onclick="stwi_word()">추가
+                              </button>
+                     </div>
+                  </div>
+                  <c:forEach var="vo" items="${list}">
+                     <c:forEach var="a" items="${fn:split(vo.stwi_word,'|')}">
+                        <button class="button b_stwi" onclick="cssChange1()">
+                           <a style=" font-size: 16px; font-family: 'Gowun Dodum', sans-serif;">${a}</a>
+                        </button>
+                     </c:forEach>
+                  </c:forEach>
 
-							$(".tab-link").removeClass("current");
-							$(".tab-content").removeClass("current");
 
-							$(this).addClass("current");
-							$("#" + tab_id).addClass("current");
-						});
-					</script>
 
-					<style>
+               </div>
+              <script>
+
+               function sted_word() {
+                var s_word = $(".s_sted").text();
+                var b_word = $(".b_sted");
+                     
+                for(var i=0; i<b_word.length; i++){
+                if(b_word[i].querySelector('a').innerText === s_word){
+                         alert("있지롱");
+                         break;
+                   }else{
+                         alert("없지롱");
+                         break;
+                        }
+                     }
+               
+
+                  }
+               </script>
+               
+               <script>
+                  function cssChange1() {
+                     var x = document.getElementById("change1");
+                     x.style.color = "blue";
+
+                  }
+                  function cssChange2() {
+                     var x = document.getElementById("change2");
+                     x.style.color = "blue";
+                  }
+                  function cssChange3() {
+                     var x = document.getElementById("change3");
+                     x.style.color = "blue";
+                  }
+                  function cssChange4() {
+                     var x = document.getElementById("change4");
+                     x.style.color = "blue";
+
+                  }
+                  function cssChange5() {
+                     var x = document.getElementById("change5");
+                     x.style.color = "blue";
+                  }
+                  function cssChange6() {
+                     var x = document.getElementById("change6");
+                     x.style.color = "blue";
+                  }
+               </script>
+               <script>
+                  $(".tab-link").click(function() {
+                     var tab_id = $(this).attr("data-tab");
+
+                     $(".tab-link").removeClass("current");
+                     $(".tab-content").removeClass("current");
+
+                     $(this).addClass("current");
+                     $("#" + tab_id).addClass("current");
+                  });
+               </script>
+
+               <style>
 .allWrap {
-	width: 100%;
-	margin: 0 auto;
+   width: 100%;
+   margin: 0 auto;
 }
 
 .tabBox {
-	margin: 50px 0;
+   margin: 50px 0;
 }
 
 .tab-link {
-	margin-left: 10px;
-	width: 40%;
-	display: inline-block;
-	padding: 10px;
-	text-align: center;
-	background-color: #929090;
-	border-radius: 20px;
-	color: #fff;
-	cursor: pointer;
-	box-shadow: 2px 2px 2px grey;
+   margin-left: 10px;
+   width: 40%;
+   display: inline-block;
+   padding: 10px;
+   text-align: center;
+   background-color: #929090;
+   border-radius: 20px;
+   color: #fff;
+   cursor: pointer;
+
 }
 
 .tab-link.current {
-	background-color: #4b49ac;
-	font-weight: 600;
+   background-color: #4b49ac;
+   font-weight: 600;
 }
 
 .tab-content {
-	display: none;
-	height: 367px;
-	overflow-y:auto;
+   display: none;
+   height: 367px;
+   overflow-y:auto;
 }
 
 
 .tab-content.current {
-	display: block;
-	width: 100%;
-	height: 100%;
-	font-size: 10px;
-	text-align: center;
-	padding-top: 20px;
-	height: 367px;
-	overflow-y:auto;
+   display: block;
+   width: 100%;
+   height: 100%;
+   font-size: 10px;
+   text-align: center;
+   padding-top: 20px;
+   height: 367px;
+   overflow-y:auto;
 }
 .button{
-    box-shadow: 1px 1px 1px grey;
+	border-radius: 27px;
+  
 }
 .tab-content.tab-content::-webkit-scrollbar {
     width: 8px;
@@ -344,26 +256,26 @@ rect#progress {
 
 
 
-					<div class="frame">
+               <div class="frame">
 
-						<p href="" id="gotrain">학습시키기</p>
-					</div>
-				</div>
-			</div>
+                  <p href="" id="gotrain" style=" font-size: 20px; "><strong>학습시키기</strong></strong></p>
+               </div>
+            </div>
+         </div>
 </body>
 <script type="text/javascript">
-	var header = document.getElementById('gotrain');
-	header.onclick = function() {
+   var header = document.getElementById('gotrain');
+   header.onclick = function() {
 
-		location.href = 'train2.do'
-	}
-	
+      location.href = 'train2.do'
+   }
+   
 </script>
 
 
 <script src="./resources/js/jquery-3.6.0.min.js"></script>
 <script src="./resources/js/main.js"></script>
-<script src="./resources/js/record_train.js"></script>
+<!--<script src="./resources/js/record_train.js"></script>-->
 <script src="./resources/js/menu_bar.js"></script>
 
 <!-- <script src="./resources/js/stt.js"></script> -->

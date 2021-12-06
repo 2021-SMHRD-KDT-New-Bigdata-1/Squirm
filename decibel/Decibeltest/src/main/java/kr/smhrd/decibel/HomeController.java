@@ -1,9 +1,12 @@
 package kr.smhrd.decibel;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
- 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import kr.smhrd.domain.MemberVO;
@@ -15,11 +18,6 @@ import kr.smhrd.mapper.Wordmapper;
 public class HomeController {
  
 
-	@RequestMapping("/list.do")
-	public String playlist() {
-		return "list";
-				
-	}
 	@RequestMapping("/main.do")
 	public String main() {
 		return "main";		
@@ -39,10 +37,7 @@ public class HomeController {
 	public String train() {
 		return "train";
 	}
-	@RequestMapping("/train2.do")
-	public String train2() {
-		return "train2";
-	}
+
 	@RequestMapping("/loading.do")
 	public String loading() {
 		return "loading";
@@ -50,7 +45,6 @@ public class HomeController {
 	
 	@Autowired
 	MemberMapper mapper;
-	
 		  
 	      @RequestMapping("/m_login.do")
 	      public String mLogin(MemberVO member, HttpSession session) {
@@ -70,15 +64,21 @@ public class HomeController {
 	    	  return "redirect:/login.do";
 	      }
 	      
-	@Autowired
-	Wordmapper mapper2;
-	
-	      @RequestMapping("/list.do")
-	      public WordVO sted(WordVO word) {
-	    	  // 학습완료 리스트
-	    	  WordVO vo = mapper2.sted(word);
-	    	  
-	    	  return vo;
-	      }
-	
+
+	  @Autowired
+	  Wordmapper w_mapper;
+		
+			@RequestMapping("/list.do")
+			public String playlist(Model model) {
+			List<WordVO> list = w_mapper.WordList();
+				
+				model.addAttribute("list", list);
+				return "list";
+						
+			}
+			@RequestMapping("/train2.do")
+			public String train2() {
+				return "train2";
+			}
+			
 }

@@ -19,7 +19,8 @@
 	outline: none;
 	color: black;
 	text-align: center;
-    box-shadow: 2px 2px 2px grey;
+	font-family: 'Gowun Dodum', sans-serif;
+
 }
 
 .searchTerm:focus {
@@ -36,7 +37,7 @@
 	border-radius: 0 8px 8px 0;
 	cursor: pointer;
 	font-size: 20px;
-	box-shadow: 2px 2px 2px grey;
+
 }
 
 /*Resize the wrap to see the search bar change!*/
