@@ -131,15 +131,15 @@ rect#progress {
               <script>
 
                function sted_word() {
-                var s_word = $(".s_sted").text();
+                var s_word = $(".s_sted").val();
                 var b_word = $(".b_sted");
                      
                 for(var i=0; i<b_word.length; i++){
-                if(b_word[i].querySelector('a').innerText === s_word){
-                         alert("있지롱");
+                if(b_word[i].querySelector('a').innerText == s_word){
+                         alert("학습한 단어 입니다.");
                          break;
                    }else{
-                         alert("없지롱");
+                         alert("학습한 단어가 아닙니다.");
                          break;
                         }
                      }
