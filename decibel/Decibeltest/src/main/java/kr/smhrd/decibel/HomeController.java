@@ -13,7 +13,7 @@ import kr.smhrd.mapper.Wordmapper;
 
 @Controller
 public class HomeController {
-
+ 
 
 	@RequestMapping("/list.do")
 	public String playlist() {
