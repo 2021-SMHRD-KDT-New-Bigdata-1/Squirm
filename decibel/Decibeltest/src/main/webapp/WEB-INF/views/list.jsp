@@ -16,6 +16,7 @@
 	href="./resources/css/loading-bar.css">
 <link rel="stylesheet" type="text/css"
 	href="./resources/css/loading-bar.min.css">
+<link rel="stylesheet" type="text/css" href="./resources/css/input.css">
 <link rel="stylesheet" type="text/css"
 	href="./resources/css/menu_bar.css">
 <link
@@ -43,204 +44,239 @@ rect#progress {
 	%>
 
 	<!-- login -->
-	<div class= "content">
-	<div class="container">
-	
-		<span class="toggle-button">
-			<div class="menu-bar bar-top"></div>
-			<div class="menu-bar bar-middle"></div>
-			<div class="menu-bar bar-bottom"></div>
-		</span>
+	<div class="content">
+		<div class="container" >
 
-		<div class="menu-wrap">
-			<div class="menu-sidebar">
-				<ul class="menu">
-					<li class="menu_nick"><a href="#">꾸러기님</a></li>
-					<li><a href="main.do">번역기</a></li>
-					<li><a href="train.do">교육</a></li>
-					<li><a href="list.do">단어</a></li>
-					<li><a href="#">로그아웃</a></li>
+			<span class="toggle-button">
+				<div class="menu-bar bar-top"></div>
+				<div class="menu-bar bar-middle"></div>
+				<div class="menu-bar bar-bottom"></div>
+			</span>
 
-				</ul>
+			<div class="menu-wrap">
+				<div class="menu-sidebar">
+					<ul class="menu">
+						<li class="menu_nick"><a href="#">꾸러기님</a></li>
+						<li><a href="main.do">번역기</a></li>
+						<li><a href="train.do">교육</a></li>
+						<li><a href="list.do">단어</a></li>
+						<li><a href="#">로그아웃</a></li>
+
+					</ul>
+				</div>
 			</div>
-		</div>
-		<div class="col-md-6 grid-margin stretch-card" overflow: auto>
-
-			<script type="text/javascript"
-				src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
 
-			<div class="allWrap">
-				<div class="tabBox">
-					<p class="tab-link current" data-tab="tab-1">
-						<span><img src="http://mmctxt.com/link/img/icon01.png"
-							alt="icon" /></span> 학습완료
-					</p>
-					<p class="tab-link" data-tab="tab-2">
-						<span><img src="http://mmctxt.com/link/img/icon02.png"
-							alt="icon" /></span> 추가학습
-					</p>
-				</div>
-				<div id="tab-1" class="tab-content current">
+			<div class="col-md-6 grid-margin stretch-card">
 
-					<button class="button" onclick="cssChange()">
-						<a>안녕하세요</a>
-					</button>
-					<button class="button" onclick="cssChange()">
-						<a>사랑해요</a>
-					</button>
-					<button class="button" onclick="cssChange()">
-						<a>너무 보고싶어요 </a>
-					</button>
-
-					<button class="button" onclick="cssChange()">
-						<a>그동안 고생했어요 </a>
-					</button>
-
-					<button class="button" onclick="cssChange()">
-						<a>다음에 꼭 봐요 </a>
-					</button>
-
-					<button class="button" onclick="cssChange()">
-						<a>엄마 아빠 사랑해요</a>
-					</button>
-
-					<button class="button" onclick="cssChange()">
-						<a>정말 고마워</a>
-					</button>
-					<button class="button" onclick="cssChange()">
-						<a>다시 만나요</a>
-					</button>
-					<button class="button" onclick="cssChange()">
-						<a>축하 해요</a>
-					</button>
-					<button class="button" onclick="cssChange()">
-						<a>응원 할게요</a>
-					</button>
-					<button class="button" onclick="cssChange()">
-						<a>메리 크리스마스</a>
-					</button>
-					<button class="button" onclick="cssChange()">
-						<a>새해복 많이</a>
-					</button>
-					<button class="button" onclick="cssChange()">
-						<a>행복해요</a>
-					</button>
-					<button class="button" onclick="cssChange()">
-						<a>미안해요</a>
-					</button>
-					<button class="button" onclick="cssChange()">
-						<a>고생했어</a>
-					</button>
-				</div>
-
-				<div id="tab-2" class="tab-content">
+				<script type="text/javascript"
+					src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 
 
-					<button class="button" onclick="cssChange()">
-						<a>돼지고기</a>
-					</button>
-					<button class="button"">
-						<a id="change">채소</a>
-					</button>
-					<button class="button" onclick="cssChange1()">
-						<a id="change1">도와주세요</a>
-					</button>
-					<button class="button">
-						<a id="change">날씨가 좋네요</a>
-					</button>
-					<button class="button" onclick="cssChange2()">
-						<a id="change2">배고파요</a>
-					</button>
-					<button class="button">
-						<a id="change">뜨거워요</a>
-					</button>
-					<button class="button">
-						<a id="change">졸려요</a>
-					</button>
-					<button class="button" onclick="cssChange3()">
-						<a id="change3">잘 지냈어요?</a>
-					</button>
-					<button class="button">
-						<a id="change">사람</a>
-					</button>
-					<button class="button" onclick="cssChange4()">
-						<a id="change4">잠깐만요</a>
-					</button>
-					<button class="button" onclick="cssChange5()">
-						<a id="change5">기다려주세요</a>
-					</button>
-					<button class="button">
-						<a id="change">거짓말</a>
-					</button>
-					<button class="button">
-						<a id="change">설레요</a>
-					</button>
-					<button class="button">
-						<a id="change">자장면</a>
-					</button>
-					<button class="button">
-						<a id="change">날씨</a>
-					</button>
-					<button class="button">
-						<a id="change">어려워요</a>
-					</button>
-					<button class="button">
-						<a id="change">부끄러워요</a>
-					</button>
-					<button class="button">
-						<a id="change">목말라요</a>
-					</button>
-					<button class="button">
-						<a id="change">운동</a>
-					</button>
-					<button class="button">
-						<a id="change">괜찮아요</a>
-					</button>
-			
+				<div class="allWrap">
+					<div class="tabBox">
+						<p class="tab-link current" data-tab="tab-1">
+							<span><img src="http://mmctxt.com/link/img/icon01.png"
+								alt="icon" /></span> 학습완료
+						</p>
+						<p class="tab-link" data-tab="tab-2">
+							<span><img src="http://mmctxt.com/link/img/icon02.png"
+								alt="icon" /></span> 추가학습
+						</p>
+					</div>
+					<div id="tab-1" class="tab-content current">
+						<div class="search_wrap">
+							<div class="search">
+								<input type="text" class="searchTerm" placeholder="단어 찾기">
+								<button type="submit" class="searchButton">
+									<i class="fa fa-search"></i>
+								</button>
+							</div>
+						</div>
 
-				</div>
-				<script>
-					function cssChange1() {
-						var x = document.getElementById("change1");
-						x.style.color = "blue";
+						<button class="button" onclick="cssChange()">
+							<a>안녕하세요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>사랑해요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>너무 보고싶어요 </a>
+						</button>
 
-					}
-					function cssChange2() {
-						var x = document.getElementById("change2");
-						x.style.color = "blue";
-					}
-					function cssChange3() {
-						var x = document.getElementById("change3");
-						x.style.color = "blue";
-					}
-					function cssChange4() {
-						var x = document.getElementById("change4");
-						x.style.color = "blue";
+						<button class="button" onclick="cssChange()">
+							<a>그동안 고생했어요 </a>
+						</button>
 
-					}
-					function cssChange5() {
-						var x = document.getElementById("change5");
-						x.style.color = "blue";
-					}
-					function cssChange6() {
-						var x = document.getElementById("change6");
-						x.style.color = "blue";
-					}
-				</script>
-				<script>
-					$(".tab-link").click(function() {
-						var tab_id = $(this).attr("data-tab");
+						<button class="button" onclick="cssChange()">
+							<a>다음에 꼭 봐요 </a>
+						</button>
 
-						$(".tab-link").removeClass("current");
-						$(".tab-content").removeClass("current");
+						<button class="button" onclick="cssChange()">
+							<a>엄마 아빠 사랑해요</a>
+						</button>
 
-						$(this).addClass("current");
-						$("#" + tab_id).addClass("current");
-					});
-				</script>
+						<button class="button" onclick="cssChange()">
+							<a>정말 고마워</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>다시 만나요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>축하 해요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>응원 할게요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>메리 크리스마스</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>새해복 많이</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>행복해요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>미안해요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>고생했어</a>
+						</button>
+												<button class="button" onclick="cssChange()">
+							<a>응원 할게요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>메리 크리스마스</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>새해복 많이</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>행복해요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>미안해요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>고생했어</a>
+						</button>
+					</div>
 
-				<style>
+					<div id="tab-2" class="tab-content">
+						<div class="search_wrap">
+							<div class="search">
+								<input type="text" class="searchTerm" placeholder="단어 추가">
+								<button id="word_button" type="submit" class="searchButton">
+									추가
+								</button>
+							</div>
+						</div>
+
+						<button class="button" onclick="cssChange()">
+							<a>돼지고기</a>
+						</button>
+						<button class="button"">
+							<a id="change">채소</a>
+						</button>
+						<button class="button" onclick="cssChange1()">
+							<a id="change1">도와주세요</a>
+						</button>
+						<button class="button">
+							<a id="change">날씨가 좋네요</a>
+						</button>
+						<button class="button" onclick="cssChange2()">
+							<a id="change2">배고파요</a>
+						</button>
+						<button class="button">
+							<a id="change">뜨거워요</a>
+						</button>
+						<button class="button">
+							<a id="change">졸려요</a>
+						</button>
+						<button class="button" onclick="cssChange3()">
+							<a id="change3">잘 지냈어요?</a>
+						</button>
+						<button class="button">
+							<a id="change">사람</a>
+						</button>
+						<button class="button" onclick="cssChange4()">
+							<a id="change4">잠깐만요</a>
+						</button>
+						<button class="button" onclick="cssChange5()">
+							<a id="change5">기다려주세요</a>
+						</button>
+						<button class="button">
+							<a id="change">거짓말</a>
+						</button>
+						<button class="button">
+							<a id="change">설레요</a>
+						</button>
+						<button class="button">
+							<a id="change">자장면</a>
+						</button>
+						<button class="button">
+							<a id="change">날씨</a>
+						</button>
+						<button class="button">
+							<a id="change">어려워요</a>
+						</button>
+						<button class="button">
+							<a id="change">부끄러워요</a>
+						</button>
+						<button class="button">
+							<a id="change">목말라요</a>
+						</button>
+						<button class="button">
+							<a id="change">운동</a>
+						</button>
+						<button class="button">
+							<a id="change">괜찮아요</a>
+						</button>
+
+
+					</div>
+					<script>
+						function cssChange1() {
+							var x = document.getElementById("change1");
+							x.style.color = "blue";
+
+						}
+						function cssChange2() {
+							var x = document.getElementById("change2");
+							x.style.color = "blue";
+						}
+						function cssChange3() {
+							var x = document.getElementById("change3");
+							x.style.color = "blue";
+						}
+						function cssChange4() {
+							var x = document.getElementById("change4");
+							x.style.color = "blue";
+
+						}
+						function cssChange5() {
+							var x = document.getElementById("change5");
+							x.style.color = "blue";
+						}
+						function cssChange6() {
+							var x = document.getElementById("change6");
+							x.style.color = "blue";
+						}
+					</script>
+					<script>
+						$(".tab-link").click(function() {
+							var tab_id = $(this).attr("data-tab");
+
+							$(".tab-link").removeClass("current");
+							$(".tab-content").removeClass("current");
+
+							$(this).addClass("current");
+							$("#" + tab_id).addClass("current");
+						});
+					</script>
+
+					<style>
 .allWrap {
 	width: 100%;
 	margin: 0 auto;
@@ -252,7 +288,7 @@ rect#progress {
 
 .tab-link {
 	margin-left: 10px;
-    width: 40%;
+	width: 40%;
 	display: inline-block;
 	padding: 10px;
 	text-align: center;
@@ -260,6 +296,7 @@ rect#progress {
 	border-radius: 20px;
 	color: #fff;
 	cursor: pointer;
+	box-shadow: 2px 2px 2px grey;
 }
 
 .tab-link.current {
@@ -269,7 +306,10 @@ rect#progress {
 
 .tab-content {
 	display: none;
+	height: 367px;
+	overflow-y:auto;
 }
+
 
 .tab-content.current {
 	display: block;
@@ -277,26 +317,46 @@ rect#progress {
 	height: 100%;
 	font-size: 10px;
 	text-align: center;
+	padding-top: 20px;
+	height: 367px;
+	overflow-y:auto;
 }
+.button{
+    box-shadow: 1px 1px 1px grey;
+}
+.tab-content.tab-content::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    scroll-behavior: smooth;
+  }
+  .tab-content.tab-content::-webkit-scrollbar-thumb {
+    background-color: #b39df6;
+    border-radius: 8px;
+  }
+  .tab-content.tab-content::-webkit-scrollbar-track {
+    background-color: grey;
+    border-radius: 8px;
+    box-shadow: inset 0px 0px 5px white;
+  }
 </style>
 
 
 
 
-				<div class="frame">
+					<div class="frame">
 
-					<p href=""
-					 id="gotrain">학습시키기</p>
+						<p href="" id="gotrain">학습시키기</p>
+					</div>
 				</div>
 			</div>
-		</div>
 </body>
-<script type="text/javascript"> 
-var header = document.getElementById('gotrain');
-header.onclick = function() { 
+<script type="text/javascript">
+	var header = document.getElementById('gotrain');
+	header.onclick = function() {
 
-	location.href='train2.do'
-}
+		location.href = 'train2.do'
+	}
+	
 </script>
 
 
