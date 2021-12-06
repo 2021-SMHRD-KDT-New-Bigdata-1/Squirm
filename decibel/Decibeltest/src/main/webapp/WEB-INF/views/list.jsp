@@ -144,22 +144,22 @@ rect#progress {
 							<a>고생했어</a>
 						</button>
 												<button class="button" onclick="cssChange()">
-							<a>응원 할게요</a>
+							<a>힘낼게요</a>
 						</button>
 						<button class="button" onclick="cssChange()">
-							<a>메리 크리스마스</a>
+							<a>맛있어요</a>
 						</button>
 						<button class="button" onclick="cssChange()">
-							<a>새해복 많이</a>
+							<a>귀여워요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>고마워요</a>
+						</button>
+						<button class="button" onclick="cssChange()">
+							<a>재밌어요</a>
 						</button>
 						<button class="button" onclick="cssChange()">
 							<a>행복해요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>미안해요</a>
-						</button>
-						<button class="button" onclick="cssChange()">
-							<a>고생했어</a>
 						</button>
 					</div>
 
@@ -174,10 +174,10 @@ rect#progress {
 						</div>
 
 						<button class="button" onclick="cssChange()">
-							<a>돼지고기</a>
+							<a>강아지</a>
 						</button>
 						<button class="button"">
-							<a id="change">채소</a>
+							<a id="change">고양이</a>
 						</button>
 						<button class="button" onclick="cssChange1()">
 							<a id="change1">도와주세요</a>
@@ -198,7 +198,7 @@ rect#progress {
 							<a id="change3">잘 지냈어요?</a>
 						</button>
 						<button class="button">
-							<a id="change">사람</a>
+							<a id="change">배가 아파요</a>
 						</button>
 						<button class="button" onclick="cssChange4()">
 							<a id="change4">잠깐만요</a>
@@ -213,10 +213,10 @@ rect#progress {
 							<a id="change">설레요</a>
 						</button>
 						<button class="button">
-							<a id="change">자장면</a>
+							<a id="change">귀찮아요</a>
 						</button>
 						<button class="button">
-							<a id="change">날씨</a>
+							<a id="change">따뜻해요</a>
 						</button>
 						<button class="button">
 							<a id="change">어려워요</a>
@@ -228,10 +228,11 @@ rect#progress {
 							<a id="change">목말라요</a>
 						</button>
 						<button class="button">
-							<a id="change">운동</a>
+							<a id="change">빨리해요</a>
 						</button>
 						<button class="button">
-							<a id="change">괜찮아요</a>
+							<a id="change">놀아주세요
+							</a>
 						</button>
 
 
