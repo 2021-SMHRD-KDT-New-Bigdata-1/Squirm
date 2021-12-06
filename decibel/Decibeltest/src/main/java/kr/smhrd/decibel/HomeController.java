@@ -1,22 +1,15 @@
 package kr.smhrd.decibel;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.smhrd.domain.MemberVO;
+import kr.smhrd.domain.WordVO;
 import kr.smhrd.mapper.MemberMapper;
+import kr.smhrd.mapper.Wordmapper;
 
 @Controller
 public class HomeController {
@@ -25,11 +18,6 @@ public class HomeController {
 	@RequestMapping("/list.do")
 	public String playlist() {
 		return "list";
-				
-	}
-	@RequestMapping("/decibel.do")
-	public String decibel() {
-		return "decibel";
 				
 	}
 	@RequestMapping("/main.do")
@@ -81,6 +69,16 @@ public class HomeController {
 	    	  session.invalidate();
 	    	  return "redirect:/login.do";
 	      }
+	      
+	@Autowired
+	Wordmapper mapper2;
 	
+	      @RequestMapping("/list.do")
+	      public WordVO sted(WordVO word) {
+	    	  // 학습완료 리스트
+	    	  WordVO vo = mapper2.sted(word);
+	    	  
+	    	  return vo;
+	      }
 	
 }
