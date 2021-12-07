@@ -20,6 +20,7 @@
 <!-- <script src="js/stt.js"></script> -->
 
 <script>
+
 	<%String a = request.getParameter("t");
 	String[] aa = a.split(" ");%>
 	var traintext = new Array(
@@ -31,8 +32,12 @@
 			var number_list = new Array(
 				<%for(int i=0;i<aa.length;i++){%>
 					"<%=""+(i+1)+"/"+aa.length%>",
+			
+				
 				<%}%>
 			);
+			 
+			
 </script>
 </head>
 <style>
