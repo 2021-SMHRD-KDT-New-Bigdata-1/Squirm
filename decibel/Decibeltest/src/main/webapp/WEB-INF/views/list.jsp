@@ -100,7 +100,7 @@ rect#progress {
                   <c:forEach var="vo" items="${list}">
                      <c:forEach var="w" items="${fn:split(vo.sted_word,'|')}">
                         <button type="button" class="button b_sted" onclick="cssChange()">
-                           <a style=" font-size: 16px; font-family: 'Gowun Dodum', sans-serif;">${w}</a>
+                           <a  style=" font-size: 16px; font-family: 'Gowun Dodum', sans-serif;">${w}</a>
                         </button>
                      </c:forEach>
                   </c:forEach>
@@ -119,7 +119,7 @@ rect#progress {
                   </div>
                   <c:forEach var="vo" items="${list}">
                      <c:forEach var="a" items="${fn:split(vo.stwi_word,'|')}">
-                        <button class="button b_stwi" onclick="cssChange1()">
+                        <button class="button b_stwi" onclick="cssChange()">
                            <a style=" font-size: 16px; font-family: 'Gowun Dodum', sans-serif;">${a}</a>
                         </button>
                      </c:forEach>
@@ -128,28 +128,34 @@ rect#progress {
 
 
                </div>
-              <script>
+                   <script>
 
-               function sted_word() {
-                var s_word = $(".s_sted").val();
-                var b_word = $(".b_sted");
-                     
-                for(var i=0; i<b_word.length; i++){
-                if(b_word[i].querySelector('a').innerText == s_word){
-                         alert("학습한 단어 입니다.");
-                         break;
-                   }else{
-                         alert("학습한 단어가 아닙니다.");
-                         break;
+                  function sted_word() {
+                     var s_word = $(".s_sted").val();                           
+                     var b_word = $(".b_sted");
+                     var study = false;
+                     for(var i=0; i<b_word.length; i++){
+                        if(b_word[i].querySelector('a').innerText == s_word){
+                           study = true;
+                        }else{
+                           continue;
                         }
                      }
-               
-
+                     if(study){
+                        alert("학습한 단어 입니다.");
+                     }else{
+                        alert("학습한 단어가 아닙니다.");
+                     }
                   }
+            
+               
+                  
+                  
                </script>
+
                
                <script>
-                  function cssChange1() {
+                  function cssChange() {
                      var x = document.getElementById("change1");
                      x.style.color = "blue";
 
