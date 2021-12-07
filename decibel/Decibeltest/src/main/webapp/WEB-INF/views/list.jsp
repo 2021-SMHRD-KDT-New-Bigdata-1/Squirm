@@ -118,9 +118,9 @@ rect#progress {
 							<div class="search">
 								<!-- mini's form -->
 
-								<input type="text" class="searchTerm s_stwi" placeholder="단어 추가"
+								<input id="word" type="text" class="searchTerm s_stwi" placeholder="단어 추가"
 									;" style="font-family: 'Gowun Dodum', sans-serif;">
-								<button id="word_button" type="button" class="searchButton">추가</button>
+								<button id="word_button" type="button" class="searchButton" onclick="word_add()">추가</button>
 							</div>
 						</div>
 						<c:forEach var="vo" items="${list}">
@@ -136,6 +136,10 @@ rect#progress {
 
 					</div>
 					<script>
+					function word_add() {                                      
+						$( '.search_wrap' ).after( '<button class="button b_sted onclick="cssChange()"><a style="font-size: 16px; font-family: "Gowun Dodum", sans-serif;">'+document.getElementById('word').value+'<a></button>' );
+					}
+					
 						function sted_word() {
 							var s_word = $(".s_sted").val();
 							var b_word = $(".b_sted");
