@@ -91,7 +91,7 @@ rect#progress {
                   <div class="search_wrap">
                      <div class="search">
 
-                        <input type="text" class="searchTerm s_sted" placeholder="단어 찾기">
+                        <input type="text" class="searchTerm s_sted" placeholder="단어 찾기" style="font-family: 'Gowun Dodum', sans-serif;">
                         <button type="submit" class="searchButton" onclick="sted_word()">
                            <i class="fa fa-search"></i>
                         </button>
@@ -111,7 +111,7 @@ rect#progress {
                      <div class="search">
                         <!-- mini's form -->
                       
-                           <input type="text" class="searchTerm s_stwi" placeholder="단어 추가";">
+                           <input type="text" class="searchTerm s_stwi" placeholder="단어 추가";" style="font-family: 'Gowun Dodum', sans-serif;">
                            <button id="word_button" type="button" class="searchButton"
                               onclick="stwi_word()">추가
                               </button>
@@ -153,35 +153,7 @@ rect#progress {
                   
                </script>
 
-               
-               <script>
-                  function cssChange() {
-                     var x = document.getElementById("change1");
-                     x.style.color = "blue";
 
-                  }
-                  function cssChange2() {
-                     var x = document.getElementById("change2");
-                     x.style.color = "blue";
-                  }
-                  function cssChange3() {
-                     var x = document.getElementById("change3");
-                     x.style.color = "blue";
-                  }
-                  function cssChange4() {
-                     var x = document.getElementById("change4");
-                     x.style.color = "blue";
-
-                  }
-                  function cssChange5() {
-                     var x = document.getElementById("change5");
-                     x.style.color = "blue";
-                  }
-                  function cssChange6() {
-                     var x = document.getElementById("change6");
-                     x.style.color = "blue";
-                  }
-               </script>
                <script>
                   $(".tab-link").click(function() {
                      var tab_id = $(this).attr("data-tab");
@@ -264,7 +236,7 @@ rect#progress {
 
                <div class="frame">
 
-                  <p href="" id="gotrain" style=" font-size: 20px; "><strong>학습시키기</strong></strong></p>
+                  <p href="" id="gotrain" style=" font-size: 20px; font-family: 'Gowun Dodum', sans-serif;"><strong>학습시키기</strong></strong></p>
                </div>
             </div>
          </div>
