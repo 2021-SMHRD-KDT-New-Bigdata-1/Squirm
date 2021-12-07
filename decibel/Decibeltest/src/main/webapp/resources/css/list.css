@@ -6,7 +6,8 @@ body {
 #gotrain {
     position: relative;
     left: 157px;
-    top: 4px;
+	font-family: 'Gowun Dodum', sans-serif;
+	font-size: 20px; 
 }
 
 .info p {
@@ -686,3 +687,4 @@ input[type="button"]:disabled,
   color: #b2b2b2 !important;
   cursor: default;
 }
+

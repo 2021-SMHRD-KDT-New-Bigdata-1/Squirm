@@ -1,37 +1,23 @@
 package kr.smhrd.decibel;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import kr.smhrd.domain.MemberVO;
+import kr.smhrd.domain.WordVO;
 import kr.smhrd.mapper.MemberMapper;
+import kr.smhrd.mapper.Wordmapper;
 
 @Controller
 public class HomeController {
+ 
 
-
-	@RequestMapping("/list.do")
-	public String playlist() {
-		return "list";
-				
-	}
-	@RequestMapping("/decibel.do")
-	public String decibel() {
-		return "decibel";
-				
-	}
 	@RequestMapping("/main.do")
 	public String main() {
 		return "main";		
@@ -51,10 +37,7 @@ public class HomeController {
 	public String train() {
 		return "train";
 	}
-	@RequestMapping("/train2.do")
-	public String train2() {
-		return "train2";
-	}
+
 	@RequestMapping("/loading.do")
 	public String loading() {
 		return "loading";
@@ -62,7 +45,6 @@ public class HomeController {
 	
 	@Autowired
 	MemberMapper mapper;
-	
 		  
 	      @RequestMapping("/m_login.do")
 	      public String mLogin(MemberVO member, HttpSession session) {
@@ -81,6 +63,22 @@ public class HomeController {
 	    	  session.invalidate();
 	    	  return "redirect:/login.do";
 	      }
-	
-	
+	      
+
+	  @Autowired
+	  Wordmapper w_mapper;
+		
+			@RequestMapping("/list.do")
+			public String playlist(Model model) {
+			List<WordVO> list = w_mapper.WordList();
+				
+				model.addAttribute("list", list);
+				return "list";
+						
+			}
+			@RequestMapping("/train2.do")
+			public String train2() {
+				return "train2";
+			}
+			
 }
