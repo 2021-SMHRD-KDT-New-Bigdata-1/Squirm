@@ -591,7 +591,8 @@ input[type="button"]:visited,
 input[type="submit"]:hover,
 input[type="reset"]:hover,
 input[type="button"]:hover,
-.button:hover {
+.button:hover,
+.button.b_stwi.active {
 	  border-color: #7959db;
   color: #7959db ;
 	

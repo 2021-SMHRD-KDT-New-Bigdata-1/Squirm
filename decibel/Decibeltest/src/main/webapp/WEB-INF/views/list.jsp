@@ -119,7 +119,7 @@ rect#progress {
                   </div>
                   <c:forEach var="vo" items="${list}">
                      <c:forEach var="a" items="${fn:split(vo.stwi_word,'|')}">
-                        <button class="button b_stwi" onclick="cssChange()">
+                        <button class="button b_stwi">
                            <a style=" font-size: 16px; font-family: 'Gowun Dodum', sans-serif;">${a}</a>
                         </button>
                      </c:forEach>
@@ -155,32 +155,14 @@ rect#progress {
 
                
                <script>
-                  function cssChange() {
+               	$(".b_stwi").click(function() {
+               		$(this).toggleClass("active");
+            	});
+                  /*function cssChange() {
                      var x = document.getElementById("change1");
                      x.style.color = "blue";
 
-                  }
-                  function cssChange2() {
-                     var x = document.getElementById("change2");
-                     x.style.color = "blue";
-                  }
-                  function cssChange3() {
-                     var x = document.getElementById("change3");
-                     x.style.color = "blue";
-                  }
-                  function cssChange4() {
-                     var x = document.getElementById("change4");
-                     x.style.color = "blue";
-
-                  }
-                  function cssChange5() {
-                     var x = document.getElementById("change5");
-                     x.style.color = "blue";
-                  }
-                  function cssChange6() {
-                     var x = document.getElementById("change6");
-                     x.style.color = "blue";
-                  }
+                  }*/
                </script>
                <script>
                   $(".tab-link").click(function() {
@@ -272,8 +254,9 @@ rect#progress {
 <script type="text/javascript">
    var header = document.getElementById('gotrain');
    header.onclick = function() {
-
-      location.href = 'train2.do'
+	   var t=''
+	   $.each($('.b_stwi.active>a'), function(i,e){t+=e.innerText+"|"})
+      location.href = 'train2.do?'
    }
    
 </script>
