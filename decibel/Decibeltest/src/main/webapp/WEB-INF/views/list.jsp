@@ -174,6 +174,7 @@ rect#progress {
 
 						<<<<<<< HEAD
 						}*/
+						
 					</script>
 					======= >>>>>>> branch 'master' of
 					https://github.com/2021-SMHRD-KDT-New-Bigdata-1/Squirm.git
