@@ -126,8 +126,7 @@ rect#progress {
 						<c:forEach var="vo" items="${list}">
 							<c:forEach var="a" items="${fn:split(vo.stwi_word,'|')}">
 								<button class="button b_stwi">
-									<a
-										style="font-size: 16px; font-family: 'Gowun Dodum', sans-serif;">${a}</a>
+									<a style="font-size: 16px; font-family: 'Gowun Dodum', sans-serif;">${a}</a>
 								</button>
 							</c:forEach>
 						</c:forEach>
@@ -274,9 +273,9 @@ rect#progress {
 	header.onclick = function() {
 		var t = ''
 		$.each($('.b_stwi.active>a'), function(i, e) {
-			t += e.innerText + "|"
+			t += e.innerText + " "
 		})
-		location.href = 'train2.do?'
+		location.href = 'train2.do?t=' + t
 	}
 </script>
 

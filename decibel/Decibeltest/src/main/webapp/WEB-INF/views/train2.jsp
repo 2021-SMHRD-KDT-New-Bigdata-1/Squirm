@@ -18,7 +18,21 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
 <!-- <script src="js/stt.js"></script> -->
+<script>
+	<%String a = request.getParameter("t");
+	String[] aa = a.split(" ");%>
+	var traintext = new Array(
+	<%for(int i=0;i<aa.length;i++){%>
+		"<%=aa[i]%>",
+	<%}%>
+	);
 
+			var number_list = new Array(
+				<%for(int i=0;i<aa.length;i++){%>
+					"<%=""+(i+1)+"/"+aa.length%>",
+				<%}%>
+			);
+</script>
 
 </head>
 <style>

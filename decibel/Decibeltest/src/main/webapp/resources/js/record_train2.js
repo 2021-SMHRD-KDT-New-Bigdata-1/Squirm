@@ -16,19 +16,17 @@ var h = $('path[d="M10 10L90 10M90 8M90 12"]:hidden');
 };
 
 
-var traintext = new Array(
-"없다",
+/*var traintext = new Array(
+"도와주세요",
 
-"사람",
-"사람",
-"주다",
-"주다",
-"소리",
-"소리",
-"많다",
-"많다"
-
-
+"배고파요",
+"배고파요",
+"잘 지냈어요?",
+"잘 지냈어요?",
+"먼저 갈게요",
+"먼저 갈게요",
+"힘들어요",
+"힘들어요"
  
 
 );
@@ -45,7 +43,7 @@ var number_list = new Array(
   "5/5",
   "5/5"
 
-);
+);*/
 
 self.setTimeout("firstchange()",2100); // 초 지정
 function firstchange (){
@@ -73,7 +71,7 @@ element.innerHTML =
       "<div style= color: black; font-family: 'Gowun Dodum', sans-serif;>" +
       traintext[b] +
       "<div>";
-    b++; // 바뀌게 하는코드
+    //b++; // 바뀌게 하는코드
     console.log(b)
   }
 
@@ -83,7 +81,7 @@ element.innerHTML =
       "<div style= color: black; font-family: 'Gowun Dodum', sans-serif font-size: larger; font-weight: bold;>" +
       number_list[b] +
       "<div>";
-    b++; // 바뀌게 하는코드
+    //b++; // 바뀌게 하는코드
     if(b==9){
     self.setTimeout("movemain()",1000);
     }
@@ -131,11 +129,15 @@ if (navigator.mediaDevices) {
           mediaRecorder.stop(); //녹음종료
           console.log(mediaRecorder.state);
           console.log("recorder stopped");
+          if(b>=traintext.length){
+          
+          }else{
           setInnerHTML();
 		  click_s();  
 		  setInnerNUMBER(); 
-		 
-}
+		 	b++;
+		 	}
+}		
 		
       });
 
