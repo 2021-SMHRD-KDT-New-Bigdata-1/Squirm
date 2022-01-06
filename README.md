@@ -13,7 +13,7 @@
 ## Menu
 <img width="940" alt="스크린샷 2022-01-06 오후 2 01 28" src="https://user-images.githubusercontent.com/90124351/148330943-b966cecf-c479-41c6-8a0d-ed7378c57f64.png">
 
-## ERD 다이어그램
+## E-R Diagram
 
 ![ERD2](https://user-images.githubusercontent.com/90124351/148330622-cb694efe-af8d-42f6-9768-3171bd205ec9.jpg)
 
